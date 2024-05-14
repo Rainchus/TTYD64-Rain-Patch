@@ -507,6 +507,7 @@ End
 
 % Update total stats
 
+%TODO: reimplement the changes needed here
 % @ $Function_802421A0
 % {
 % 	[25C] ADDIU 	A0, R0, 141` % badges total, was 80`
@@ -588,7 +589,7 @@ End
    E0:  LI        T1, 1078
    .oE4
    E0:  ORI t1, t1, 1800
-   E8:  LI        T3, F647C300
+   %E8:  LI        T3, F647C300
    F0:  LI        T2, 000840AC
    F8:  LI        A0, 1E
    FC:  LI        A1, 28
@@ -673,7 +674,7 @@ End
   258:  SW        R0, 14 (SP)
   JAL $GetValidBadgeFlagsSize
   NOP
-  ADDU a0, v0, r0
+  ADDU a0, v0, r0 %new total badges possible
 %   25C:  LI        A0, 50
   260:  LI        A1, F4
   264:  LI        A2, 42
@@ -720,7 +721,7 @@ End
   30C:  SW        R0, 10 (SP)
   310:  JAL       ~Func:draw_string
   314:  SW        R0, 14 (SP)
-  318:  LI        A0, A0
+  318:  ADDIU     A0, R0, 134` %new star pieces total
   31C:  LI        A1, F4
   320:  LI        A2, 50
   324:  LI        A3, 1
@@ -794,7 +795,7 @@ End
   42C:  LI        A1, F4
   430:  LI        A2, 5F
   434:  LI        A3, 1
-  438:  LH        A0, 28 (S6)
+  438:  ADDIU     A0, R0, 92` %new recipe total
   43C:  LI        V0, 2
   440:  SW        R0, 10 (SP)
   444:  SW        S0, 14 (SP)
@@ -826,7 +827,7 @@ End
   4AC:  COPY      A3, S0
   4B0:  LI        V0, 1
   4B4:  SW        R0, 10 (SP)
-  4B8:  JAL       ~Func:draw_string
+  %4B8:  JAL       ~Func:draw_string
   4BC:  SW        V0, 14 (SP)
   4C0:  LI        A1, E7
   4C4:  LI        A2, 6F
@@ -835,14 +836,14 @@ End
   4D0:  SW        S0, 14 (SP)
   4D4:  LHU       A0, 2C2 (S1)
   4D8:  LI        V0, 3
-  4DC:  JAL       ~Func:draw_number
+  %4DC:  JAL       ~Func:draw_number
   4E0:  SW        V0, 18 (SP)
   4E4:  LI        A0, 001F0034
   4EC:  LI        A1, E8
   4F0:  LI        A2, 6C
   4F4:  COPY      A3, S0
   4F8:  SW        R0, 10 (SP)
-  4FC:  JAL       ~Func:draw_string
+  %4FC:  JAL       ~Func:draw_string
   500:  SW        R0, 14 (SP)
   504:  LI        A1, F4
   508:  LI        A2, 6F
@@ -851,7 +852,7 @@ End
   514:  SW        S0, 14 (SP)
   518:  LHU       A0, 2C0 (S1)
   51C:  LI        V0, 2
-  520:  JAL       ~Func:draw_number
+  %520:  JAL       ~Func:draw_number
   524:  SW        V0, 18 (SP)
   528:  LI        A0, 000B
   .o52C
@@ -861,14 +862,14 @@ End
   538:  LI        A0, 000B00F4
   540:  LI        S4, CE
   544:  SUBU      A1, S4, V0
-  548:  LI        A2, 7D
+  548:  LI        A2, 6D % number of battles
   54C:  COPY      A3, S0
   550:  LI        S2, 1
   554:  SW        R0, 10 (SP)
   558:  JAL       ~Func:draw_string
   55C:  SW        S2, 14 (SP)
   560:  LI        A1, D8
-  564:  LI        A2, 7E
+  564:  LI        A2, 6E % amount of battles
   568:  COPY      A3, S2
   56C:  LA        S1, 8010F290
   574:  SW        R0, 10 (SP)
@@ -882,13 +883,13 @@ End
   598:  CLEAR     A1
   59C:  LI        A0, 000B00F7
   5A4:  SUBU      A1, S4, V0
-  5A8:  LI        A2, 8C
+  5A8:  LI        A2, 7D % first strikes
   5AC:  COPY      A3, S0
   5B0:  SW        R0, 10 (SP)
   5B4:  JAL       ~Func:draw_string
   5B8:  SW        S2, 14 (SP)
   5BC:  LI        A1, D8
-  5C0:  LI        A2, 8D
+  5C0:  LI        A2, 7E % amount
   5C4:  LHU       A0, 29C (S1)
   5C8:  COPY      A3, S2
   5CC:  SW        R0, 10 (SP)
@@ -900,13 +901,13 @@ End
   5E8:  CLEAR     A1
   5EC:  LI        A0, 000B00F8
   5F4:  SUBU      A1, S4, V0
-  5F8:  LI        A2, 9B
+  5F8:  LI        A2, 8C % enemies first strikes
   5FC:  COPY      A3, S0
   600:  SW        R0, 10 (SP)
   604:  JAL       ~Func:draw_string
   608:  SW        S2, 14 (SP)
   60C:  LI        A1, D8
-  610:  LI        A2, 9C
+  610:  LI        A2, 8D % amount
   614:  LHU       A0, 29E (S1)
   618:  COPY      A3, S2
   61C:  SW        R0, 10 (SP)
@@ -918,7 +919,7 @@ End
   634:  LUI       A0, B
   638:  ORI       A0, A0, FA
   63C:  LI        A1, 6D
-  640:  LI        A2, AA
+  640:  LI        A2, 9D % ??? (total power bounces)
   644:  COPY      A3, S0
   648:  SW        R0, 10 (SP)
   64C:  JAL       ~Func:draw_string
@@ -931,13 +932,13 @@ End
   664:  CLEAR     A1
   668:  LI        A0, 000B00F9
   670:  SUBU      A1, S4, V0
-  674:  LI        A2, AA
+  674:  LI        A2, 9D % total power bounces
   678:  COPY      A3, S0
   67C:  SW        R0, 10 (SP)
   680:  JAL       ~Func:draw_string
   684:  SW        S2, 14 (SP)
   688:  LI        A1, D8
-  68C:  LI        A2, AB
+  68C:  LI        A2, 9D % amount
   690:  LHU       A0, 2A0 (S1)
   694:  LI        A3, 1
   698:  SW        R0, 10 (SP)

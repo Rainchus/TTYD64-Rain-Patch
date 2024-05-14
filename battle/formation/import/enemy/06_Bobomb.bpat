@@ -265,6 +265,38 @@
   37C:  		Return
   384:  	CaseOR  ==  .Event:ShockHit % 2F
   390:  	CaseOR  ==  .Event:ShockDeath % 26
+			Call  $ReadAddress ( $Superguard_Byteflag 0 *Var0 .False .False )
+			%was superguarded
+			If *Var0 == .True
+				%if bobomb has 1 hp and superguarded, do death
+				Call  GetActorHP    ( .Actor:Self *Var0 )
+				If *Var0 == 1
+					ExecWait  DoDeath
+					Return
+				EndIf
+
+				SetConst  *Var0  00000001 
+				SetConst  *Var1  002C000A %death anim when jumping back
+				ExecWait  DoJumpBack 
+				Call  JumpToGoal    ( .Actor:Self 00000005 .False .True .False )
+				SetConst  *Var0  00000001 
+				SetConst  *Var1  002C0006 %run anim
+				ExecWait  DoReturnHome 
+
+				%ignite if bob-omb isn't dead and isn't lit
+				2D4:  		Call  GetLastDamage ( .Actor:Self *Var0 )
+				2E8:  		If  *Var0  !=  00000000 
+				2F8:  			ExecWait  $Script_Ignite_06 
+				304:  		EndIf
+
+				% %ignite if bob-omb isn't dead and isn't lit
+				% Call  GetActorVar   ( .Actor:Self 00000000 *Var0 )
+				% If  *Var0  ==  00000001 
+				% 	ExecWait  $Script_Ignite_06 
+				% EndIf
+				Return
+        	EndIf
+			%if normal shock hit
   39C:  		SetConst  *Var0  00000001 
   3AC:  		SetConst  *Var1  002C0010 
   3BC:  		Set   *Var2  FFFFCFC7 

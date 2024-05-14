@@ -1,7 +1,7 @@
 % This file adds the super guard mechanic from TTYD
 
 % Used to know if the player succesfully landed a Superguard
-#new:Data $Superguard_Byteflag
+#export:Data $Superguard_Byteflag
 { 00 }
 
 % ~DamageType:00004000 = attack can't be superguarded
@@ -599,3 +599,37 @@
     JR	    RA
     ADDIU	SP, SP, 28
 }
+
+%new superguard stuff - rain
+% @Data 1C9038 { %8029A758
+%     $SkipElectricAnimationIfSuperguarded
+% }
+
+#export:Function $API_GetSuperguardBool {
+    PUSH ra
+    LW a1, 000C (a0)
+    LAW a2, $Superguard_Byteflag
+    JAL ~Func:set_variable
+    LW a1, 0000 (a1)
+    POP ra
+    JR RA
+    ADDIU v0, r0, 0002 %return done api status
+}
+
+% #new:Script $SkipElectricAnimationIfSuperguarded {
+%     Call 8026B1B0 ( FFFFFF81 *Var0 *Var1 ) %SetAnimation
+%     Call 8026AAA8 ( FFFFFF81 *Var0 *Var1 *Var2 ) %GetActorPos
+%     Call 8027D8E0 ( FFFFFF81 *Var3 *Var4) %GetActorSize
+%     SetF *Var5 *Var3
+%     DivF *Var5 F24ACA80
+%     AddF *Var1 *Var5
+
+%     %custom code stuff
+%     Call $API_GetSuperguardBool ( *Var5 )
+%     If *Var5 == 0 %if no superguard
+%         Call PlayEffect (0000004A 0 *Var0 *Var1 *Var2 *Var4 *Var3 0 0 0 0 0 0 0) %normal code
+%         %stuff
+%     EndIf
+%     Return
+%     End
+% }
