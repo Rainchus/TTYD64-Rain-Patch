@@ -1,0 +1,1196 @@
+#export:Data $WorldLakilester0Raster { ~RasterFile:CI-4:../sprite/npc/src/08/Raster_00.png }
+#export:Data $WorldLakilester0Palette { ~PaletteFile:CI-4:../sprite/npc/src/08/Raster_00.png }
+#export:Data $WorldLakilester1Raster { ~RasterFile:CI-4:../sprite/npc/src/08/Raster_12.png }
+#export:Data $WorldLakilester1Palette { ~PaletteFile:CI-4:../sprite/npc/src/08/Raster_12.png }
+#export:Data $WorldLakilesterData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $WorldLakilester0Raster  $WorldLakilester0Palette    0`s    0`s   48`s  32`s
+    $WorldLakilester1Raster  $WorldLakilester1Palette    -4`s    -24`s   32`s  32`s
+}
+#export:Data $BattleLakilester0Raster { ~RasterFile:CI-4:../sprite/npc/src/10/Raster_00.png }
+#export:Data $BattleLakilester0Palette { ~PaletteFile:CI-4:../sprite/npc/src/10/Raster_00.png }
+#export:Data $BattleLakilester1Raster { ~RasterFile:CI-4:../sprite/npc/src/10/Raster_16.png }
+#export:Data $BattleLakilester1Palette { ~PaletteFile:CI-4:../sprite/npc/src/10/Raster_16.png }
+#export:Data $BattleLakilesterData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BattleLakilester0Raster  $BattleLakilester0Palette    0`s    0`s   48`s  32`s
+    $BattleLakilester1Raster  $BattleLakilester1Palette    -4`s    -24`s   32`s  32`s
+}
+#export:Data $JrTroopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/21/Raster_00.png }
+#export:Data $JrTroopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/21/Raster_00.png }
+#export:Data $JrTroopaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $JrTroopa0Raster  $JrTroopa0Palette    0`s    0`s   32`s  48`s
+}
+#export:Data $SpikedJrTroopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/22/Raster_00.png }
+#export:Data $SpikedJrTroopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/22/Raster_00.png }
+#export:Data $SpikedJrTroopaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $SpikedJrTroopa0Raster  $SpikedJrTroopa0Palette    0`s    0`s   32`s  56`s
+}
+#export:Data $SpikedParaJrTroopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/23/Raster_0E.png }
+#export:Data $SpikedParaJrTroopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/23/Raster_0E.png }
+#export:Data $SpikedParaJrTroopa1Raster { ~RasterFile:CI-4:../sprite/npc/src/23/Raster_0A.png }
+#export:Data $SpikedParaJrTroopa1Palette { ~PaletteFile:CI-4:../sprite/npc/src/23/Raster_0A.png }
+#export:Data $SpikedParaJrTroopa2Raster { ~RasterFile:CI-4:../sprite/npc/src/23/Raster_00.png }
+#export:Data $SpikedParaJrTroopa2Palette { ~PaletteFile:CI-4:../sprite/npc/src/23/Raster_00.png }
+#export:Data $SpikedParaJrTroopaData {
+    3 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $SpikedParaJrTroopa0Raster  $SpikedParaJrTroopa0Palette    2`s    4`s   32`s  32`s
+    $SpikedParaJrTroopa1Raster  $SpikedParaJrTroopa1Palette    2`s    4`s   64`s  32`s
+    $SpikedParaJrTroopa2Raster  $SpikedParaJrTroopa2Palette    2`s    4`s   32`s  48`s
+}
+#export:Data $MageJrTroopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/24/Raster_00.png }
+#export:Data $MageJrTroopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/24/Raster_00.png }
+#export:Data $MageJrTroopaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $MageJrTroopa0Raster  $MageJrTroopa0Palette    -8`s    0`s   48`s  48`s
+}
+#export:Data $ParaJrTroopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/25/Raster_0E.png }
+#export:Data $ParaJrTroopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/25/Raster_0E.png }
+#export:Data $ParaJrTroopa1Raster { ~RasterFile:CI-4:../sprite/npc/src/25/Raster_0A.png }
+#export:Data $ParaJrTroopa1Palette { ~PaletteFile:CI-4:../sprite/npc/src/25/Raster_0A.png }
+#export:Data $ParaJrTroopa2Raster { ~RasterFile:CI-4:../sprite/npc/src/25/Raster_00.png }
+#export:Data $ParaJrTroopa2Palette { ~PaletteFile:CI-4:../sprite/npc/src/25/Raster_00.png }
+#export:Data $ParaJrTroopaData {
+    3 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $ParaJrTroopa0Raster  $ParaJrTroopa0Palette    0`s    0`s   32`s  32`s
+    $ParaJrTroopa1Raster  $ParaJrTroopa1Palette    0`s    0`s   64`s  32`s
+    $ParaJrTroopa2Raster  $ParaJrTroopa2Palette    0`s    0`s   32`s  48`s
+}
+#export:Data $Goomba0Raster { ~RasterFile:CI-4:../sprite/npc/src/26/Raster_00.png }
+#export:Data $Goomba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/26/Palette_00.png }
+#export:Data $GoombaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Goomba0Raster  $Goomba0Palette    0`s    0`s   32`s  32`s
+}
+#export:Data $Gloomba0Raster { ~RasterFile:CI-4:../sprite/npc/src/26/Raster_00.png }
+#export:Data $Gloomba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/26/Palette_04.png }
+#export:Data $GloombaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Gloomba0Raster  $Gloomba0Palette    0`s    0`s   32`s  32`s
+}
+#export:Data $HyperGoomba0Raster { ~RasterFile:CI-4:../sprite/npc/src/26/Raster_00.png }
+#export:Data $HyperGoomba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/26/Palette_02.png }
+#export:Data $HyperGoombaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $HyperGoomba0Raster  $HyperGoomba0Palette    0`s    0`s   32`s  32`s
+}
+#export:Data $SpikedGoomba0Raster { ~RasterFile:CI-4:../sprite/npc/src/27/Raster_05.png }
+#export:Data $SpikedGoomba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/27/Palette_00.png }
+#export:Data $SpikedGoombaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $SpikedGoomba0Raster  $SpikedGoomba0Palette    0`s    0`s   32`s  40`s
+}
+#export:Data $SpikedGloomba0Raster { ~RasterFile:CI-4:../sprite/npc/src/27/Raster_05.png }
+#export:Data $SpikedGloomba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/27/Palette_01.png }
+#export:Data $SpikedGloombaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $SpikedGloomba0Raster  $SpikedGloomba0Palette    0`s    0`s   32`s  40`s
+}
+#export:Data $Paragoomba0Raster { ~RasterFile:CI-4:../sprite/npc/src/28/Raster_06.png }
+#export:Data $Paragoomba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/28/Palette_00.png }
+#export:Data $Paragoomba1Raster { ~RasterFile:CI-4:../sprite/npc/src/28/Raster_00.png }
+#export:Data $Paragoomba1Palette { ~PaletteFile:CI-4:../sprite/npc/src/28/Palette_00.png }
+#export:Data $ParagoombaData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Paragoomba0Raster  $Paragoomba0Palette    0`s    -16`s   48`s  24`s
+    $Paragoomba1Raster  $Paragoomba1Palette    0`s    1`s   32`s  40`s
+}
+#export:Data $Paragloomba0Raster { ~RasterFile:CI-4:../sprite/npc/src/28/Raster_06.png }
+#export:Data $Paragloomba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/28/Palette_03.png }
+#export:Data $Paragloomba1Raster { ~RasterFile:CI-4:../sprite/npc/src/28/Raster_00.png }
+#export:Data $Paragloomba1Palette { ~PaletteFile:CI-4:../sprite/npc/src/28/Palette_03.png }
+#export:Data $ParagloombaData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Paragloomba0Raster  $Paragloomba0Palette    0`s    -16`s   48`s  24`s
+    $Paragloomba1Raster  $Paragloomba1Palette    0`s    1`s   32`s  40`s
+}
+#export:Data $HyperParagoomba0Raster { ~RasterFile:CI-4:../sprite/npc/src/28/Raster_06.png }
+#export:Data $HyperParagoomba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/28/Palette_02.png }
+#export:Data $HyperParagoomba1Raster { ~RasterFile:CI-4:../sprite/npc/src/28/Raster_00.png }
+#export:Data $HyperParagoomba1Palette { ~PaletteFile:CI-4:../sprite/npc/src/28/Palette_02.png }
+#export:Data $HyperParagoombaData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $HyperParagoomba0Raster  $HyperParagoomba0Palette    0`s    -16`s   48`s  24`s
+    $HyperParagoomba1Raster  $HyperParagoomba1Palette    0`s    1`s   32`s  40`s
+}
+#export:Data $KoopaTroopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/29/Raster_03.png }
+#export:Data $KoopaTroopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/29/Palette_01.png }
+#export:Data $KoopaTroopaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $KoopaTroopa0Raster  $KoopaTroopa0Palette    0`s    0`s   48`s  56`s
+}
+#export:Data $DarkKoopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/29/Raster_03.png }
+#export:Data $DarkKoopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/29/Palette_00.png }
+#export:Data $DarkKoopaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $DarkKoopa0Raster  $DarkKoopa0Palette    0`s    0`s   48`s  56`s
+}
+#export:Data $ParaTroopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/2A/Raster_01.png }
+#export:Data $ParaTroopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2A/Palette_01.png }
+#export:Data $ParaTroopa1Raster { ~RasterFile:CI-4:../sprite/npc/src/2A/Raster_0E.png }
+#export:Data $ParaTroopa1Palette { ~PaletteFile:CI-4:../sprite/npc/src/2A/Palette_01.png }
+#export:Data $ParaTroopa2Raster { ~RasterFile:CI-4:../sprite/npc/src/2A/Raster_00.png }
+#export:Data $ParaTroopa2Palette { ~PaletteFile:CI-4:../sprite/npc/src/2A/Palette_01.png }
+#export:Data $ParaTroopaData {
+    3 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $ParaTroopa0Raster  $ParaTroopa0Palette    16`s    -29`s   32`s  32`s
+    $ParaTroopa1Raster  $ParaTroopa1Palette    0`s    0`s   48`s  56`s
+    $ParaTroopa2Raster  $ParaTroopa2Palette    -11`s    -29`s   32`s  32`s
+}
+#export:Data $DarkParaTroopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/2A/Raster_01.png }
+#export:Data $DarkParaTroopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2A/Palette_00.png }
+#export:Data $DarkParaTroopa1Raster { ~RasterFile:CI-4:../sprite/npc/src/2A/Raster_0E.png }
+#export:Data $DarkParaTroopa1Palette { ~PaletteFile:CI-4:../sprite/npc/src/2A/Palette_00.png }
+#export:Data $DarkParaTroopa2Raster { ~RasterFile:CI-4:../sprite/npc/src/2A/Raster_00.png }
+#export:Data $DarkParaTroopa2Palette { ~PaletteFile:CI-4:../sprite/npc/src/2A/Palette_00.png }
+#export:Data $DarkParaTroopaData {
+    3 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $DarkParaTroopa0Raster  $DarkParaTroopa0Palette    16`s    -29`s   32`s  32`s
+    $DarkParaTroopa1Raster  $DarkParaTroopa1Palette    0`s    0`s   48`s  56`s
+    $DarkParaTroopa2Raster  $DarkParaTroopa2Palette    -11`s    -29`s   32`s  32`s
+}
+#export:Data $Fuzzy0Raster { ~RasterFile:CI-4:../sprite/npc/src/2B/Raster_00.png }
+#export:Data $Fuzzy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2B/Palette_00.png }
+#export:Data $FuzzyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Fuzzy0Raster  $Fuzzy0Palette    0`s    1`s   32`s  32`s
+}
+#export:Data $ForestFuzzy0Raster { ~RasterFile:CI-4:../sprite/npc/src/2B/Raster_00.png }
+#export:Data $ForestFuzzy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2B/Palette_01.png }
+#export:Data $ForestFuzzyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $ForestFuzzy0Raster  $ForestFuzzy0Palette    0`s    1`s   32`s  32`s
+}
+#export:Data $JungleFuzzy0Raster { ~RasterFile:CI-4:../sprite/npc/src/2B/Raster_00.png }
+#export:Data $JungleFuzzy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2B/Palette_03.png }
+#export:Data $JungleFuzzyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $JungleFuzzy0Raster  $JungleFuzzy0Palette    0`s    1`s   32`s  32`s
+}
+#export:Data $Bombomb0Raster { ~RasterFile:CI-4:../sprite/npc/src/2C/Raster_0B.png }
+#export:Data $Bombomb0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2C/Raster_0B.png }
+#export:Data $Bombomb1Raster { ~RasterFile:CI-4:../sprite/npc/src/2C/Raster_12.png }
+#export:Data $Bombomb1Palette { ~PaletteFile:CI-4:../sprite/npc/src/2C/Raster_12.png }
+#export:Data $BombombData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Bombomb0Raster  $Bombomb0Palette    0`s    0`s   32`s  40`s
+    $Bombomb1Raster  $Bombomb1Palette    20`s    -8`s   16`s  24`s
+}
+#export:Data $BulletBill0Raster { ~RasterFile:CI-4:../sprite/npc/src/2D/Raster_00.png }
+#export:Data $BulletBill0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2D/Palette_00.png }
+#export:Data $BulletBillData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BulletBill0Raster  $BulletBill0Palette    0`s    1`s   48`s  24`s
+}
+#export:Data $BombshellBill0Raster { ~RasterFile:CI-4:../sprite/npc/src/2D/Raster_00.png }
+#export:Data $BombshellBill0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2D/Palette_01.png }
+#export:Data $BombshellBillData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BombshellBill0Raster  $BombshellBill0Palette    0`s    1`s   48`s  24`s
+}
+#export:Data $BillBlaster0Raster { ~RasterFile:CI-4:../sprite/npc/src/2E/Raster_01.png }
+#export:Data $BillBlaster0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2E/Palette_00.png }
+#export:Data $BillBlaster1Raster { ~RasterFile:CI-4:../sprite/npc/src/2E/Raster_00.png }
+#export:Data $BillBlaster1Palette { ~PaletteFile:CI-4:../sprite/npc/src/2E/Palette_00.png }
+#export:Data $BillBlaster2Raster { ~RasterFile:CI-4:../sprite/npc/src/2E/Raster_02.png }
+#export:Data $BillBlaster2Palette { ~PaletteFile:CI-4:../sprite/npc/src/2E/Palette_00.png }
+#export:Data $BillBlasterData {
+    3 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BillBlaster0Raster  $BillBlaster0Palette    0`s    1`s   48`s  32`s
+    $BillBlaster1Raster  $BillBlaster1Palette    -10`s    -11`s   64`s  32`s
+    $BillBlaster2Raster  $BillBlaster2Palette    -16`s    1`s   16`s  24`s
+}
+#export:Data $BombshellBillBlaster0Raster { ~RasterFile:CI-4:../sprite/npc/src/2E/Raster_01.png }
+#export:Data $BombshellBillBlaster0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2E/Palette_01.png }
+#export:Data $BombshellBillBlaster1Raster { ~RasterFile:CI-4:../sprite/npc/src/2E/Raster_00.png }
+#export:Data $BombshellBillBlaster1Palette { ~PaletteFile:CI-4:../sprite/npc/src/2E/Palette_01.png }
+#export:Data $BombshellBillBlaster2Raster { ~RasterFile:CI-4:../sprite/npc/src/2E/Raster_02.png }
+#export:Data $BombshellBillBlaster2Palette { ~PaletteFile:CI-4:../sprite/npc/src/2E/Palette_01.png }
+#export:Data $BombshellBillBlasterData {
+    3 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BombshellBillBlaster0Raster  $BombshellBillBlaster0Palette    0`s    1`s   48`s  32`s
+    $BombshellBillBlaster1Raster  $BombshellBillBlaster1Palette    -10`s    -11`s   64`s  32`s
+    $BombshellBillBlaster2Raster  $BombshellBillBlaster2Palette    -16`s    1`s   16`s  24`s
+}
+#export:Data $MontyMole0Raster { ~RasterFile:CI-4:../sprite/npc/src/2F/Raster_00.png }
+#export:Data $MontyMole0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2F/Palette_00.png }
+#export:Data $MontyMoleData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $MontyMole0Raster  $MontyMole0Palette    0`s    0`s   48`s  32`s
+}
+#export:Data $MontyMoleCh6_0Raster { ~RasterFile:CI-4:../sprite/npc/src/2F/Raster_00.png }
+#export:Data $MontyMoleCh6_0Palette { ~PaletteFile:CI-4:../sprite/npc/src/2F/Palette_01.png }
+#export:Data $MontyMoleCh6_Data {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $MontyMoleCh6_0Raster  $MontyMoleCh6_0Palette    0`s    0`s   48`s  32`s
+}
+#export:Data $Cleft0Raster { ~RasterFile:CI-4:../sprite/npc/src/30/Raster_00.png }
+#export:Data $Cleft0Palette { ~PaletteFile:CI-4:../sprite/npc/src/30/Palette_00.png }
+#export:Data $CleftData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Cleft0Raster  $Cleft0Palette    -6`s    0`s   48`s  40`s
+}
+#export:Data $HyperCleft0Raster { ~RasterFile:CI-4:../sprite/npc/src/30/Raster_00.png }
+#export:Data $HyperCleft0Palette { ~PaletteFile:CI-4:../sprite/npc/src/30/Palette_01.png }
+#export:Data $HyperCleftData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $HyperCleft0Raster  $HyperCleft0Palette    -6`s    0`s   48`s  40`s
+}
+#export:Data $Pokey0Raster { ~RasterFile:CI-4:../sprite/npc/src/31/Raster_00.png }
+#export:Data $Pokey0Palette { ~PaletteFile:CI-4:../sprite/npc/src/31/Palette_00.png }
+#export:Data $Pokey1Raster { ~RasterFile:CI-4:../sprite/npc/src/31/Raster_01.png }
+#export:Data $Pokey1Palette { ~PaletteFile:CI-4:../sprite/npc/src/31/Palette_00.png }
+#export:Data $Pokey2Raster { ~RasterFile:CI-4:../sprite/npc/src/31/Raster_01.png }
+#export:Data $Pokey2Palette { ~PaletteFile:CI-4:../sprite/npc/src/31/Palette_00.png }
+#export:Data $Pokey3Raster { ~RasterFile:CI-4:../sprite/npc/src/31/Raster_01.png }
+#export:Data $Pokey3Palette { ~PaletteFile:CI-4:../sprite/npc/src/31/Palette_00.png }
+#export:Data $PokeyData {
+    4 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Pokey0Raster  $Pokey0Palette    0`s    -75`s   32`s  32`s
+    $Pokey1Raster  $Pokey1Palette    0`s    -50`s   32`s  32`s
+    $Pokey2Raster  $Pokey2Palette    0`s    -25`s   32`s  32`s
+    $Pokey3Raster  $Pokey3Palette    0`s    0`s   32`s  32`s
+}
+#export:Data $PoisonPokey0Raster { ~RasterFile:CI-4:../sprite/npc/src/31/Raster_00.png }
+#export:Data $PoisonPokey0Palette { ~PaletteFile:CI-4:../sprite/npc/src/31/Palette_01.png }
+#export:Data $PoisonPokey1Raster { ~RasterFile:CI-4:../sprite/npc/src/31/Raster_01.png }
+#export:Data $PoisonPokey1Palette { ~PaletteFile:CI-4:../sprite/npc/src/31/Palette_01.png }
+#export:Data $PoisonPokey2Raster { ~RasterFile:CI-4:../sprite/npc/src/31/Raster_01.png }
+#export:Data $PoisonPokey2Palette { ~PaletteFile:CI-4:../sprite/npc/src/31/Palette_01.png }
+#export:Data $PoisonPokey3Raster { ~RasterFile:CI-4:../sprite/npc/src/31/Raster_01.png }
+#export:Data $PoisonPokey3Palette { ~PaletteFile:CI-4:../sprite/npc/src/31/Palette_01.png }
+#export:Data $PoisonPokeyData {
+    4 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $PoisonPokey0Raster  $PoisonPokey0Palette    0`s    -75`s   32`s  32`s
+    $PoisonPokey1Raster  $PoisonPokey1Palette    0`s    -50`s   32`s  32`s
+    $PoisonPokey2Raster  $PoisonPokey2Palette    0`s    -25`s   32`s  32`s
+    $PoisonPokey3Raster  $PoisonPokey3Palette    0`s    0`s   32`s  32`s
+}
+#export:Data $Bandit0Raster { ~RasterFile:CI-4:../sprite/npc/src/32/Raster_03.png }
+#export:Data $Bandit0Palette { ~PaletteFile:CI-4:../sprite/npc/src/32/Raster_03.png }
+#export:Data $BanditData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Bandit0Raster  $Bandit0Palette    0`s    0`s   32`s  48`s
+}
+#export:Data $BuzzyBeetle0Raster { ~RasterFile:CI-4:../sprite/npc/src/33/Raster_03.png }
+#export:Data $BuzzyBeetle0Palette { ~PaletteFile:CI-4:../sprite/npc/src/33/Raster_03.png }
+#export:Data $BuzzyBeetleData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BuzzyBeetle0Raster  $BuzzyBeetle0Palette    0`s    0`s   32`s  32`s
+}
+#export:Data $Swooper0Raster { ~RasterFile:CI-4:../sprite/npc/src/34/Raster_02.png }
+#export:Data $Swooper0Palette { ~PaletteFile:CI-4:../sprite/npc/src/34/Palette_00.png }
+#export:Data $SwooperData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Swooper0Raster  $Swooper0Palette    0`s    0`s   32`s  40`s
+}
+#export:Data $Swoopula0Raster { ~RasterFile:CI-4:../sprite/npc/src/34/Raster_02.png }
+#export:Data $Swoopula0Palette { ~PaletteFile:CI-4:../sprite/npc/src/34/Palette_01.png }
+#export:Data $SwoopulaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Swoopula0Raster  $Swoopula0Palette    0`s    0`s   32`s  40`s
+}
+#export:Data $StoneChomp0Raster { ~RasterFile:CI-4:../sprite/npc/src/35/Raster_00.png }
+#export:Data $StoneChomp0Palette { ~PaletteFile:CI-4:../sprite/npc/src/35/Raster_00.png }
+#export:Data $StoneChompData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $StoneChomp0Raster  $StoneChomp0Palette    0`s    0`s   48`s  48`s
+}
+#export:Data $PutridPiranha0Raster { ~RasterFile:CI-4:../sprite/npc/src/36/Raster_0B.png }
+#export:Data $PutridPiranha0Palette { ~PaletteFile:CI-4:../sprite/npc/src/36/Palette_00.png }
+#export:Data $PutridPiranha1Raster { ~RasterFile:CI-4:../sprite/npc/src/36/Raster_09.png }
+#export:Data $PutridPiranha1Palette { ~PaletteFile:CI-4:../sprite/npc/src/36/Palette_00.png }
+#export:Data $PutridPiranha2Raster { ~RasterFile:CI-4:../sprite/npc/src/36/Raster_0C.png }
+#export:Data $PutridPiranha2Palette { ~PaletteFile:CI-4:../sprite/npc/src/36/Palette_00.png }
+#export:Data $PutridPiranha3Raster { ~RasterFile:CI-4:../sprite/npc/src/36/Raster_00.png }
+#export:Data $PutridPiranha3Palette { ~PaletteFile:CI-4:../sprite/npc/src/36/Palette_00.png }
+#export:Data $PutridPiranhaData {
+    4 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $PutridPiranha0Raster  $PutridPiranha0Palette    -10`s    2`s   48`s  32`s
+    $PutridPiranha1Raster  $PutridPiranha1Palette    0`s    -2`s   32`s  32`s
+    $PutridPiranha2Raster  $PutridPiranha2Palette    14`s    1`s   48`s  32`s
+    $PutridPiranha3Raster  $PutridPiranha3Palette    -20`s    -20`s   64`s  56`s
+}
+#export:Data $FrostPiranha0Raster { ~RasterFile:CI-4:../sprite/npc/src/36/Raster_0B.png }
+#export:Data $FrostPiranha0Palette { ~PaletteFile:CI-4:../sprite/npc/src/36/Palette_01.png }
+#export:Data $FrostPiranha1Raster { ~RasterFile:CI-4:../sprite/npc/src/36/Raster_09.png }
+#export:Data $FrostPiranha1Palette { ~PaletteFile:CI-4:../sprite/npc/src/36/Palette_01.png }
+#export:Data $FrostPiranha2Raster { ~RasterFile:CI-4:../sprite/npc/src/36/Raster_0C.png }
+#export:Data $FrostPiranha2Palette { ~PaletteFile:CI-4:../sprite/npc/src/36/Palette_01.png }
+#export:Data $FrostPiranha3Raster { ~RasterFile:CI-4:../sprite/npc/src/36/Raster_00.png }
+#export:Data $FrostPiranha3Palette { ~PaletteFile:CI-4:../sprite/npc/src/36/Palette_01.png }
+#export:Data $FrostPiranhaData {
+    4 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $FrostPiranha0Raster  $FrostPiranha0Palette    -10`s    2`s   48`s  32`s
+    $FrostPiranha1Raster  $FrostPiranha1Palette    0`s    -2`s   32`s  32`s
+    $FrostPiranha2Raster  $FrostPiranha2Palette    14`s    1`s   48`s  32`s
+    $FrostPiranha3Raster  $FrostPiranha3Palette    -20`s    -20`s   64`s  56`s
+}
+#export:Data $PiranhaPlant0Raster { ~RasterFile:CI-4:../sprite/npc/src/37/Raster_00.png }
+#export:Data $PiranhaPlant0Palette { ~PaletteFile:CI-4:../sprite/npc/src/37/Raster_00.png }
+#export:Data $PiranhaPlantData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $PiranhaPlant0Raster  $PiranhaPlant0Palette    0`s    0`s   48`s  56`s
+}
+#export:Data $Sentinel0Raster { ~RasterFile:CI-4:../sprite/npc/src/38/Raster_0D.png }
+#export:Data $Sentinel0Palette { ~PaletteFile:CI-4:../sprite/npc/src/38/Raster_0D.png }
+#export:Data $Sentinel1Raster { ~RasterFile:CI-4:../sprite/npc/src/38/Raster_00.png }
+#export:Data $Sentinel1Palette { ~PaletteFile:CI-4:../sprite/npc/src/38/Raster_00.png }
+#export:Data $SentinelData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Sentinel0Raster  $Sentinel0Palette    0`s    -46`s   32`s  16`s
+    $Sentinel1Raster  $Sentinel1Palette    0`s    0`s   64`s  48`s
+}
+#export:Data $WorldClubba0Raster { ~RasterFile:CI-4:../sprite/npc/src/39/Raster_22.png }
+#export:Data $WorldClubba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/39/Palette_00.png }
+#export:Data $WorldClubba1Raster { ~RasterFile:CI-4:../sprite/npc/src/39/Raster_00.png }
+#export:Data $WorldClubba1Palette { ~PaletteFile:CI-4:../sprite/npc/src/39/Palette_00.png }
+#export:Data $WorldClubbaData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $WorldClubba0Raster  $WorldClubba0Palette    -27`s    0`s   32`s  72`s
+    $WorldClubba1Raster  $WorldClubba1Palette    -2`s    1`s   64`s  64`s
+}
+#export:Data $WorldWhiteClubba0Raster { ~RasterFile:CI-4:../sprite/npc/src/39/Raster_22.png }
+#export:Data $WorldWhiteClubba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/39/Palette_01.png }
+#export:Data $WorldWhiteClubba1Raster { ~RasterFile:CI-4:../sprite/npc/src/39/Raster_00.png }
+#export:Data $WorldWhiteClubba1Palette { ~PaletteFile:CI-4:../sprite/npc/src/39/Palette_01.png }
+#export:Data $WorldWhiteClubbaData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $WorldWhiteClubba0Raster  $WorldWhiteClubba0Palette    -27`s    0`s   32`s  72`s
+    $WorldWhiteClubba1Raster  $WorldWhiteClubba1Palette    -2`s    1`s   64`s  64`s
+}
+#export:Data $BattleClubba0Raster { ~RasterFile:CI-4:../sprite/npc/src/3A/Raster_16.png }
+#export:Data $BattleClubba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/3A/Raster_16.png }
+#export:Data $BattleClubba1Raster { ~RasterFile:CI-4:../sprite/npc/src/3A/Raster_00.png }
+#export:Data $BattleClubba1Palette { ~PaletteFile:CI-4:../sprite/npc/src/3A/Raster_00.png }
+#export:Data $BattleClubbaData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BattleClubba0Raster  $BattleClubba0Palette    -27`s    0`s   32`s  72`s
+    $BattleClubba1Raster  $BattleClubba1Palette    -2`s    1`s   64`s  64`s
+}
+#export:Data $ShyGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/3B/Raster_00.png }
+#export:Data $ShyGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/3B/Palette_00.png }
+#export:Data $ShyGuyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $ShyGuy0Raster  $ShyGuy0Palette    0`s    0`s   32`s  40`s
+}
+#export:Data $AntiGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/3B/Raster_00.png }
+#export:Data $AntiGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/3B/Palette_05.png }
+#export:Data $AntiGuyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $AntiGuy0Raster  $AntiGuy0Palette    0`s    0`s   32`s  40`s
+}
+#export:Data $GrooveGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/3C/Raster_00.png }
+#export:Data $GrooveGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/3C/Raster_00.png }
+#export:Data $GrooveGuyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $GrooveGuy0Raster  $GrooveGuy0Palette    -3`s    0`s   48`s  48`s
+}
+#export:Data $SkyGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/3D/Raster_00.png }
+#export:Data $SkyGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/3D/Raster_00.png }
+#export:Data $SkyGuyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $SkyGuy0Raster  $SkyGuy0Palette    -2`s    0`s   48`s  40`s
+}
+#export:Data $PyroGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/3E/Raster_00.png }
+#export:Data $PyroGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/3E/Raster_00.png }
+#export:Data $PyroGuy1Raster { ~RasterFile:CI-4:../sprite/npc/src/3E/Raster_18.png }
+#export:Data $PyroGuy1Palette { ~PaletteFile:CI-4:../sprite/npc/src/3E/Raster_18.png }
+#export:Data $PyroGuy2Raster { ~RasterFile:CI-4:../sprite/npc/src/3E/Raster_19.png }
+#export:Data $PyroGuy2Palette { ~PaletteFile:CI-4:../sprite/npc/src/3E/Raster_19.png }
+#export:Data $PyroGuyData {
+    3 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $PyroGuy0Raster  $PyroGuy0Palette    0`s    0`s   48`s  56`s
+    $PyroGuy1Raster  $PyroGuy1Palette    -13`s    0`s   16`s  16`s
+    $PyroGuy2Raster  $PyroGuy2Palette    5`s    0`s   16`s  16`s
+}
+#export:Data $SpyGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/3F/Raster_00.png }
+#export:Data $SpyGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/3F/Raster_00.png }
+#export:Data $SpyGuy1Raster { ~RasterFile:CI-4:../sprite/npc/src/3F/Raster_1F.png }
+#export:Data $SpyGuy1Palette { ~PaletteFile:CI-4:../sprite/npc/src/3F/Raster_1F.png }
+#export:Data $SpyGuyData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $SpyGuy0Raster  $SpyGuy0Palette    0`s    0`s   48`s  48`s
+    $SpyGuy1Raster  $SpyGuy1Palette    0`s    0`s   16`s  32`s
+}
+#export:Data $MediGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/40/Raster_00.png }
+#export:Data $MediGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/40/Raster_00.png }
+#export:Data $MediGuyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $MediGuy0Raster  $MediGuy0Palette    -1`s    0`s   48`s  56`s
+}
+#export:Data $Fuzzipede0Raster { ~RasterFile:CI-4:../sprite/npc/src/41/Raster_00.png }
+#export:Data $Fuzzipede0Palette { ~PaletteFile:CI-4:../sprite/npc/src/41/Raster_00.png }
+#export:Data $FuzzipedeData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Fuzzipede0Raster  $Fuzzipede0Palette    0`s    1`s   32`s  40`s
+}
+#export:Data $JungleGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/42/Raster_00.png }
+#export:Data $JungleGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/42/Raster_00.png }
+#export:Data $JungleGuy1Raster { ~RasterFile:CI-4:../sprite/npc/src/42/Raster_0F.png }
+#export:Data $JungleGuy1Palette { ~PaletteFile:CI-4:../sprite/npc/src/42/Raster_0F.png }
+#export:Data $JungleGuyData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $JungleGuy0Raster  $JungleGuy0Palette    0`s    0`s   48`s  40`s
+    $JungleGuy1Raster  $JungleGuy1Palette    0`s    0`s   64`s  56`s
+}
+#export:Data $HeartPlant0Raster { ~RasterFile:CI-4:../sprite/npc/src/43/Raster_00.png }
+#export:Data $HeartPlant0Palette { ~PaletteFile:CI-4:../sprite/npc/src/43/Raster_00.png }
+#export:Data $HeartPlant1Raster { ~RasterFile:CI-4:../sprite/npc/src/43/Raster_0C.png }
+#export:Data $HeartPlant1Palette { ~PaletteFile:CI-4:../sprite/npc/src/43/Raster_0C.png }
+#export:Data $HeartPlantData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $HeartPlant0Raster  $HeartPlant0Palette    2`s    11`s   32`s  48`s
+    $HeartPlant1Raster  $HeartPlant1Palette    1`s    0`s   48`s  32`s
+}
+#export:Data $HurtPlant0Raster { ~RasterFile:CI-4:../sprite/npc/src/44/Raster_0E.png }
+#export:Data $HurtPlant0Palette { ~PaletteFile:CI-4:../sprite/npc/src/44/Raster_0E.png }
+#export:Data $HurtPlant1Raster { ~RasterFile:CI-4:../sprite/npc/src/44/Raster_0F.png }
+#export:Data $HurtPlant1Palette { ~PaletteFile:CI-4:../sprite/npc/src/44/Raster_0F.png }
+#export:Data $HurtPlantData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $HurtPlant0Raster  $HurtPlant0Palette    -1`s    3`s   48`s  48`s
+    $HurtPlant1Raster  $HurtPlant1Palette    0`s    -1`s   48`s  24`s
+}
+#export:Data $MBush0Raster { ~RasterFile:CI-4:../sprite/npc/src/45/Raster_00.png }
+#export:Data $MBush0Palette { ~PaletteFile:CI-4:../sprite/npc/src/45/Raster_00.png }
+#export:Data $MBushData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $MBush0Raster  $MBush0Palette    0`s    0`s   48`s  48`s
+}
+#export:Data $Bubble0Raster { ~RasterFile:CI-4:../sprite/npc/src/46/Raster_00.png }
+#export:Data $Bubble0Palette { ~PaletteFile:CI-4:../sprite/npc/src/46/Palette_00.png }
+#export:Data $BubbleData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Bubble0Raster  $Bubble0Palette    0`s    0`s   32`s  48`s
+}
+#export:Data $Ember0Raster { ~RasterFile:CI-4:../sprite/npc/src/46/Raster_00.png }
+#export:Data $Ember0Palette { ~PaletteFile:CI-4:../sprite/npc/src/46/Palette_01.png }
+#export:Data $EmberData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Ember0Raster  $Ember0Palette    0`s    0`s   32`s  48`s
+}
+#export:Data $KentCKoopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/47/Raster_05.png }
+#export:Data $KentCKoopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/47/Raster_05.png }
+#export:Data $KentCKoopa1Raster { ~RasterFile:CI-4:../sprite/npc/src/47/Raster_09.png }
+#export:Data $KentCKoopa1Palette { ~PaletteFile:CI-4:../sprite/npc/src/47/Raster_09.png }
+#export:Data $KentCKoopa2Raster { ~RasterFile:CI-4:../sprite/npc/src/47/Raster_0E.png }
+#export:Data $KentCKoopa2Palette { ~PaletteFile:CI-4:../sprite/npc/src/47/Raster_0E.png }
+#export:Data $KentCKoopa3Raster { ~RasterFile:CI-4:../sprite/npc/src/47/Raster_01.png }
+#export:Data $KentCKoopa3Palette { ~PaletteFile:CI-4:../sprite/npc/src/47/Raster_01.png }
+#export:Data $KentCKoopa4Raster { ~RasterFile:CI-4:../sprite/npc/src/47/Raster_16.png }
+#export:Data $KentCKoopa4Palette { ~PaletteFile:CI-4:../sprite/npc/src/47/Raster_16.png }
+#export:Data $KentCKoopa5Raster { ~RasterFile:CI-4:../sprite/npc/src/47/Raster_0C.png }
+#export:Data $KentCKoopa5Palette { ~PaletteFile:CI-4:../sprite/npc/src/47/Raster_0C.png }
+#export:Data $KentCKoopa6Raster { ~RasterFile:CI-4:../sprite/npc/src/47/Raster_15.png }
+#export:Data $KentCKoopa6Palette { ~PaletteFile:CI-4:../sprite/npc/src/47/Raster_15.png }
+#export:Data $KentCKoopa7Raster { ~RasterFile:CI-4:../sprite/npc/src/47/Raster_12.png }
+#export:Data $KentCKoopa7Palette { ~PaletteFile:CI-4:../sprite/npc/src/47/Raster_12.png }
+#export:Data $KentCKoopaData {
+    8 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $KentCKoopa0Raster  $KentCKoopa0Palette    -4`s    3`s   48`s  48`s
+    $KentCKoopa1Raster  $KentCKoopa1Palette    46`s    -16`s   32`s  24`s
+    $KentCKoopa2Raster  $KentCKoopa2Palette    -24`s    -21`s   48`s  40`s
+    $KentCKoopa3Raster  $KentCKoopa3Palette    17`s    3`s   48`s  48`s
+    $KentCKoopa4Raster  $KentCKoopa4Palette    8`s    -17`s   80`s  64`s
+    $KentCKoopa5Raster  $KentCKoopa5Palette    -4`s    -21`s   48`s  48`s
+    $KentCKoopa6Raster  $KentCKoopa6Palette    6`s    -25`s   80`s  64`s
+    $KentCKoopa7Raster  $KentCKoopa7Palette    -33`s    -38`s   80`s  64`s
+}
+#export:Data $CrazeeDayzee0Raster { ~RasterFile:CI-4:../sprite/npc/src/48/Raster_00.png }
+#export:Data $CrazeeDayzee0Palette { ~PaletteFile:CI-4:../sprite/npc/src/48/Palette_00.png }
+#export:Data $CrazeeDayzeeData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $CrazeeDayzee0Raster  $CrazeeDayzee0Palette    2`s    0`s   48`s  48`s
+}
+#export:Data $AmayzDayzee0Raster { ~RasterFile:CI-4:../sprite/npc/src/48/Raster_00.png }
+#export:Data $AmayzDayzee0Palette { ~PaletteFile:CI-4:../sprite/npc/src/48/Palette_01.png }
+#export:Data $AmayzDayzeeData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $AmayzDayzee0Raster  $AmayzDayzee0Palette    2`s    0`s   48`s  48`s
+}
+#export:Data $Lakitu0Raster { ~RasterFile:CI-4:../sprite/npc/src/49/Raster_00.png }
+#export:Data $Lakitu0Palette { ~PaletteFile:CI-4:../sprite/npc/src/49/Raster_00.png }
+#export:Data $Lakitu1Raster { ~RasterFile:CI-4:../sprite/npc/src/49/Raster_13.png }
+#export:Data $Lakitu1Palette { ~PaletteFile:CI-4:../sprite/npc/src/49/Raster_13.png }
+#export:Data $LakituData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Lakitu0Raster  $Lakitu0Palette    -4`s    -24`s   32`s  32`s
+    $Lakitu1Raster  $Lakitu1Palette    0`s    0`s   48`s  32`s
+}
+#export:Data $Spiny0Raster { ~RasterFile:CI-4:../sprite/npc/src/4A/Raster_00.png }
+#export:Data $Spiny0Palette { ~PaletteFile:CI-4:../sprite/npc/src/4A/Raster_00.png }
+#export:Data $SpinyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Spiny0Raster  $Spiny0Palette    0`s    0`s   32`s  32`s
+}
+#export:Data $Bzzap0Raster { ~RasterFile:CI-4:../sprite/npc/src/4B/Raster_02.png }
+#export:Data $Bzzap0Palette { ~PaletteFile:CI-4:../sprite/npc/src/4B/Raster_02.png }
+#export:Data $BzzapData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Bzzap0Raster  $Bzzap0Palette    0`s    0`s   64`s  56`s
+}
+#export:Data $RuffPuff0Raster { ~RasterFile:CI-4:../sprite/npc/src/4C/Raster_00.png }
+#export:Data $RuffPuff0Palette { ~PaletteFile:CI-4:../sprite/npc/src/4C/Raster_00.png }
+#export:Data $RuffPuffData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $RuffPuff0Raster  $RuffPuff0Palette    0`s    18`s   48`s  32`s
+}
+#export:Data $SpikeTop0Raster { ~RasterFile:CI-4:../sprite/npc/src/4D/Raster_00.png }
+#export:Data $SpikeTop0Palette { ~PaletteFile:CI-4:../sprite/npc/src/4D/Raster_00.png }
+#export:Data $SpikeTopData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $SpikeTop0Raster  $SpikeTop0Palette    0`s    0`s   32`s  40`s
+}
+#export:Data $Duplighost0Raster { ~RasterFile:CI-4:../sprite/npc/src/4E/Raster_00.png }
+#export:Data $Duplighost0Palette { ~PaletteFile:CI-4:../sprite/npc/src/4E/Raster_00.png }
+#export:Data $DuplighostData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Duplighost0Raster  $Duplighost0Palette    6`s    0`s   64`s  48`s
+}
+#export:Data $AlbinoDino0Raster { ~RasterFile:CI-4:../sprite/npc/src/4F/Raster_00.png }
+#export:Data $AlbinoDino0Palette { ~PaletteFile:CI-4:../sprite/npc/src/4F/Raster_00.png }
+#export:Data $AlbinoDinoData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $AlbinoDino0Raster  $AlbinoDino0Palette    -1`s    0`s   96`s  80`s
+}
+#export:Data $Blooper0Raster { ~RasterFile:CI-4:../sprite/npc/src/50/Raster_00.png }
+#export:Data $Blooper0Palette { ~PaletteFile:CI-4:../sprite/npc/src/50/Raster_00.png }
+#export:Data $Blooper1Raster { ~RasterFile:CI-4:../sprite/npc/src/50/Raster_0F.png }
+#export:Data $Blooper1Palette { ~PaletteFile:CI-4:../sprite/npc/src/50/Raster_0F.png }
+#export:Data $BlooperData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Blooper0Raster  $Blooper0Palette    0`s    0`s   112`s  120`s
+    $Blooper1Raster  $Blooper1Palette    0`s    -56`s   48`s  24`s
+}
+#export:Data $BabyBlooper0Raster { ~RasterFile:CI-4:../sprite/npc/src/51/Raster_00.png }
+#export:Data $BabyBlooper0Palette { ~PaletteFile:CI-4:../sprite/npc/src/51/Raster_00.png }
+#export:Data $BabyBlooperData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BabyBlooper0Raster  $BabyBlooper0Palette    0`s    0`s   48`s  48`s
+}
+#export:Data $Gulpit0Raster { ~RasterFile:CI-4:../sprite/npc/src/52/Raster_00.png }
+#export:Data $Gulpit0Palette { ~PaletteFile:CI-4:../sprite/npc/src/52/Raster_00.png }
+#export:Data $GulpitData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Gulpit0Raster  $Gulpit0Palette    -14`s    0`s   112`s  72`s
+}
+#export:Data $DryBones0Raster { ~RasterFile:CI-4:../sprite/npc/src/53/Raster_02.png }
+#export:Data $DryBones0Palette { ~PaletteFile:CI-4:../sprite/npc/src/53/Raster_02.png }
+#export:Data $DryBones1Raster { ~RasterFile:CI-4:../sprite/npc/src/53/Raster_00.png }
+#export:Data $DryBones1Palette { ~PaletteFile:CI-4:../sprite/npc/src/53/Raster_00.png }
+#export:Data $DryBones2Raster { ~RasterFile:CI-4:../sprite/npc/src/53/Raster_01.png }
+#export:Data $DryBones2Palette { ~PaletteFile:CI-4:../sprite/npc/src/53/Raster_01.png }
+#export:Data $DryBones3Raster { ~RasterFile:CI-4:../sprite/npc/src/53/Raster_02.png }
+#export:Data $DryBones3Palette { ~PaletteFile:CI-4:../sprite/npc/src/53/Raster_02.png }
+#export:Data $DryBonesData {
+    4 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $DryBones0Raster  $DryBones0Palette    -4`s    -5`s   16`s  16`s
+    $DryBones1Raster  $DryBones1Palette    -12`s    -16`s   32`s  32`s
+    $DryBones2Raster  $DryBones2Palette    0`s    1`s   32`s  32`s
+    $DryBones3Raster  $DryBones3Palette    -13`s    -6`s   16`s  16`s
+}
+#export:Data $ThrownBone0Raster { ~RasterFile:CI-4:../sprite/npc/src/54/Raster_00.png }
+#export:Data $ThrownBone0Palette { ~PaletteFile:CI-4:../sprite/npc/src/54/Raster_00.png }
+#export:Data $ThrownBoneData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $ThrownBone0Raster  $ThrownBone0Palette    0`s    0`s   32`s  16`s
+}
+#export:Data $BonyBeetle0Raster { ~RasterFile:CI-4:../sprite/npc/src/55/Raster_00.png }
+#export:Data $BonyBeetle0Palette { ~PaletteFile:CI-4:../sprite/npc/src/55/Raster_00.png }
+#export:Data $BonyBeetleData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BonyBeetle0Raster  $BonyBeetle0Palette    0`s    0`s   48`s  40`s
+}
+#export:Data $Magikoopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/56/Raster_00.png }
+#export:Data $Magikoopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/56/Raster_00.png }
+#export:Data $MagikoopaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Magikoopa0Raster  $Magikoopa0Palette    0`s    0`s   64`s  64`s
+}
+#export:Data $FlyingMagikoopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/57/Raster_00.png }
+#export:Data $FlyingMagikoopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/57/Raster_00.png }
+#export:Data $FlyingMagikoopa1Raster { ~RasterFile:CI-4:../sprite/npc/src/57/Raster_00.png }
+#export:Data $FlyingMagikoopa1Palette { ~PaletteFile:CI-4:../sprite/npc/src/57/Raster_00.png }
+#export:Data $FlyingMagikoopaData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $FlyingMagikoopa0Raster  $FlyingMagikoopa0Palette    0`s    1`s   80`s  64`s
+    $FlyingMagikoopa1Raster  $FlyingMagikoopa1Palette    0`s    2`s   80`s  64`s
+}
+#export:Data $WorldKoopatrol0Raster { ~RasterFile:CI-4:../sprite/npc/src/58/Raster_03.png }
+#export:Data $WorldKoopatrol0Palette { ~PaletteFile:CI-4:../sprite/npc/src/58/Raster_03.png }
+#export:Data $WorldKoopatrolData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $WorldKoopatrol0Raster  $WorldKoopatrol0Palette    4`s    0`s   48`s  64`s
+}
+#export:Data $Koopatrol0Raster { ~RasterFile:CI-4:../sprite/npc/src/59/Raster_03.png }
+#export:Data $Koopatrol0Palette { ~PaletteFile:CI-4:../sprite/npc/src/59/Raster_03.png }
+#export:Data $KoopatrolData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Koopatrol0Raster  $Koopatrol0Palette    4`s    0`s   48`s  64`s
+}
+#export:Data $HammerBros0Raster { ~RasterFile:CI-4:../sprite/npc/src/5A/Raster_00.png }
+#export:Data $HammerBros0Palette { ~PaletteFile:CI-4:../sprite/npc/src/5A/Raster_00.png }
+#export:Data $HammerBrosData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $HammerBros0Raster  $HammerBros0Palette    0`s    0`s   64`s  56`s
+}
+#export:Data $GoombaBroRed0Raster { ~RasterFile:CI-4:../sprite/npc/src/62/Raster_04.png }
+#export:Data $GoombaBroRed0Palette { ~PaletteFile:CI-4:../sprite/npc/src/62/Palette_00.png }
+#export:Data $GoombaBroRedData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $GoombaBroRed0Raster  $GoombaBroRed0Palette    0`s    0`s   48`s  48`s
+}
+#export:Data $GoombaBroBlue0Raster { ~RasterFile:CI-4:../sprite/npc/src/62/Raster_04.png }
+#export:Data $GoombaBroBlue0Palette { ~PaletteFile:CI-4:../sprite/npc/src/62/Palette_01.png }
+#export:Data $GoombaBroBlueData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $GoombaBroBlue0Raster  $GoombaBroBlue0Palette    0`s    0`s   48`s  48`s
+}
+#export:Data $GoombaKing0Raster { ~RasterFile:CI-4:../sprite/npc/src/63/Raster_01.png }
+#export:Data $GoombaKing0Palette { ~PaletteFile:CI-4:../sprite/npc/src/63/Raster_01.png }
+#export:Data $GoombaKing1Raster { ~RasterFile:CI-4:../sprite/npc/src/63/Raster_00.png }
+#export:Data $GoombaKing1Palette { ~PaletteFile:CI-4:../sprite/npc/src/63/Raster_00.png }
+#export:Data $GoombaKing2Raster { ~RasterFile:CI-4:../sprite/npc/src/63/Raster_10.png }
+#export:Data $GoombaKing2Palette { ~PaletteFile:CI-4:../sprite/npc/src/63/Raster_10.png }
+#export:Data $GoombaKing3Raster { ~RasterFile:CI-4:../sprite/npc/src/63/Raster_11.png }
+#export:Data $GoombaKing3Palette { ~PaletteFile:CI-4:../sprite/npc/src/63/Raster_11.png }
+#export:Data $GoombaKing4Raster { ~RasterFile:CI-4:../sprite/npc/src/63/Raster_08.png }
+#export:Data $GoombaKing4Palette { ~PaletteFile:CI-4:../sprite/npc/src/63/Raster_08.png }
+#export:Data $GoombaKing5Raster { ~RasterFile:CI-4:../sprite/npc/src/63/Raster_0D.png }
+#export:Data $GoombaKing5Palette { ~PaletteFile:CI-4:../sprite/npc/src/63/Raster_0D.png }
+#export:Data $GoombaKing6Raster { ~RasterFile:CI-4:../sprite/npc/src/63/Raster_04.png }
+#export:Data $GoombaKing6Palette { ~PaletteFile:CI-4:../sprite/npc/src/63/Raster_04.png }
+#export:Data $GoombaKing7Raster { ~RasterFile:CI-4:../sprite/npc/src/63/Raster_05.png }
+#export:Data $GoombaKing7Palette { ~PaletteFile:CI-4:../sprite/npc/src/63/Raster_05.png }
+#export:Data $GoombaKing8Raster { ~RasterFile:CI-4:../sprite/npc/src/63/Raster_06.png }
+#export:Data $GoombaKing8Palette { ~PaletteFile:CI-4:../sprite/npc/src/63/Raster_06.png }
+#export:Data $GoombaKing9Raster { ~RasterFile:CI-4:../sprite/npc/src/63/Raster_03.png }
+#export:Data $GoombaKing9Palette { ~PaletteFile:CI-4:../sprite/npc/src/63/Raster_03.png }
+#export:Data $GoombaKing10Raster { ~RasterFile:CI-4:../sprite/npc/src/63/Raster_02.png }
+#export:Data $GoombaKing10Palette { ~PaletteFile:CI-4:../sprite/npc/src/63/Raster_02.png }
+#export:Data $GoombaKingData {
+    11 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $GoombaKing0Raster  $GoombaKing0Palette    -2`s    -2`s   64`s  40`s
+    $GoombaKing1Raster  $GoombaKing1Palette    1`s    -27`s   96`s  80`s
+    $GoombaKing2Raster  $GoombaKing2Palette    -34`s    9`s   32`s  32`s
+    $GoombaKing3Raster  $GoombaKing3Palette    30`s    9`s   32`s  32`s
+    $GoombaKing4Raster  $GoombaKing4Palette    -1`s    -60`s   48`s  32`s
+    $GoombaKing5Raster  $GoombaKing5Palette    -1`s    -38`s   48`s  24`s
+    $GoombaKing6Raster  $GoombaKing6Palette    -31`s    -46`s   32`s  24`s
+    $GoombaKing7Raster  $GoombaKing7Palette    28`s    -45`s   32`s  24`s
+    $GoombaKing8Raster  $GoombaKing8Palette    0`s    -93`s   48`s  32`s
+    $GoombaKing9Raster  $GoombaKing9Palette    14`s    -79`s   32`s  24`s
+    $GoombaKing10Raster  $GoombaKing10Palette    -16`s    -79`s   32`s  24`s
+}
+#export:Data $KoopaBrosBlack0Raster { ~RasterFile:CI-4:../sprite/npc/src/66/Raster_00.png }
+#export:Data $KoopaBrosBlack0Palette { ~PaletteFile:CI-4:../sprite/npc/src/66/Palette_00.png }
+#export:Data $KoopaBrosBlackData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $KoopaBrosBlack0Raster  $KoopaBrosBlack0Palette    -4`s    0`s   48`s  64`s
+}
+#export:Data $KoopaBrosRed0Raster { ~RasterFile:CI-4:../sprite/npc/src/66/Raster_00.png }
+#export:Data $KoopaBrosRed0Palette { ~PaletteFile:CI-4:../sprite/npc/src/66/Palette_01.png }
+#export:Data $KoopaBrosRedData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $KoopaBrosRed0Raster  $KoopaBrosRed0Palette    -4`s    0`s   48`s  64`s
+}
+#export:Data $KoopaBrosYellow0Raster { ~RasterFile:CI-4:../sprite/npc/src/66/Raster_00.png }
+#export:Data $KoopaBrosYellow0Palette { ~PaletteFile:CI-4:../sprite/npc/src/66/Palette_02.png }
+#export:Data $KoopaBrosYellowData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $KoopaBrosYellow0Raster  $KoopaBrosYellow0Palette    -4`s    0`s   48`s  64`s
+}
+#export:Data $KoopaBrosGreen0Raster { ~RasterFile:CI-4:../sprite/npc/src/66/Raster_00.png }
+#export:Data $KoopaBrosGreen0Palette { ~PaletteFile:CI-4:../sprite/npc/src/66/Palette_03.png }
+#export:Data $KoopaBrosGreenData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $KoopaBrosGreen0Raster  $KoopaBrosGreen0Palette    -4`s    0`s   48`s  64`s
+}
+#export:Data $Buzzar0Raster { ~RasterFile:CI-4:../sprite/npc/src/67/Raster_00.png }
+#export:Data $Buzzar0Palette { ~PaletteFile:CI-4:../sprite/npc/src/67/Raster_00.png }
+#export:Data $Buzzar1Raster { ~RasterFile:CI-4:../sprite/npc/src/67/Raster_05.png }
+#export:Data $Buzzar1Palette { ~PaletteFile:CI-4:../sprite/npc/src/67/Raster_05.png }
+#export:Data $Buzzar2Raster { ~RasterFile:CI-4:../sprite/npc/src/67/Raster_03.png }
+#export:Data $Buzzar2Palette { ~PaletteFile:CI-4:../sprite/npc/src/67/Raster_03.png }
+#export:Data $Buzzar3Raster { ~RasterFile:CI-4:../sprite/npc/src/67/Raster_02.png }
+#export:Data $Buzzar3Palette { ~PaletteFile:CI-4:../sprite/npc/src/67/Raster_02.png }
+#export:Data $Buzzar4Raster { ~RasterFile:CI-4:../sprite/npc/src/67/Raster_01.png }
+#export:Data $Buzzar4Palette { ~PaletteFile:CI-4:../sprite/npc/src/67/Raster_01.png }
+#export:Data $Buzzar5Raster { ~RasterFile:CI-4:../sprite/npc/src/67/Raster_06.png }
+#export:Data $Buzzar5Palette { ~PaletteFile:CI-4:../sprite/npc/src/67/Raster_06.png }
+#export:Data $Buzzar6Raster { ~RasterFile:CI-4:../sprite/npc/src/67/Raster_04.png }
+#export:Data $Buzzar6Palette { ~PaletteFile:CI-4:../sprite/npc/src/67/Raster_04.png }
+#export:Data $BuzzarData {
+    7 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Buzzar0Raster  $Buzzar0Palette    0`s    0`s   64`s  56`s
+    $Buzzar1Raster  $Buzzar1Palette    0`s    0`s   32`s  32`s
+    $Buzzar2Raster  $Buzzar2Palette    0`s    0`s   64`s  32`s
+    $Buzzar3Raster  $Buzzar3Palette    0`s    0`s   48`s  64`s
+    $Buzzar4Raster  $Buzzar4Palette    0`s    0`s   48`s  48`s
+    $Buzzar5Raster  $Buzzar5Palette    0`s    0`s   32`s  24`s
+    $Buzzar6Raster  $Buzzar6Palette    0`s    0`s   48`s  64`s
+}
+#export:Data $Tutankoopa0Raster { ~RasterFile:CI-4:../sprite/npc/src/68/Raster_03.png }
+#export:Data $Tutankoopa0Palette { ~PaletteFile:CI-4:../sprite/npc/src/68/Raster_03.png }
+#export:Data $TutankoopaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Tutankoopa0Raster  $Tutankoopa0Palette    0`s    1`s   48`s  72`s
+}
+#export:Data $ChainChomp0Raster { ~RasterFile:CI-4:../sprite/npc/src/69/Raster_00.png }
+#export:Data $ChainChomp0Palette { ~PaletteFile:CI-4:../sprite/npc/src/69/Raster_00.png }
+#export:Data $ChainChompData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $ChainChomp0Raster  $ChainChomp0Palette    0`s    0`s   64`s  56`s
+}
+#export:Data $WorldTubba0Raster { ~RasterFile:CI-4:../sprite/npc/src/6A/Raster_03.png }
+#export:Data $WorldTubba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/6A/Raster_03.png }
+#export:Data $WorldTubba1Raster { ~RasterFile:CI-4:../sprite/npc/src/6A/Raster_05.png }
+#export:Data $WorldTubba1Palette { ~PaletteFile:CI-4:../sprite/npc/src/6A/Raster_05.png }
+#export:Data $WorldTubba2Raster { ~RasterFile:CI-4:../sprite/npc/src/6A/Raster_0D.png }
+#export:Data $WorldTubba2Palette { ~PaletteFile:CI-4:../sprite/npc/src/6A/Raster_0D.png }
+#export:Data $WorldTubba3Raster { ~RasterFile:CI-4:../sprite/npc/src/6A/Raster_00.png }
+#export:Data $WorldTubba3Palette { ~PaletteFile:CI-4:../sprite/npc/src/6A/Raster_00.png }
+#export:Data $WorldTubba4Raster { ~RasterFile:CI-4:../sprite/npc/src/6A/Raster_01.png }
+#export:Data $WorldTubba4Palette { ~PaletteFile:CI-4:../sprite/npc/src/6A/Raster_01.png }
+#export:Data $WorldTubba5Raster { ~RasterFile:CI-4:../sprite/npc/src/6A/Raster_02.png }
+#export:Data $WorldTubba5Palette { ~PaletteFile:CI-4:../sprite/npc/src/6A/Raster_02.png }
+#export:Data $WorldTubba6Raster { ~RasterFile:CI-4:../sprite/npc/src/6A/Raster_06.png }
+#export:Data $WorldTubba6Palette { ~PaletteFile:CI-4:../sprite/npc/src/6A/Raster_06.png }
+#export:Data $WorldTubba7Raster { ~RasterFile:CI-4:../sprite/npc/src/6A/Raster_04.png }
+#export:Data $WorldTubba7Palette { ~PaletteFile:CI-4:../sprite/npc/src/6A/Raster_04.png }
+#export:Data $WorldTubbaData {
+    8 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $WorldTubba0Raster  $WorldTubba0Palette    -37`s    -5`s   48`s  56`s
+    $WorldTubba1Raster  $WorldTubba1Palette    -22`s    4`s   48`s  24`s
+    $WorldTubba2Raster  $WorldTubba2Palette    11`s    -90`s   64`s  56`s
+    $WorldTubba3Raster  $WorldTubba3Palette    11`s    -5`s   112`s  104`s
+    $WorldTubba4Raster  $WorldTubba4Palette    -21`s    -71`s   48`s  32`s
+    $WorldTubba5Raster  $WorldTubba5Palette    -21`s    -54`s   64`s  32`s
+    $WorldTubba6Raster  $WorldTubba6Palette    16`s    2`s   48`s  40`s
+    $WorldTubba7Raster  $WorldTubba7Palette    -1`s    -3`s   48`s  64`s
+}
+#export:Data $BattleTubba0Raster { ~RasterFile:CI-4:../sprite/npc/src/6B/Raster_03.png }
+#export:Data $BattleTubba0Palette { ~PaletteFile:CI-4:../sprite/npc/src/6B/Raster_03.png }
+#export:Data $BattleTubba1Raster { ~RasterFile:CI-4:../sprite/npc/src/6B/Raster_05.png }
+#export:Data $BattleTubba1Palette { ~PaletteFile:CI-4:../sprite/npc/src/6B/Raster_05.png }
+#export:Data $BattleTubba2Raster { ~RasterFile:CI-4:../sprite/npc/src/6B/Raster_10.png }
+#export:Data $BattleTubba2Palette { ~PaletteFile:CI-4:../sprite/npc/src/6B/Raster_10.png }
+#export:Data $BattleTubba3Raster { ~RasterFile:CI-4:../sprite/npc/src/6B/Raster_00.png }
+#export:Data $BattleTubba3Palette { ~PaletteFile:CI-4:../sprite/npc/src/6B/Raster_00.png }
+#export:Data $BattleTubba4Raster { ~RasterFile:CI-4:../sprite/npc/src/6B/Raster_01.png }
+#export:Data $BattleTubba4Palette { ~PaletteFile:CI-4:../sprite/npc/src/6B/Raster_01.png }
+#export:Data $BattleTubba5Raster { ~RasterFile:CI-4:../sprite/npc/src/6B/Raster_02.png }
+#export:Data $BattleTubba5Palette { ~PaletteFile:CI-4:../sprite/npc/src/6B/Raster_02.png }
+#export:Data $BattleTubba6Raster { ~RasterFile:CI-4:../sprite/npc/src/6B/Raster_06.png }
+#export:Data $BattleTubba6Palette { ~PaletteFile:CI-4:../sprite/npc/src/6B/Raster_06.png }
+#export:Data $BattleTubba7Raster { ~RasterFile:CI-4:../sprite/npc/src/6B/Raster_04.png }
+#export:Data $BattleTubba7Palette { ~PaletteFile:CI-4:../sprite/npc/src/6B/Raster_04.png }
+#export:Data $BattleTubbaData {
+    8 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BattleTubba0Raster  $BattleTubba0Palette    -37`s    -5`s   48`s  56`s
+    $BattleTubba1Raster  $BattleTubba1Palette    -22`s    4`s   48`s  24`s
+    $BattleTubba2Raster  $BattleTubba2Palette    11`s    -90`s   64`s  56`s
+    $BattleTubba3Raster  $BattleTubba3Palette    11`s    -5`s   112`s  104`s
+    $BattleTubba4Raster  $BattleTubba4Palette    -21`s    -71`s   48`s  32`s
+    $BattleTubba5Raster  $BattleTubba5Palette    -21`s    -54`s   64`s  32`s
+    $BattleTubba6Raster  $BattleTubba6Palette    16`s    2`s   48`s  40`s
+    $BattleTubba7Raster  $BattleTubba7Palette    -1`s    -3`s   48`s  64`s
+}
+#export:Data $TubbasHeart0Raster { ~RasterFile:CI-4:../sprite/npc/src/6C/Raster_00.png }
+#export:Data $TubbasHeart0Palette { ~PaletteFile:CI-4:../sprite/npc/src/6C/Raster_00.png }
+#export:Data $TubbasHeartData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $TubbasHeart0Raster  $TubbasHeart0Palette    0`s    0`s   64`s  48`s
+}
+#export:Data $BigLanternGhost0Raster { ~RasterFile:CI-4:../sprite/npc/src/6D/Raster_00.png }
+#export:Data $BigLanternGhost0Palette { ~PaletteFile:CI-4:../sprite/npc/src/6D/Raster_00.png }
+#export:Data $BigLanternGhost1Raster { ~RasterFile:CI-4:../sprite/npc/src/6D/Raster_15.png }
+#export:Data $BigLanternGhost1Palette { ~PaletteFile:CI-4:../sprite/npc/src/6D/Raster_15.png }
+#export:Data $BigLanternGhostData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BigLanternGhost0Raster  $BigLanternGhost0Palette    0`s    0`s   128`s  88`s
+    $BigLanternGhost1Raster  $BigLanternGhost1Palette    -47`s    -39`s   32`s  40`s
+}
+#export:Data $ShySquadGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/6E/Raster_00.png }
+#export:Data $ShySquadGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/6E/Raster_00.png }
+#export:Data $ShySquadGuyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $ShySquadGuy0Raster  $ShySquadGuy0Palette    0`s    0`s   32`s  40`s
+}
+#export:Data $MarshalGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/6F/Raster_00.png }
+#export:Data $MarshalGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/6F/Raster_00.png }
+#export:Data $MarshalGuyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $MarshalGuy0Raster  $MarshalGuy0Palette    0`s    0`s   64`s  40`s
+}
+#export:Data $StiltGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/70/Raster_01.png }
+#export:Data $StiltGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/70/Raster_01.png }
+#export:Data $StiltGuy1Raster { ~RasterFile:CI-4:../sprite/npc/src/70/Raster_00.png }
+#export:Data $StiltGuy1Palette { ~PaletteFile:CI-4:../sprite/npc/src/70/Raster_00.png }
+#export:Data $StiltGuy2Raster { ~RasterFile:CI-4:../sprite/npc/src/70/Raster_00.png }
+#export:Data $StiltGuy2Palette { ~PaletteFile:CI-4:../sprite/npc/src/70/Raster_00.png }
+#export:Data $StiltGuy3Raster { ~RasterFile:CI-4:../sprite/npc/src/70/Raster_03.png }
+#export:Data $StiltGuy3Palette { ~PaletteFile:CI-4:../sprite/npc/src/70/Raster_03.png }
+#export:Data $StiltGuyData {
+    4 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $StiltGuy0Raster  $StiltGuy0Palette    0`s    0`s   32`s  48`s
+    $StiltGuy1Raster  $StiltGuy1Palette    0`s    0`s   16`s  96`s
+    $StiltGuy2Raster  $StiltGuy2Palette    0`s    0`s   16`s  96`s
+    $StiltGuy3Raster  $StiltGuy3Palette    0`s    0`s   32`s  24`s
+}
+#export:Data $StiltGuyUnfold0Raster { ~RasterFile:CI-4:../sprite/npc/src/71/Raster_01.png }
+#export:Data $StiltGuyUnfold0Palette { ~PaletteFile:CI-4:../sprite/npc/src/71/Raster_01.png }
+#export:Data $StiltGuyUnfoldData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $StiltGuyUnfold0Raster  $StiltGuyUnfold0Palette    0`s    0`s   48`s  32`s
+}
+#export:Data $ShyStackGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/72/Raster_00.png }
+#export:Data $ShyStackGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/72/Raster_00.png }
+#export:Data $ShyStackGuy1Raster { ~RasterFile:CI-4:../sprite/npc/src/72/Raster_00.png }
+#export:Data $ShyStackGuy1Palette { ~PaletteFile:CI-4:../sprite/npc/src/72/Raster_00.png }
+#export:Data $ShyStackGuy2Raster { ~RasterFile:CI-4:../sprite/npc/src/72/Raster_00.png }
+#export:Data $ShyStackGuy2Palette { ~PaletteFile:CI-4:../sprite/npc/src/72/Raster_00.png }
+#export:Data $ShyStackGuy3Raster { ~RasterFile:CI-4:../sprite/npc/src/72/Raster_00.png }
+#export:Data $ShyStackGuy3Palette { ~PaletteFile:CI-4:../sprite/npc/src/72/Raster_00.png }
+#export:Data $ShyStackGuyData {
+    4 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $ShyStackGuy0Raster  $ShyStackGuy0Palette    0`s    0`s   32`s  40`s
+    $ShyStackGuy1Raster  $ShyStackGuy1Palette    0`s    0`s   32`s  40`s
+    $ShyStackGuy2Raster  $ShyStackGuy2Palette    0`s    0`s   32`s  40`s
+    $ShyStackGuy3Raster  $ShyStackGuy3Palette    0`s    0`s   32`s  40`s
+}
+#export:Data $ShyStackUnfold0Raster { ~RasterFile:CI-4:../sprite/npc/src/73/Raster_00.png }
+#export:Data $ShyStackUnfold0Palette { ~PaletteFile:CI-4:../sprite/npc/src/73/Raster_00.png }
+#export:Data $ShyStackUnfoldData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $ShyStackUnfold0Raster  $ShyStackUnfold0Palette    0`s    0`s   48`s  112`s
+}
+#export:Data $ShyStackDamage0Raster { ~RasterFile:CI-4:../sprite/npc/src/74/Raster_00.png }
+#export:Data $ShyStackDamage0Palette { ~PaletteFile:CI-4:../sprite/npc/src/74/Raster_00.png }
+#export:Data $ShyStackDamageData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $ShyStackDamage0Raster  $ShyStackDamage0Palette    3`s    0`s   48`s  40`s
+}
+#export:Data $GeneralGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/76/Raster_00.png }
+#export:Data $GeneralGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/76/Raster_00.png }
+#export:Data $GeneralGuyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $GeneralGuy0Raster  $GeneralGuy0Palette    0`s    0`s   48`s  48`s
+}
+#export:Data $TankGuy0Raster { ~RasterFile:CI-4:../sprite/npc/src/78/Raster_00.png }
+#export:Data $TankGuy0Palette { ~PaletteFile:CI-4:../sprite/npc/src/78/Raster_00.png }
+#export:Data $TankGuyData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $TankGuy0Raster  $TankGuy0Palette    0`s    0`s   32`s  40`s
+}
+#export:Data $LavaPiranhaHead0Raster { ~RasterFile:CI-4:../sprite/npc/src/79/Raster_03.png }
+#export:Data $LavaPiranhaHead0Palette { ~PaletteFile:CI-4:../sprite/npc/src/79/Raster_03.png }
+#export:Data $LavaPiranhaHeadData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $LavaPiranhaHead0Raster  $LavaPiranhaHead0Palette    -37`s    40`s   80`s  80`s
+}
+#export:Data $PetitPiranha0Raster { ~RasterFile:CI-4:../sprite/npc/src/7A/Raster_00.png }
+#export:Data $PetitPiranha0Palette { ~PaletteFile:CI-4:../sprite/npc/src/7A/Raster_00.png }
+#export:Data $PetitPiranhaData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $PetitPiranha0Raster  $PetitPiranha0Palette    -1`s    8`s   32`s  48`s
+}
+#export:Data $LavaBud0Raster { ~RasterFile:CI-4:../sprite/npc/src/7B/Raster_00.png }
+#export:Data $LavaBud0Palette { ~PaletteFile:CI-4:../sprite/npc/src/7B/Raster_00.png }
+#export:Data $LavaBudData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $LavaBud0Raster  $LavaBud0Palette    -1`s    12`s   48`s  32`s
+}
+#export:Data $HuffNPuff0Raster { ~RasterFile:CI-4:../sprite/npc/src/7C/Raster_36.png }
+#export:Data $HuffNPuff0Palette { ~PaletteFile:CI-4:../sprite/npc/src/7C/Raster_36.png }
+#export:Data $HuffNPuff1Raster { ~RasterFile:CI-4:../sprite/npc/src/7C/Raster_1A.png }
+#export:Data $HuffNPuff1Palette { ~PaletteFile:CI-4:../sprite/npc/src/7C/Raster_1A.png }
+#export:Data $HuffNPuff2Raster { ~RasterFile:CI-4:../sprite/npc/src/7C/Raster_00.png }
+#export:Data $HuffNPuff2Palette { ~PaletteFile:CI-4:../sprite/npc/src/7C/Raster_00.png }
+#export:Data $HuffNPuff3Raster { ~RasterFile:CI-4:../sprite/npc/src/7C/Raster_29.png }
+#export:Data $HuffNPuff3Palette { ~PaletteFile:CI-4:../sprite/npc/src/7C/Raster_29.png }
+#export:Data $HuffNPuff4Raster { ~RasterFile:CI-4:../sprite/npc/src/7C/Raster_2D.png }
+#export:Data $HuffNPuff4Palette { ~PaletteFile:CI-4:../sprite/npc/src/7C/Raster_2D.png }
+#export:Data $HuffNPuff5Raster { ~RasterFile:CI-4:../sprite/npc/src/7C/Raster_2E.png }
+#export:Data $HuffNPuff5Palette { ~PaletteFile:CI-4:../sprite/npc/src/7C/Raster_2E.png }
+#export:Data $HuffNPuff6Raster { ~RasterFile:CI-4:../sprite/npc/src/7C/Raster_2A.png }
+#export:Data $HuffNPuff6Palette { ~PaletteFile:CI-4:../sprite/npc/src/7C/Raster_2A.png }
+#export:Data $HuffNPuff7Raster { ~RasterFile:CI-4:../sprite/npc/src/7C/Raster_04.png }
+#export:Data $HuffNPuff7Palette { ~PaletteFile:CI-4:../sprite/npc/src/7C/Raster_04.png }
+#export:Data $HuffNPuffData {
+    8 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $HuffNPuff0Raster  $HuffNPuff0Palette    31`s    -54`s   32`s  32`s
+    $HuffNPuff1Raster  $HuffNPuff1Palette    -77`s    76`s   64`s  56`s
+    $HuffNPuff2Raster  $HuffNPuff2Palette    11`s    59`s   160`s  128`s
+    $HuffNPuff3Raster  $HuffNPuff3Palette    -55`s    22`s   32`s  48`s
+    $HuffNPuff4Raster  $HuffNPuff4Palette    -23`s    0`s   64`s  40`s
+    $HuffNPuff5Raster  $HuffNPuff5Palette    -25`s    39`s   32`s  32`s
+    $HuffNPuff6Raster  $HuffNPuff6Palette    -16`s    24`s   96`s  48`s
+    $HuffNPuff7Raster  $HuffNPuff7Palette    20`s    90`s   64`s  64`s
+}
+#export:Data $TuffPuff0Raster { ~RasterFile:CI-4:../sprite/npc/src/7D/Raster_00.png }
+#export:Data $TuffPuff0Palette { ~PaletteFile:CI-4:../sprite/npc/src/7D/Raster_00.png }
+#export:Data $TuffPuffData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $TuffPuff0Raster  $TuffPuff0Palette    0`s    0`s   48`s  40`s
+}
+#export:Data $Monstar0Raster { ~RasterFile:CI-4:../sprite/npc/src/7E/Raster_00.png }
+#export:Data $Monstar0Palette { ~PaletteFile:CI-4:../sprite/npc/src/7E/Raster_00.png }
+#export:Data $Monstar1Raster { ~RasterFile:CI-4:../sprite/npc/src/7E/Raster_06.png }
+#export:Data $Monstar1Palette { ~PaletteFile:CI-4:../sprite/npc/src/7E/Raster_06.png }
+#export:Data $Monstar2Raster { ~RasterFile:CI-4:../sprite/npc/src/7E/Raster_0E.png }
+#export:Data $Monstar2Palette { ~PaletteFile:CI-4:../sprite/npc/src/7E/Raster_0E.png }
+#export:Data $MonstarData {
+    3 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Monstar0Raster  $Monstar0Palette    0`s    0`s   144`s  128`s
+    $Monstar1Raster  $Monstar1Palette    0`s    0`s   144`s  128`s
+    $Monstar2Raster  $Monstar2Palette    0`s    0`s   48`s  40`s
+}
+#export:Data $CrystalKing0Raster { ~RasterFile:CI-4:../sprite/npc/src/7F/Raster_00.png }
+#export:Data $CrystalKing0Palette { ~PaletteFile:CI-4:../sprite/npc/src/7F/Raster_00.png }
+#export:Data $CrystalKing1Raster { ~RasterFile:CI-4:../sprite/npc/src/7F/Raster_14.png }
+#export:Data $CrystalKing1Palette { ~PaletteFile:CI-4:../sprite/npc/src/7F/Raster_14.png }
+#export:Data $CrystalKing2Raster { ~RasterFile:CI-4:../sprite/npc/src/7F/Raster_1A.png }
+#export:Data $CrystalKing2Palette { ~PaletteFile:CI-4:../sprite/npc/src/7F/Raster_1A.png }
+#export:Data $CrystalKingData {
+    3 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $CrystalKing0Raster  $CrystalKing0Palette    8`s    0`s   80`s  48`s
+    $CrystalKing1Raster  $CrystalKing1Palette    8`s    -48`s   48`s  32`s
+    $CrystalKing2Raster  $CrystalKing2Palette    -9`s    -35`s   32`s  16`s
+}
+#export:Data $WorldBowser0Raster { ~RasterFile:CI-4:../sprite/npc/src/80/Raster_06.png }
+#export:Data $WorldBowser0Palette { ~PaletteFile:CI-4:../sprite/npc/src/80/Raster_06.png }
+#export:Data $WorldBowser1Raster { ~RasterFile:CI-4:../sprite/npc/src/80/Raster_03.png }
+#export:Data $WorldBowser1Palette { ~PaletteFile:CI-4:../sprite/npc/src/80/Raster_03.png }
+#export:Data $WorldBowser2Raster { ~RasterFile:CI-4:../sprite/npc/src/80/Raster_13.png }
+#export:Data $WorldBowser2Palette { ~PaletteFile:CI-4:../sprite/npc/src/80/Raster_13.png }
+#export:Data $WorldBowser3Raster { ~RasterFile:CI-4:../sprite/npc/src/80/Raster_07.png }
+#export:Data $WorldBowser3Palette { ~PaletteFile:CI-4:../sprite/npc/src/80/Raster_07.png }
+#export:Data $WorldBowser4Raster { ~RasterFile:CI-4:../sprite/npc/src/80/Raster_02.png }
+#export:Data $WorldBowser4Palette { ~PaletteFile:CI-4:../sprite/npc/src/80/Raster_02.png }
+#export:Data $WorldBowser5Raster { ~RasterFile:CI-4:../sprite/npc/src/80/Raster_00.png }
+#export:Data $WorldBowser5Palette { ~PaletteFile:CI-4:../sprite/npc/src/80/Raster_00.png }
+#export:Data $WorldBowser6Raster { ~RasterFile:CI-4:../sprite/npc/src/80/Raster_04.png }
+#export:Data $WorldBowser6Palette { ~PaletteFile:CI-4:../sprite/npc/src/80/Raster_04.png }
+#export:Data $WorldBowserData {
+    7 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $WorldBowser0Raster  $WorldBowser0Palette    -8`s    1`s   48`s  32`s
+    $WorldBowser1Raster  $WorldBowser1Palette    -33`s    -25`s   48`s  40`s
+    $WorldBowser2Raster  $WorldBowser2Palette    20`s    0`s   96`s  88`s
+    $WorldBowser3Raster  $WorldBowser3Palette    12`s    0`s   48`s  32`s
+    $WorldBowser4Raster  $WorldBowser4Palette    4`s    -23`s   80`s  72`s
+    $WorldBowser5Raster  $WorldBowser5Palette    -21`s    -42`s   80`s  72`s
+    $WorldBowser6Raster  $WorldBowser6Palette    -11`s    -24`s   48`s  40`s
+}
+#export:Data $BattleBowser0Raster { ~RasterFile:CI-4:../sprite/npc/src/81/Raster_06.png }
+#export:Data $BattleBowser0Palette { ~PaletteFile:CI-4:../sprite/npc/src/81/Raster_06.png }
+#export:Data $BattleBowser1Raster { ~RasterFile:CI-4:../sprite/npc/src/81/Raster_03.png }
+#export:Data $BattleBowser1Palette { ~PaletteFile:CI-4:../sprite/npc/src/81/Raster_03.png }
+#export:Data $BattleBowser2Raster { ~RasterFile:CI-4:../sprite/npc/src/81/Raster_14.png }
+#export:Data $BattleBowser2Palette { ~PaletteFile:CI-4:../sprite/npc/src/81/Raster_14.png }
+#export:Data $BattleBowser3Raster { ~RasterFile:CI-4:../sprite/npc/src/81/Raster_07.png }
+#export:Data $BattleBowser3Palette { ~PaletteFile:CI-4:../sprite/npc/src/81/Raster_07.png }
+#export:Data $BattleBowser4Raster { ~RasterFile:CI-4:../sprite/npc/src/81/Raster_02.png }
+#export:Data $BattleBowser4Palette { ~PaletteFile:CI-4:../sprite/npc/src/81/Raster_02.png }
+#export:Data $BattleBowser5Raster { ~RasterFile:CI-4:../sprite/npc/src/81/Raster_00.png }
+#export:Data $BattleBowser5Palette { ~PaletteFile:CI-4:../sprite/npc/src/81/Raster_00.png }
+#export:Data $BattleBowser6Raster { ~RasterFile:CI-4:../sprite/npc/src/81/Raster_04.png }
+#export:Data $BattleBowser6Palette { ~PaletteFile:CI-4:../sprite/npc/src/81/Raster_04.png }
+#export:Data $BattleBowserData {
+    7 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BattleBowser0Raster  $BattleBowser0Palette    -8`s    1`s   48`s  32`s
+    $BattleBowser1Raster  $BattleBowser1Palette    -33`s    -25`s   48`s  40`s
+    $BattleBowser2Raster  $BattleBowser2Palette    20`s    0`s   96`s  88`s
+    $BattleBowser3Raster  $BattleBowser3Palette    12`s    0`s   48`s  32`s
+    $BattleBowser4Raster  $BattleBowser4Palette    4`s    -23`s   80`s  72`s
+    $BattleBowser5Raster  $BattleBowser5Palette    -21`s    -42`s   80`s  72`s
+    $BattleBowser6Raster  $BattleBowser6Palette    -11`s    -24`s   48`s  40`s
+}
+#export:Data $Luigi0Raster { ~RasterFile:CI-4:../sprite/npc/src/82/Raster_00.png }
+#export:Data $Luigi0Palette { ~PaletteFile:CI-4:../sprite/npc/src/82/Raster_00.png }
+#export:Data $LuigiData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Luigi0Raster  $Luigi0Palette    0`s    0`s   32`s  64`s
+}
+#export:Data $Craw0Raster { ~RasterFile:CI-4:../sprite/npc/src/EA/Raster_00.png }
+#export:Data $Craw0Palette { ~PaletteFile:CI-4:../sprite/npc/src/EA/Raster_00.png }
+#export:Data $Craw1Raster { ~RasterFile:CI-4:../sprite/npc/src/EA/Raster_03.png }
+#export:Data $Craw1Palette { ~PaletteFile:CI-4:../sprite/npc/src/EA/Raster_03.png }
+#export:Data $CrawData {
+    2 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Craw0Raster  $Craw0Palette    0`s    0`s   48`s  64`s
+    $Craw1Raster  $Craw1Palette    -20`s    0`s   32`s  80`s
+}
+#export:Data $Pider0Raster { ~RasterFile:CI-4:../sprite/npc/src/EB/Raster_00.png }
+#export:Data $Pider0Palette { ~PaletteFile:CI-4:../sprite/npc/src/EB/Raster_00.png }
+#export:Data $PiderData {
+    1 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $Pider0Raster  $Pider0Palette    0`s    2`s   80`s  80`s
+}
+#export:Data $BulkyBobomb0Raster { ~RasterFile:CI-4:../sprite/npc/src/EC/Raster_00.png }
+#export:Data $BulkyBobomb0Palette { ~PaletteFile:CI-4:../sprite/npc/src/EC/Raster_00.png }
+#export:Data $BulkyBobomb1Raster { ~RasterFile:CI-4:../sprite/npc/src/EC/Raster_01.png }
+#export:Data $BulkyBobomb1Palette { ~PaletteFile:CI-4:../sprite/npc/src/EC/Raster_01.png }
+#export:Data $BulkyBobomb2Raster { ~RasterFile:CI-4:../sprite/npc/src/EC/Raster_01.png }
+#export:Data $BulkyBobomb2Palette { ~PaletteFile:CI-4:../sprite/npc/src/EC/Raster_01.png }
+#export:Data $BulkyBobomb3Raster { ~RasterFile:CI-4:../sprite/npc/src/EC/Raster_0B.png }
+#export:Data $BulkyBobomb3Palette { ~PaletteFile:CI-4:../sprite/npc/src/EC/Raster_0B.png }
+#export:Data $BulkyBobomb4Raster { ~RasterFile:CI-4:../sprite/npc/src/EC/Raster_02.png }
+#export:Data $BulkyBobomb4Palette { ~PaletteFile:CI-4:../sprite/npc/src/EC/Raster_02.png }
+#export:Data $BulkyBobomb5Raster { ~RasterFile:CI-4:../sprite/npc/src/EC/Raster_0E.png }
+#export:Data $BulkyBobomb5Palette { ~PaletteFile:CI-4:../sprite/npc/src/EC/Raster_0E.png }
+#export:Data $BulkyBobombData {
+    6 %number of components
+    %raster ptr    %palette ptr    %xpos    %ypos   %width  %height
+    $BulkyBobomb0Raster  $BulkyBobomb0Palette    0`s    -1`s   80`s  80`s
+    $BulkyBobomb1Raster  $BulkyBobomb1Palette    17`s    4`s   32`s  24`s
+    $BulkyBobomb2Raster  $BulkyBobomb2Palette    -20`s    4`s   32`s  24`s
+    $BulkyBobomb3Raster  $BulkyBobomb3Palette    36`s    -13`s   32`s  24`s
+    $BulkyBobomb4Raster  $BulkyBobomb4Palette    21`s    -71`s   32`s  24`s
+    $BulkyBobomb5Raster  $BulkyBobomb5Palette    -14`s    -42`s   32`s  16`s
+}
+
+%manually added things stuff below here:
+#export:Data $KoopaBroData {
+    4 %number of components (draws in order)
+    %raster ptr             %palette ptr        %xpos  %ypos   %width  %height
+    $KoopaBrosGreen0Raster      $KoopaBrosGreen0Palette      0`s    0`s      48`s    64`s
+    $KoopaBrosGreen0Raster      $KoopaBrosYellow0Palette     30`s    0`s    48`s    64`s
+    $KoopaBrosGreen0Raster      $KoopaBrosBlack0Palette      60`s    0`s    48`s    64`s
+    $KoopaBrosGreen0Raster      $KoopaBrosRed0Palette        90`s    0`s    48`s    64`s
+}
+
+%manually added
+#export:Data $crystalBitCubeRaster { ~RasterFile:CI-4:../sprite/npc/src/7F/Raster_16.png }
+#export:Data $crystalBitCircleRaster { ~RasterFile:CI-4:../sprite/npc/src/7F/Raster_17.png }
+#export:Data $crystalBitRhombusRaster { ~RasterFile:CI-4:../sprite/npc/src/7F/Raster_18.png }
+#export:Data $crystalBitEyesRaster { ~RasterFile:CI-4:../sprite/npc/src/7F/Raster_1F.png }
+#export:Data $crystalBitPalette { ~PaletteFile:CI-4:../sprite/npc/src/7F/Palette_00.png }
+#export:Data $CrystalBitData {
+    6 %number of components
+    %raster ptr             %palette ptr            %xpos   %ypos   %width  %height
+    $crystalBitCubeRaster       $crystalBitPalette  4`s     1`s     32`s    24`s
+    $crystalBitCircleRaster     $crystalBitPalette  4`s     -19`s     32`s    24`s
+    $crystalBitRhombusRaster    $crystalBitPalette  6`s     -39`s     32`s    24`s
+    $crystalBitEyesRaster       $crystalBitPalette  -4`s    -6`s    16`s    8`s
+    $crystalBitEyesRaster       $crystalBitPalette  -4`s    -26`s    16`s    8`s
+    $crystalBitEyesRaster       $crystalBitPalette  -3`s    -46`s   16`s    8`s
+}

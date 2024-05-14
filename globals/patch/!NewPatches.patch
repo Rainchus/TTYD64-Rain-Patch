@@ -1,0 +1,88 @@
+%These 2 following hooks prevent a softlock within NpcMoveTo by snapping the npc to the -
+%wanted position after 180 frames (5 seconds)
+
+#define .FramesUntilPositionSnap 180`
+#define .FramesUntilForcedStandUp 180`
+
+@Hook:World 802CE250 { %802CE250
+    BEQ a1, r0, .notInitialCall
+    NOP
+    SW r0, 0070 (s2) %script->functionTemp[0] = 0;
+    SW r0, 0078 (s2) %script->functionTemp[2] = 0; (custom var)
+    .notInitialCall
+    J 802CE258
+    NOP
+}
+
+@Hook:World 802CE414 {
+    BNE v0, r0, .isNotBlocking
+    NOP
+    %if it is blocking increment frame counter
+    LW t0, 0078 (s2)
+    ADDIU t0, t0, 1
+    SW t0, 0078 (s2)
+    SLTI t1, t0, .FramesUntilPositionSnap %5 seconds (30 frames per second * 5 seconds)
+    BNE t1, r0, .exit %if frames < 180, exit as normal
+    NOP
+    LWC1 f12, 0060 (s0) %npc->moveToPos.x
+    SWC1 f12, 0038 (s0) %npc->pos.x = npc->moveToPos.x
+
+    LWC1 f12, 0060 (s0) %npc->moveToPos.x
+    SWC1 f12, 0038 (s0) %npc->pos.x = npc->moveToPos.x
+
+    LWC1 f12, 0068 (s0) %npc->moveToPos.z
+    SWC1 f12, 0040 (s0) %npc->pos.z = npc->moveToPos.z
+    ORI v0, r0, 1 %return that npc has reached destination
+
+    .exit
+    .isNotBlocking
+    LW ra, 001C (sp) %restore from hook
+    J 802CE41C
+    LW s2, 0018 (sp) %restore from hook
+}
+
+#new:Data $SlideDuration { 0 }
+
+%This hook fixes infinitely sliding on a slide in the desert by forcing the -
+%player to stand up if they have been sliding for 5 seconds
+@Hook E2759C { %802B608C (sliding overlay)
+    LI v0, $SlideDuration
+    SW r0, 0000 (v0)
+    LUI v0, 7FFF %restore from hook
+    J 802B6094
+    ORI v0, v0, FFFF %restore from hook
+}
+
+@Hook E277BC { %802B62AC
+    LI v0, $SlideDuration
+    LW v1, 0000 (v0)
+    ADDIU v1, v1, 1
+    SW v1, 0000 (v0)
+    SLTI v1, v1, .FramesUntilForcedStandUp %5 seconds (30 frames per second * 5 seconds)
+    BNE v1, r0, .exit %if frames < 180, exit as normal
+    NOP
+    ORI v1, r0, 1
+    SB v1, 00B6 (s0) %update mario to stand up if sliding for more than 5 seconds
+    .exit
+    LUI v0, 8016
+    J 802B62B4
+    ADDIU v0, v0, A550
+}
+
+#export:Data $GoombaRaster { ~RasterFile:CI-4:../sprite/npc/src/26/Raster_00.png }
+
+% @Hook E277F4  { %802B62E4
+%     LI v0, $SlideDuration
+%     LW t0, 0000 (v0) %load current duration in frames
+%     ADDIU t0, t0, 1
+%     SW t0, 0000 (v0) %update timer
+%     SLTI t1, t0, .FramesUntilForcedStandUp %5 seconds (30 frames per second * 5 seconds)
+%     BNE t1, r0, .exit %if frames < 180, exit as normal
+%     NOP
+%     ORI v0, r0, 1
+
+%     .exit
+%     LWC1 f0, 0000 (s2)
+%     J 802B62EC
+%     LWC1 f2, 0000 (s1)
+% }
