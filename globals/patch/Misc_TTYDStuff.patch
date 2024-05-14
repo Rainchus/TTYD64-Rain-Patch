@@ -174,6 +174,210 @@
 % Overworld - ~Func:add_badge
 %================
 
+#export:Data $BadgesFoundFlagList {
+    *FLAG_SPIN_SMASH
+    *FLAG_MULTIBOUNCE
+    *FLAG_POWER_PLUS_A
+    *FLAG_DODGE_MASTER
+    *FLAG_POWER_BOUNCE
+    *FLAG_SPIKE_SHIELD
+    *FLAG_FIRST_ATTACK
+    *FLAG_HP_PLUS_A
+    *FLAG_QUAKE_HAMMER
+    *FLAG_DOUBLE_DIP
+    *FLAG_MYSTERY_SCROLL
+    *FLAG_SLEEP_STOMP
+    *FLAG_FIRE_SHIELD
+    *FLAG_QUICK_CHANGE
+    *FLAG_D_DOWN_POUND
+    *FLAG_DIZZY_STOMP
+    *FLAG_SMASH_CHARGE0
+    *FLAG_PRETTY_LUCKY
+    *FLAG_FEELING_FINE
+    *FLAG_ATTACK_FX_A
+    *FLAG_ALLOR_NOTHING
+    *FLAG_HP_DRAIN
+    *FLAG_JUMP_CHARGE0
+    *FLAG_SLOW_GO
+    *FLAG_FP_PLUS_A
+    *FLAG_MEGA_RUSH
+    *FLAG_ICE_POWER
+    *FLAG_DEFEND_PLUS_A
+    *FLAG_PAY_OFF
+    *FLAG_MONEY_MONEY
+    *FLAG_CHILL_OUT
+    *FLAG_HAPPY_HEART_A
+    *FLAG_ZAP_TAP
+    *FLAG_BERSERKER
+    *FLAG_RIGHT_ON
+    *FLAG_RUNAWAY_PAY
+    *FLAG_REFUND
+    *FLAG_FLOWER_SAVER_A
+    *FLAG_TRIPLE_DIP
+    *FLAG_HAMMER_THROW
+    *FLAG_MEGA_QUAKE
+    *FLAG_SMASH_CHARGE
+    *FLAG_JUMP_CHARGE
+    *FLAG_S_SMASH_CHG
+    *FLAG_S_JUMP_CHG
+    *FLAG_POWER_RUSH
+    *FLAG_AUTO_JUMP
+    *FLAG_AUTO_SMASH
+    *FLAG_CRAZY_HEART
+    *FLAG_LAST_STAND
+    *FLAG_CLOSE_CALL
+    *FLAG_P_UP_D_DOWN
+    *FLAG_LUCKY_DAY
+    *FLAG_MEGA_HP_DRAIN
+    *FLAG_P_DOWN_D_UP
+    *FLAG_POWER_QUAKE
+    *FLAG_AUTO_MULTIBOUNCE
+    *FLAG_FLOWER_FANATIC
+    *FLAG_HEART_FINDER
+    *FLAG_FLOWER_FINDER
+    *FLAG_SPIN_ATTACK
+    *FLAG_DIZZY_ATTACK
+    *FLAG_I_SPY
+    *FLAG_SPEEDY_SPIN
+    *FLAG_BUMP_ATTACK
+    *FLAG_POWER_JUMP
+    *FLAG_SUPER_JUMP
+    *FLAG_MEGA_JUMP
+    *FLAG_POWER_SMASH
+    *FLAG_SUPER_SMASH
+    *FLAG_MEGA_SMASH
+    *FLAG_UNUSED_POWER_SMASH1
+    *FLAG_UNUSED_POWER_SMASH2
+    *FLAG_DEEP_FOCUS_A
+    *FLAG_SUPER_FOCUS
+    *FLAG_SHRINK_SMASH
+    *FLAG_SHELL_CRACK
+    *FLAG_KAIDEN
+    *FLAG_D_DOWN_JUMP
+    *FLAG_SHRINK_STOMP
+    *FLAG_DAMAGE_DODGE_A
+    *FLAG_EARTHQUAKE_JUMP
+    *FLAG_DEEP_FOCUS_B
+    *FLAG_DEEP_FOCUS_C
+    *FLAG_HP_PLUS_B
+    *FLAG_FP_PLUS_B
+    *FLAG_HAPPY_HEART_B
+    *FLAG_HAPPY_HEART_X
+    *FLAG_FLOWER_SAVER_B
+    *FLAG_FLOWER_SAVER_X
+    *FLAG_DAMAGE_DODGE_B
+    *FLAG_DAMAGE_DODGE_X
+    *FLAG_POWER_PLUS_B
+    *FLAG_POWER_PLUS_X
+    *FLAG_DEFEND_PLUS_X
+    *FLAG_DEFEND_PLUS_Y
+    *FLAG_HAPPY_FLOWER_A
+    *FLAG_HAPPY_FLOWER_B
+    *FLAG_HAPPY_FLOWER_X
+    *FLAG_GROUP_FOCUS
+    *FLAG_PEEKABOO
+    *FLAG_ATTACK_FX_D
+    *FLAG_ATTACK_FX_B
+    *FLAG_ATTACK_FX_E
+    *FLAG_ATTACK_FX_C
+    *FLAG_ATTACK_FX_F
+    *FLAG_HP_PLUS_C
+    *FLAG_HP_PLUS_X
+    *FLAG_HP_PLUS_Y
+    *FLAG_FP_PLUS_C
+    *FLAG_FP_PLUS_X
+    *FLAG_FP_PLUS_Y
+    *FLAG_HEALTHY_HEALTHY
+    *FLAG_UNUSED_ATTACK_FX_1
+    *FLAG_UNUSED_ATTACK_FX_2
+    *FLAG_UNUSED_ATTACK_FX_3
+    *FLAG_UNUSED_ATTACK_FX_4
+    -1 %end of list
+}
+
+#export:Function $GetValidBadgeFlagsSize { %returns number of entries in $BadgesFoundFlagList
+    DADDU v0, r0, r0
+    LI t0, $BadgesFoundFlagList
+    ADDIU t1, r0, -1
+    .loop
+    LW t2, 0000 (t0)
+    BEQ t1, t2, .exit
+    NOP
+    ADDIU t0, t0, 4
+    BEQ r0, r0, .loop
+    ADDIU v0, v0, 1
+    .exit
+    JR RA
+    NOP
+}
+
+@Hook:Global 80135A2C {
+    SH v1, 00B4 (v0) %restore from hook (sets badge in inventory)
+    JAL $SetBadgeFlag
+    ADDU a0, v1, r0
+    J 80135A34
+    LH v1, 0018 (s1) %restore from hook
+}
+
+#export:Function $GetBadgeFlag { %takes arg a0, item index (for badge)
+    PUSH ra
+    ADDIU v0, r0, -1
+    SLTI t0, a0, 00E0
+    BNE t0, r0, .isNotBadge
+    NOP
+    SLTI t0, a0, 0155
+    BEQ t0, r0, .isNotBadge
+    NOP
+    %is badge, set flag
+    LI t0, $BadgesFoundFlagList
+    ADDIU a0, a0, -E0 %subtract start of list (spin smash is ID 0xE0 and is the first badge)
+    SLL t1, a0, 2 %multiply by sizeof FLAG var (4 bytes)
+    ADDU t1, t1, t0 %now points to current flag
+    DADDU a0, r0, r0 %clear script context ptr
+    JAL ~Func:get_variable
+    LW a1, 0000 (t1) %load cur flag to set
+    %returns result to v0
+
+    .isNotBadge
+    POP ra
+    JR RA
+    NOP
+}
+
+#export:Function $SetBadgeFlag { %takes arg a0, item index (for badge)
+    PUSH ra
+    SLTI t0, a0, 00E0
+    BNE t0, r0, .isNotBadge
+    NOP
+    SLTI t0, a0, 0155
+    BEQ t0, r0, .isNotBadge
+    NOP
+    %is badge, set flag
+    LI t0, $BadgesFoundFlagList
+    ADDIU a0, a0, -E0 %subtract start of list (spin smash is ID 0xE0 and is the first badge)
+    SLL t1, a0, 2 %multiply by sizeof FLAG var (4 bytes)
+    ADDU t1, t1, t0 %now points to current flag
+    DADDU a0, r0, r0 %clear script context ptr
+    LW a1, 0000 (t1) %load cur flag to set
+    JAL ~Func:set_variable
+    ORI a2, r0, 1 %set to true
+
+    .isNotBadge
+    POP ra
+    JR RA
+    NOP
+}
+
+@Hook:Global 800E7740 {
+    SW ra, 0010 (sp) %restore from hook
+    PUSH a0
+    JAL $SetBadgeFlag
+    NOP
+    POP a0
+    SLL v0, a0, 5 %restore from hook
+    J 800E7748 %return from hook
+    NOP
+}
 
 @Function 800E77B4
 {
