@@ -453,13 +453,13 @@
         CaseOR  ==  .Event:Immune % 19
             Call  PlaySoundAtActor  ( .Actor:Player 0000208C )
             % Check if Player used the defend command
-            Call $ReadAddress ( $ExtraActorData_Everyone 0 *Var0 E .False ) % get Mario's defense byte
-            If *Var0 == .False
-                SetConst  *Var1  00010002
-            Else % Defend
-                SetConst  *Var1  .PlayerAnim:StoneStill % 00010015
-            EndIf
-            ExecWait  80298948 
+            % Call $ReadAddress ( $ExtraActorData_Everyone 0 *Var0 E .False ) % get Mario's defense byte
+            % If *Var0 == .False
+            %     SetConst  *Var1  00010002
+            % Else % Defend
+            %     SetConst  *Var1  .PlayerAnim:StoneStill % 00010015
+            % EndIf
+            ExecWait  80298948
         EndCaseGroup
         CaseOR  ==  00000018 % 18
         CaseOR  ==  .Event:Block % 1A

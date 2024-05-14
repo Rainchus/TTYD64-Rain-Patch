@@ -294,3 +294,19 @@
     J       8027D2C0
     NOP
 }
+
+%new guarding animation stuff - rain
+@Function 18F40C % (80260B2C) Sets animation for 'Defend' to use the moment you press accept on it.
+{
+	ORI	A2, A2, 0004 % Set to 0004 so it's Mario's 'Walking' animation. This fixes nearly ALL the animation issues.
+}
+
+@Data 1B1BB8 % (802832D4) Loads a table for Mario's animations? (Uncertain what this is)
+{
+	00010014 00000000 % Set it to 00010014 00000000 instead of 00010014 0000001A and Mario will have the proper defense animation!
+}
+
+@Data 1B482C % (80285F4C) Loads a table for Mario's animations? (Uncertain what this is) (Code was loaded at 802C57A4)
+{
+	00010014 00000046 % Set it to 00010014 instead of 00010002 so now Defend always plays the Defend pose unless they are damaged.
+}
