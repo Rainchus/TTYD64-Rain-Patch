@@ -3,3 +3,8 @@ out/
 
 world/partner/temp/
 map/temp
+battle/formation/temp/
+battle/item/temp/
+battle/partner/temp/
+battle/starpower/temp/
+battle/move/temp/
