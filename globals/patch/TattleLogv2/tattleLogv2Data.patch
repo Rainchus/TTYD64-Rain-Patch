@@ -49,14 +49,14 @@ typedef struct page {
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
 
-    $blueGoombaName     $NullDescription    90  35`s    8`s     $GoombaBroBlueData
-    $redGoombaName      $NullDescription    90  35`s    8`s     $GoombaBroRedData
-    $goombaKingName     $NullDescription    92  35`s    40`s 	$GoombaKingData
-    $bulletBillName     $NullDescription    0F  40`s    0`s 	$BulletBillData
-    $billBlasterName    $NullDescription    10  35`s  	12`s 	$BillBlasterData
-    $koopaBrosName      $NullDescription    9C  -10`s   12`s 	$KoopaBroData
-    $buzzarName         $NullDescription    A0  32`s    4`s     $BuzzarData
-    $chompName          $NullDescription    A2  40`s    12`s    $ChainChompData
+    $blueGoombaName     002F0004    90  35`s    8`s     $GoombaBroBlueData
+    $redGoombaName      002F0003    90  35`s    8`s     $GoombaBroRedData
+    $goombaKingName     002F0005    92  35`s    40`s 	$GoombaKingData
+    $bulletBillName     002F000B    0F  40`s    0`s 	$BulletBillData
+    $billBlasterName    002F000C    10  35`s  	12`s 	$BillBlasterData
+    $koopaBrosName      002F0012    9C  -10`s   12`s 	$KoopaBroData
+    $buzzarName         002F001B    A0  32`s    4`s     $BuzzarData
+    $chompName          002F001D    A2  40`s    12`s    $ChainChompData
 }
 
 #export:Data $bossPage1Struct { %0x14 in size
@@ -69,14 +69,14 @@ typedef struct page {
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
-    $tutankoopaName         $NullDescription    A1  40`s    12`s 	$TutankoopaData
-    $tubbasHeartName        $NullDescription    A5  40`s     8`s 	$TubbasHeartData
-    $tubbaName              $NullDescription    A4  36`s     48`s 	$WorldTubbaData %may need changes
-    $bigLanternGhostName    $NullDescription    B1  40`s     28`s 	$BigLanternGhostData
-    $stiltGuyName           $NullDescription    A6  40`s     28`s   $StiltGuyData
-    $generalGuyName         $NullDescription    AA  44`s     8`s 	$GeneralGuyData %has toy tank tattle
-    $lavaPiranhaName        $NullDescription    B3  40`s  	16`s 	$LavaPiranhaHeadData
-    $lavaBudName            $NullDescription    B6  40`s    8`s     $LavaBudData
+    $tutankoopaName         002F001C    A1  40`s    12`s 	$TutankoopaData
+    $tubbasHeartName        002F0026    A5  40`s     8`s 	$TubbasHeartData
+    $tubbaName              002F0025    A4  36`s     48`s 	$WorldTubbaData %may need changes
+    $bigLanternGhostName    002F0030    B1  40`s     28`s 	$BigLanternGhostData
+    $stiltGuyName           002F0034    A6  40`s     28`s   $StiltGuyData
+    $generalGuyName         002F0031    AA  44`s     8`s 	$GeneralGuyData %has toy tank tattle
+    $lavaPiranhaName        002F003D    B3  40`s  	16`s 	$LavaPiranhaHeadData
+    $lavaBudName            002F003F    B6  40`s    8`s     $LavaBudData
 }
 
 #export:Data $bossPage2Struct { %0x14 in size
@@ -89,16 +89,14 @@ typedef struct page {
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
-    $kentCKoopaName         $NullDescription    35  40`s    32`s     $KentCKoopaData
-    $spikeName              $NullDescription    35  44`s  	8`s 	$WorldLakilesterData
-    $huffNPuffName          $NullDescription    BA  32`s  	-16`s 	$HuffNPuffData
-    $monstarName            $NullDescription    BC  44`s  	44`s 	$MonstarData
-    $crystalKingName        $NullDescription    BD  44`s  	16`s 	$CrystalKingData
-    $crystalBitsName        $NullDescription    BF  48`s  	8`s 	$CrystalBitData
-    $antiGuyName            $NullDescription    AF  44`s  	0`s 	$AntiGuyData
-    $jrTroopaName           $NullDescription    8F  44`s  	8`s 	$JrTroopaData
-    
-    
+    $kentCKoopaName         002F006F    35  40`s    32`s     $KentCKoopaData
+    $spikeName              002F0048    35  44`s  	8`s 	$WorldLakilesterData
+    $huffNPuffName          002F004A    BA  32`s  	-16`s 	$HuffNPuffData
+    $monstarName            002F004F    BC  44`s  	44`s 	$MonstarData
+    $crystalKingName        002F005D    BD  44`s  	16`s 	$CrystalKingData
+    $crystalBitsName        002F005F    BF  48`s  	8`s 	$CrystalBitData
+    $antiGuyName            002F002F    AF  44`s  	0`s 	$AntiGuyData
+    $jrTroopaName           002F0013    8F  44`s  	8`s 	$JrTroopaData
 }
 
 #export:Data $bossPage3Struct { %0x14 in size
@@ -111,7 +109,7 @@ typedef struct page {
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
-    $bowserName             $NullDescription    C1  40`s  	36`s 	$WorldBowserData   
+    $bowserName             002F006D    C1  40`s  	36`s 	$WorldBowserData   
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
@@ -123,75 +121,75 @@ typedef struct page {
 
 #export:Data $commonPage0Struct {
     %enemy name     %tattle     actorID     originX originY %data for sprite
-    $goombaName         $NullDescription    07  0`s     0`s 	$GoombaData
-    $paragoombaName     $NullDescription    08  0`s     0`s 	$ParagoombaData
-    $spikedGoombaName   $NullDescription    09  0`s     0`s 	$SpikedGoombaData
-    $magikoopaName      $NullDescription    95  0`s     8`s     $MagikoopaData
-    $koopaTroopaName    $NullDescription    0B  0`s     8`s     $KoopaTroopaData
-    $fuzzyName          $NullDescription    0A  0`s  	0`s 	$FuzzyData
-    $paratroopaName     $NullDescription    0C  0`s     8`s     $ParaTroopaData
-    $bobombName         $NullDescription    0D  0`s     4`s     $BombombData
+    $goombaName         002F0000    07  0`s     0`s 	$GoombaData
+    $paragoombaName     002F0002    08  0`s     0`s 	$ParagoombaData
+    $spikedGoombaName   002F0001    09  0`s     0`s 	$SpikedGoombaData
+    $magikoopaName      002F0063    95  0`s     8`s     $MagikoopaData
+    $koopaTroopaName    002F0007    0B  0`s     8`s     $KoopaTroopaData
+    $fuzzyName          002F0009    0A  0`s  	0`s 	$FuzzyData
+    $paratroopaName     002F0008    0C  0`s     8`s     $ParaTroopaData
+    $bobombName         002F000A    0D  0`s     4`s     $BombombData
 
-    $montyMole1Name     $NullDescription    12  0`s     0`s 	$MontyMoleData
-    $cleftName          $NullDescription    11  0`s     0`s 	$CleftData
-    $banditName         $NullDescription    13  0`s     0`s 	$BanditData
-    $pokeyName          $NullDescription    14  0`s     37`s     $PokeyData
-    $poisonPokeyName    $NullDescription    15  0`s     37`s     $PoisonPokeyData
-    $buzzyBeetleName    $NullDescription    17  0`s  	0`s 	$BuzzyBeetleData
-    $stoneChompName     $NullDescription    18  0`s     0`s     $StoneChompData
-    $forestFuzzyName    $NullDescription    1A  0`s     0`s     $ForestFuzzyData
+    $montyMole1Name     002F0014    12  0`s     0`s 	$MontyMoleData
+    $cleftName          002F0015    11  0`s     0`s 	$CleftData
+    $banditName         002F0017    13  0`s     0`s 	$BanditData
+    $pokeyName          002F0016    14  0`s     37`s     $PokeyData
+    $poisonPokeyName    002F0018    15  0`s     37`s     $PoisonPokeyData
+    $buzzyBeetleName    002F0019    17  0`s  	0`s 	$BuzzyBeetleData
+    $stoneChompName     002F001E    18  0`s     0`s     $StoneChompData
+    $forestFuzzyName    002F0020    1A  0`s     0`s     $ForestFuzzyData
 }
 
 #export:Data $commonPage1Struct {
     %enemy name             %tattle     actorID     originX originY %data for sprite
-    $piranhaPlantName       $NullDescription    19  2`s     15`s     $PiranhaPlantData
-    $hyperGoombaName        $NullDescription    19  0`s     0`s 	$HyperGoombaData
-    $hyperParagoombaName    $NullDescription    1C  0`s     0`s 	$HyperParagoombaData
-    $hyperCleftName         $NullDescription    1D  -4`s     8`s     $HyperCleftData
-    $clubbaName             $NullDescription    1E  0`s     15`s     $WorldClubbaData
-    $shyGuyName             $NullDescription    1F  0`s  	0`s 	$ShyGuyData
-    $grooveGuyName          $NullDescription    20  0`s     0`s     $GrooveGuyData
-    $skyGuyName             $NullDescription    21  0`s     20`s    $SkyGuyData
+    $piranhaPlantName       002F001F    19  2`s     15`s     $PiranhaPlantData
+    $hyperGoombaName        002F0021    19  0`s     0`s 	$HyperGoombaData
+    $hyperParagoombaName    002F0022    1C  0`s     0`s 	$HyperParagoombaData
+    $hyperCleftName         002F0023    1D  -4`s     8`s     $HyperCleftData
+    $clubbaName             002F0024    1E  0`s     15`s     $WorldClubbaData
+    $shyGuyName             002F0029    1F  0`s  	0`s 	$ShyGuyData
+    $grooveGuyName          002F002A    20  0`s     0`s     $GrooveGuyData
+    $skyGuyName             002F002D    21  0`s     20`s    $SkyGuyData
 
-    $mediGuyName            $NullDescription    22  0`s     4`s 	$MediGuyData
-    $pyroGuyName            $NullDescription    23  0`s     4`s 	$PyroGuyData
-    $spyGuyName             $NullDescription    24  0`s     4`s 	$SpyGuyData
-    $jungleFuzzyName        $NullDescription    29  0`s     0`s     $JungleFuzzyData
-    $spearGuyName           $NullDescription    2A  0`s     8`s     $JungleGuyData
-    $hurtPlantName          $NullDescription    26  0`s     16`s     $HurtPlantData
-    $mBushName              $NullDescription    27  0`s     0`s     $MBushData
-    $putridPiranhaName      $NullDescription    2D  4`s     20`s     $PutridPiranhaData
+    $mediGuyName            002F002E    22  0`s     4`s 	$MediGuyData
+    $pyroGuyName            002F002C    23  0`s     4`s 	$PyroGuyData
+    $spyGuyName             002F002B    24  0`s     4`s 	$SpyGuyData
+    $jungleFuzzyName        002F0037    29  0`s     0`s     $JungleFuzzyData
+    $spearGuyName           002F0038    2A  0`s     8`s     $JungleGuyData
+    $hurtPlantName          002F0035    26  0`s     16`s     $HurtPlantData
+    $mBushName              002F0036    27  0`s     0`s     $MBushData
+    $putridPiranhaName      002F0039    2D  4`s     20`s     $PutridPiranhaData
 
 }
 
 #export:Data $commonPage2Struct {
     %enemy name     %tattle     actorID     originX originY %data for sprite
-    $lavaBubbleName     $NullDescription    2B  0`s     0`s 	$BubbleData
-    $spikeTopName       $NullDescription    2C  0`s     0`s 	$SpikeTopData
-    $crazeeDayzeeName   $NullDescription    32  2`s     10`s 	$CrazeeDayzeeData
-    $bzzapName          $NullDescription    31  2`s     4`s     $BzzapData
-    $montyMole2Name     $NullDescription    30  0`s     0`s     $MontyMoleCh6_Data
-    $ruffPuffName       $NullDescription    34  0`s  	0`s 	$RuffPuffData
-    $amayzName          $NullDescription    33  2`s     6`s     $AmayzDayzeeData
-    $spinyName          $NullDescription    2F  0`s     0`s     $SpinyData
+    $lavaBubbleName     002F003A    2B  0`s     0`s 	$BubbleData
+    $spikeTopName       002F003B    2C  0`s     0`s 	$SpikeTopData
+    $crazeeDayzeeName   002F0045    32  2`s     10`s 	$CrazeeDayzeeData
+    $bzzapName          002F0044    31  2`s     4`s     $BzzapData
+    $montyMole2Name     002F0047    30  0`s     0`s     $MontyMoleCh6_Data
+    $ruffPuffName       002F0049    34  0`s  	0`s 	$RuffPuffData
+    $amayzName          002F0046    33  2`s     6`s     $AmayzDayzeeData
+    $spinyName          002F0043    2F  0`s     0`s     $SpinyData
 
-    $lakituName         $NullDescription    2E  4`s     10`s 	$LakituData
-    $gulpitName         $NullDescription    36  -12`s   20`s 	$GulpitData
-    $frostPiranhaName   $NullDescription    39  4`s     20`s 	$FrostPiranhaData
-    $duplighostName     $NullDescription    3B  4`s     0`s     $DuplighostData
-    $whiteClubbaName    $NullDescription    38  3`s     10`s     $WorldWhiteClubbaData
-    $swoopulaName       $NullDescription    3A  0`s  	0`s 	$SwoopulaData
-    $emberName          $NullDescription    45  0`s     0`s     $EmberData
-    $koopatrolName      $NullDescription    4C  4`s     10`s     $KoopatrolData
+    $lakituName         002F0042    2E  4`s     10`s 	$LakituData
+    $gulpitName         002F004D    36  -12`s   20`s 	$GulpitData
+    $frostPiranhaName   002F0050    39  4`s     20`s 	$FrostPiranhaData
+    $duplighostName     002F0052    3B  4`s     0`s     $DuplighostData
+    $whiteClubbaName    002F0051    38  3`s     10`s     $WorldWhiteClubbaData
+    $swoopulaName       002F005C    3A  0`s  	0`s 	$SwoopulaData
+    $emberName          002F0060    45  0`s     0`s     $EmberData
+    $koopatrolName      002F0067    4C  4`s     10`s     $KoopatrolData
 }
 
 #export:Data $commonPage3Struct {
     %enemy name     %tattle     actorID     originX originY %data for sprite
-    $hammerBroName          $NullDescription    4B  0`s     0`s 	$HammerBrosData
-    $bonyBeetleName         $NullDescription    46  0`s     0`s 	$BonyBeetleData
-    $bombshellBillName      $NullDescription    4A  0`s     0`s 	$BombshellBillData
-    $bombshellBlasterName   $NullDescription    49  0`s     0`s     $BombshellBillBlasterData
-    $dryBonesName           $NullDescription    47  0`s     0`s     $DryBonesData
+    $hammerBroName          002F0068    4B  0`s     0`s 	$HammerBrosData
+    $bonyBeetleName         002F0062    46  0`s     0`s 	$BonyBeetleData
+    $bombshellBillName      002F0069    4A  0`s     0`s 	$BombshellBillData
+    $bombshellBlasterName   002F006A    49  10`s     11`s     $BombshellBillBlasterData
+    $dryBonesName           002F0061    47  0`s     0`s     $DryBonesData
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
@@ -206,166 +204,98 @@ typedef struct page {
     0   0   0   0`s     0`s 	0
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /%
-#export:Data $commonPage0Struct { %0x14 in size
-    %enemy name             %enemy description              actorID         originX originY %data for sprite
-    $redGoombaName          $redGoombaDescription           0           	0`s  	0`s 	$RedGoombaData
-    $skyGuyName             $skyGuyDescription              1               0`s  	0`s 	$SkyGuyData
-    $gloombaName            $gloombaDescription             2          	    0`s  	0`s 	$GloombaData
-    $pyroGuyName            $pyroGuyDescription             3          	    0`s  	0`s 	$PyroGuyData
-    $spikedGloombaName      $spikedGloombaDescription       4               0`s    0`s   $SpikedGloombaData
-    $darkKoopaName          $darkKoopaDescription           5           	-4`s  	0`s 	$DarkKoopaData
-    $darkParatroopaName     $darkParatroopaDescription      6           	-4`s  	0`s 	$DarkParatroopaData
-    $goombaName             $goombaDescription              7           	0`s  	0`s 	$GoombaData
+    $blueGoombaName     002F0004    90  35`s    8`s     $GoombaBroBlueData
+    $redGoombaName      002F0003    90  35`s    8`s     $GoombaBroRedData
+    $goombaKingName     002F0005    92  35`s    40`s 	$GoombaKingData
+    $bulletBillName     002F000B    0F  40`s    0`s 	$BulletBillData
+    $billBlasterName    002F000C    10  35`s  	12`s 	$BillBlasterData
+    $koopaBrosName      002F0012    9C  -10`s   12`s 	$KoopaBroData
+    $buzzarName         002F001B    A0  32`s    4`s     $BuzzarData
+    $chompName          002F001D    A2  40`s    12`s    $ChainChompData
+    $tutankoopaName         002F001C    A1  40`s    12`s 	$TutankoopaData
+    $tubbasHeartName        002F0026    A5  40`s     8`s 	$TubbasHeartData
+    $tubbaName              002F0025    A4  36`s     48`s 	$WorldTubbaData %may need changes
+    $bigLanternGhostName    002F0030    B1  40`s     28`s 	$BigLanternGhostData
+    $stiltGuyName           002F0034    A6  40`s     28`s   $StiltGuyData
+    $generalGuyName         002F0031    AA  44`s     8`s 	$GeneralGuyData %has toy tank tattle
+    $lavaPiranhaName        002F003D    B3  40`s  	16`s 	$LavaPiranhaHeadData
+    $lavaBudName            002F003F    B6  40`s    8`s     $LavaBudData
+    $kentCKoopaName         002F006F    35  40`s    32`s     $KentCKoopaData
+    $spikeName              002F0048    35  44`s  	8`s 	$WorldLakilesterData
+    $huffNPuffName          002F004A    BA  32`s  	-16`s 	$HuffNPuffData
+    $monstarName            002F004F    BC  44`s  	44`s 	$MonstarData
+    $crystalKingName        002F005D    BD  44`s  	16`s 	$CrystalKingData
+    $crystalBitsName        002F005F    BF  48`s  	8`s 	$CrystalBitData
+    $antiGuyName            002F002F    AF  44`s  	0`s 	$AntiGuyData
+    $jrTroopaName           002F0013    8F  44`s  	8`s 	$JrTroopaData
+    $bowserName             002F006D    C1  40`s  	36`s 	$WorldBowserData
 
-    $paragoombaName         $paragoombaDescription          8           	0`s  	0`s 	$ParagoombaData
-    $spikedGoombaName       $spikedGoombaDescription        9           	0`s  	0`s 	$SpikedGoombaData
-    $fuzzyName              $fuzzyDescription               A           	0`s  	0`s 	$FuzzyData
-    $koopaTroopaName        $koopaTroopaDescription         B           	-4`s  	0`s 	$KoopaData
-    $paratroopaName         $paratroopaDescription          C           	-4`s  	0`s 	$ParatroopaData
-    $huffNPuffName          $huffNPuffDescription           A0           	0`s  	-16`s 	$HuffNPuffData
-    $bulletBillName         $bulletBillDescription          F           	-4`s  	-6`s 	$BulletBillData
-    $goombaKingName         $goombaKingDescription          92           	60s  	B0s 	$GoombaKingData
+    %normal enemies start
 
-}
-
-#export:Data $commonPage1Struct {
-    $bombshesllBillName     $bombshesllBillDescription      0               -4`s  	-6`s 	$BombshellBillData
-    $stoneChompName         $stoneChompDescription          0           	-4`s  	-6`s 	$StoneChompData
-    $tutankoopaName         $tutankoopaDescription          0           	-4`s  	-6`s 	$TutankoopaData
-    $hyperGoombaName        $hyperGoombaDescription         0           	0`s  	0`s 	$HyperGoombaData
-    $tubbaName              $tubbaDescription               0           	-4`s  	28`s 	$TubbaData
-    $spyGuyName             $spyGuyDescription              0               0`s 	0`s   $SpyGuyData
-    $stiltGuyName           $stiltGuyDescription            0           	0`s  	0`s 	$StiltGuyData
-    $bigLanternGhostName    $bigLanternGhostDescription     0           	0`s  	0`s 	$BigLanternGhostData
-
-    $spearGuyName           $spearGuyDescription            0               0`s  	0`s 	$SpearGuyData
-    $hurtPlantName          $hurtPlantDescription           0               0`s  	8`s 	$HurtPlantData
-    $mBushName              $mBushDescription               0           	0`s  	0`s 	$MBushData
-    $putridPiranhaName      $putridPiranhaDescription       0           	0`s  	0`s 	$PutridPiranhaData
-    $lavaBubbleName         $lavaBubbleDescription          0           	0`s  	0`s 	$LavaBubbleData
-    $spikeTopName           $spikeTopDescription            0           	0`s  	0`s 	$SpikeTopData
-    $lavaBudName            $lavaBudDescription             0           	0`s  	0`s 	$LavaBudData
-    $spikeName              $spikeDescription               0               0`s  	0`s 	$SpikeData
-}
-
-#export:Data $commonPage2Struct {
-    $gulpitName             $gulpitDescription              0           	-12`s  	6`s 	$GulpitData
-    $frostPiranhaName       $frostPiranhaDescription        0               0`s  	0`s 	$FrostPiranhaData
-    $monstarName            $monstarDescription             0           	22`s  	48`s 	$MonstarData
-    $duplighostName         $duplighostDescription          0           	0`s  	0`s 	$DuplighostData
-    $whiteClubbaName        $whiteClubbaDescription         0           	0`s  	0`s 	$WhiteClubbaData
-    $swooperName            $swooperDescription             0           	0`s  	0`s 	$SwooperData
-    $swoopulaName           $swoopulaDescription            0           	0`s  	0`s 	$SwoopulaData
-    $crystalKingName        $crystalKingDescription         0           	0`s  	0`s 	$CrystalKingData
-
-    $crystalBitsName        $crystalBitsDescription         0           	0`s  	0`s 	$CrystalBitData
-    $koopatrolName          $koopatrolDescription           0           	0`s  	0`s 	$KoopatrolData
-    $hammerBroName          $hammerBroDescription           0           	0`s  	0`s 	$HammerBroData
-    $bonyBeetleName         $bonyBeetleDescription          0           	0`s  	0`s 	$BonyBeetleData
-    $bombshellBlasterName   $bombshellBlasterDescription    0               0`s  	0`s 	$BombshellBlasterData
-    $billBlasterName         $billBlasterDescription        0           	0`s  	0`s 	$BillBlasterData
-    $dryBonesName         $dryBonesDescription          0           	0`s  	0`s 	$DryBonesData
-    $bowserName         $bowserDescription          0           	0`s  	0`s 	$BowserData
-}
-
-#export:Data $commonPage3Struct {
-    $spikyGoombaName       $goombaDescription        0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $spikyGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $hyperGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $spikyGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $spikyGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-}
-
-#export:Data $commonPage4Struct {
-    $hyperGoombaName       $goombaDescription        0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $spikyGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $hyperGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $hyperGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $hyperGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-}
-
-#export:Data $commonPage5Struct {
-    $lakituName             $goombaDescription        0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $spikyGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $hyperGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $lakituName             $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-}
-
-#export:Data $commonPage6Struct {
-    $lakituName             $goombaDescription        0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $spikyGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $hyperGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $lakituName             $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-}
-
-#export:Data $commonPage7Struct {
-    $goombaName       $goombaDescription        0           	0`s  	0`s 	0
-    $spikyGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $spikyGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $hyperGoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $lakituName             $paragoombaDescription    0           	0`s  	0`s 	0
-    $lakituName             $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-    $paragoombaName       $paragoombaDescription    0           	0`s  	0`s 	0
-}
+    $goombaName         002F0000    07  0`s     0`s 	$GoombaData
+    $paragoombaName     002F0002    08  0`s     0`s 	$ParagoombaData
+    $spikedGoombaName   002F0001    09  0`s     0`s 	$SpikedGoombaData
+    $magikoopaName      002F0063    95  0`s     8`s     $MagikoopaData
+    $koopaTroopaName    002F0007    0B  0`s     8`s     $KoopaTroopaData
+    $fuzzyName          002F0009    0A  0`s  	0`s 	$FuzzyData
+    $paratroopaName     002F0008    0C  0`s     8`s     $ParaTroopaData
+    $bobombName         002F000A    0D  0`s     4`s     $BombombData
+    $montyMole1Name     002F0014    12  0`s     0`s 	$MontyMoleData
+    $cleftName          002F0015    11  0`s     0`s 	$CleftData
+    $banditName         002F0017    13  0`s     0`s 	$BanditData
+    $pokeyName          002F0016    14  0`s     37`s     $PokeyData
+    $poisonPokeyName    002F0018    15  0`s     37`s     $PoisonPokeyData
+    $buzzyBeetleName    002F0019    17  0`s  	0`s 	$BuzzyBeetleData
+    $stoneChompName     002F001E    18  0`s     0`s     $StoneChompData
+    $forestFuzzyName    002F0020    1A  0`s     0`s     $ForestFuzzyData
+    $piranhaPlantName       002F001F    19  2`s     15`s     $PiranhaPlantData
+    $hyperGoombaName        002F0021    19  0`s     0`s 	$HyperGoombaData
+    $hyperParagoombaName    002F0022    1C  0`s     0`s 	$HyperParagoombaData
+    $hyperCleftName         002F0023    1D  -4`s     8`s     $HyperCleftData
+    $clubbaName             002F0024    1E  0`s     15`s     $WorldClubbaData
+    $shyGuyName             002F0029    1F  0`s  	0`s 	$ShyGuyData
+    $grooveGuyName          002F002A    20  0`s     0`s     $GrooveGuyData
+    $skyGuyName             002F002D    21  0`s     20`s    $SkyGuyData
+    $mediGuyName            002F002E    22  0`s     4`s 	$MediGuyData
+    $pyroGuyName            002F002C    23  0`s     4`s 	$PyroGuyData
+    $spyGuyName             002F002B    24  0`s     4`s 	$SpyGuyData
+    $jungleFuzzyName        002F0037    29  0`s     0`s     $JungleFuzzyData
+    $spearGuyName           002F0038    2A  0`s     8`s     $JungleGuyData
+    $hurtPlantName          002F0035    26  0`s     16`s     $HurtPlantData
+    $mBushName              002F0036    27  0`s     0`s     $MBushData
+    $putridPiranhaName      002F0039    2D  4`s     20`s     $PutridPiranhaData
+    $lavaBubbleName     002F003A    2B  0`s     0`s 	$BubbleData
+    $spikeTopName       002F003B    2C  0`s     0`s 	$SpikeTopData
+    $crazeeDayzeeName   002F0045    32  2`s     10`s 	$CrazeeDayzeeData
+    $bzzapName          002F0044    31  2`s     4`s     $BzzapData
+    $montyMole2Name     002F0047    30  0`s     0`s     $MontyMoleCh6_Data
+    $ruffPuffName       002F0049    34  0`s  	0`s 	$RuffPuffData
+    $amayzName          002F0046    33  2`s     6`s     $AmayzDayzeeData
+    $spinyName          002F0043    2F  0`s     0`s     $SpinyData
+    $lakituName         002F0042    2E  4`s     10`s 	$LakituData
+    $gulpitName         002F004D    36  -12`s   20`s 	$GulpitData
+    $frostPiranhaName   002F0050    39  4`s     20`s 	$FrostPiranhaData
+    $duplighostName     002F0052    3B  4`s     0`s     $DuplighostData
+    $whiteClubbaName    002F0051    38  3`s     10`s     $WorldWhiteClubbaData
+    $swoopulaName       002F005C    3A  0`s  	0`s 	$SwoopulaData
+    $emberName          002F0060    45  0`s     0`s     $EmberData
+    $koopatrolName      002F0067    4C  4`s     10`s     $KoopatrolData
+    $hammerBroName          002F0068    4B  0`s     0`s 	$HammerBrosData
+    $bonyBeetleName         002F0062    46  0`s     0`s 	$BonyBeetleData
+    $bombshellBillName      002F0069    4A  0`s     0`s 	$BombshellBillData
+    $bombshellBlasterName   002F006A    49  0`s     0`s     $BombshellBillBlasterData
+    $dryBonesName           002F0061    47  0`s     0`s     $DryBonesData
 %/

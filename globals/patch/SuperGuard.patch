@@ -452,6 +452,7 @@
         CaseOR  ==  00000017 % 17
         CaseOR  ==  .Event:Immune % 19
             Call  PlaySoundAtActor  ( .Actor:Player 0000208C )
+            %this was causing the defend animation to reset but we dont want that
             % Check if Player used the defend command
             % Call $ReadAddress ( $ExtraActorData_Everyone 0 *Var0 E .False ) % get Mario's defense byte
             % If *Var0 == .False

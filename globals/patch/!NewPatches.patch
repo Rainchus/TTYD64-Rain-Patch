@@ -68,21 +68,3 @@
     J 802B62B4
     ADDIU v0, v0, A550
 }
-
-#export:Data $GoombaRaster { ~RasterFile:CI-4:../sprite/npc/src/26/Raster_00.png }
-
-% @Hook E277F4  { %802B62E4
-%     LI v0, $SlideDuration
-%     LW t0, 0000 (v0) %load current duration in frames
-%     ADDIU t0, t0, 1
-%     SW t0, 0000 (v0) %update timer
-%     SLTI t1, t0, .FramesUntilForcedStandUp %5 seconds (30 frames per second * 5 seconds)
-%     BNE t1, r0, .exit %if frames < 180, exit as normal
-%     NOP
-%     ORI v0, r0, 1
-
-%     .exit
-%     LWC1 f0, 0000 (s2)
-%     J 802B62EC
-%     LWC1 f2, 0000 (s1)
-% }
