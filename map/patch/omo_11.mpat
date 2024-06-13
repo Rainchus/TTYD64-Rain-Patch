@@ -24,8 +24,7 @@
          Set   *MapVar[1] *Var0
          Call  AssignBlockFlag   ( *GF_OMO11_Shine )
          Call  AssignScript 	    ( $Script_Entity_Shine2 )
-         %
-   168:  Call  AssignBlockFlag   ( *GF_OMO11_HiddenBadge_DeepFocus2 )
+         
    178:  Call  MakeEntity        ( .Entity:YellowBlock ~Vec4d:Entity80242600 .Item:Coin 80000000 )
    1A0:  Call  AssignBlockFlag   ( *GF_OMO11_ItemBlock_CoinA )
    1B0:  Return

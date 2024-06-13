@@ -218,9 +218,10 @@
     ADDIU	S6, R0, 009A
     .End
     POP     T0
-    % restore vanilla code
-    LUI	    S5, 8011
-    J       800F3E40
+    % point to new icons
+    LI s4, $newIconScriptPtrs
+    LI s5, $newIconScriptPtrs
+    J       800F3E4C
     NOP
 }
 
