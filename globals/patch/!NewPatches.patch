@@ -68,3 +68,16 @@
     J 802B62B4
     ADDIU v0, v0, A550
 }
+
+@Hook:Global 800E69DC {
+    LAB t0, 8010EFC5
+    BEQ t0, r0, .normalRoutine
+    NOP
+    %else, prevent menus
+    JR RA
+    ORI v0, r0, 0
+    .normalRoutine
+    ADDIU sp, sp, -20
+    J 800E69E4
+    SW s2, 0018 (sp)
+}
