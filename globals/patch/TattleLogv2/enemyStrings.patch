@@ -512,6 +512,22 @@ A Bombshell Blaster[END]
 A Dry Bones[END]
 }
 
+#export:String $boomerangBrosName {
+[Size:0C:0C]Boomerang Bros.[END]
+}
+
+#export:String $darkMontyMoleName {
+[Size:0C:0C]Dark Monty Mole[END]
+}
+
+#export:String $fireBrosName {
+[Size:0C:0C]Fire Bros.[END]
+}
+
+#export:String $darkHammerBrosName {
+[Size:0C:0C]Dark Hammer Bros.[END]
+}
+
 #export:String $bowserName {
 [Size:0C:0C]Bowser[END]
 }

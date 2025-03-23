@@ -3115,3 +3115,63 @@
 	peeved.[End]
 }
 
+#string:2F:096
+{
+	[Style Right]
+	This is a Boomerang Bros.[BR]
+	[Wait][Next]
+	Max HP: 7, Attack Power: 2,[BR]
+	Defense Power: 1[BR]
+	[End]
+}
+
+#string:2F:097
+{
+	[Style Right]
+	This is a Dark Monty Mole.[BR]
+	[Wait][Next]
+	Max HP: 10, Attack Power: 6,[BR]
+	Defense Power: 0[BR]
+	[Wait][Next]
+	Ugh. They have kind of scary[BR]
+	looking faces.[BR]
+	[Wait][Next]
+	Maybe they wear sunglasses[BR]
+	because they have really[BR]
+	sensitive eyes.[BR]
+	[Pause 10]Or maybe they're just hip.[End]
+}
+
+#string:2F:098
+{
+	[Style Right]
+	This is a Fire Bros.[BR]
+	[Wait][Next]
+	Max HP: 7, Attack Power: 3,[BR]
+	Defense Power: 1[BR]
+	[End]
+}
+
+#string:2F:099
+{
+	[Style Right]
+	These are the Dark Hammer Bros.[BR]
+	[Wait][Next]
+	Max HP: 14, Attack Power: 6,[BR]
+	Defense Power: 1[BR]
+	[Wait][Next]
+	Be careful of that hammer![BR]
+	If it hits you, you'll get[BR]
+	shrunk in a wink.[BR]
+	[Wait][Next]
+	When the Dark Hammer Bros. get[BR]
+	desperate, they'll hurl a ton[BR]
+	of hammers, so watch it.[BR]
+	[Wait][Next]
+	These guys have been a pain for[BR]
+	ages, so let's give 'em an [BR]
+	old-fashioned whopping. [BR]
+	[Wait][Next]
+	As always, they're not to be[BR]
+	underestimated.[Wait][End]
+}

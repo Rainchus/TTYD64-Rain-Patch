@@ -188,12 +188,14 @@ typedef struct page {
     $hammerBroName          002F0068    4B  0`s     0`s 	$HammerBrosData
     $bonyBeetleName         002F0062    46  0`s     0`s 	$BonyBeetleData
     $bombshellBillName      002F0069    4A  0`s     0`s 	$BombshellBillData
-    $bombshellBlasterName   002F006A    49  10`s     11`s     $BombshellBillBlasterData
+    $bombshellBlasterName   002F006A    49  10`s    11`s    $BombshellBillBlasterData
     $dryBonesName           002F0061    47  0`s     0`s     $DryBonesData
-    0   0   0   0`s     0`s 	0
-    0   0   0   0`s     0`s 	0
-    0   0   0   0`s     0`s 	0
+    $boomerangBrosName      002F0096    6C  0`s     0`s     $BoomerangBrosData
+    $darkMontyMoleName      002F0097    61  0`s     0`s     $DarkMontyMoleData
+    $fireBrosName           002F0098    68  0`s     0`s     $FireBrosData
 
+
+    %$darkHammerBrosName     002F0099    60  0`s     0`s     0 %$DarkHammerBrosData
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
