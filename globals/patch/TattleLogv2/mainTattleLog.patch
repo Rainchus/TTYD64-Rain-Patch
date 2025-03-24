@@ -186,8 +186,8 @@ on foes he's tattled here.[END]
     .displayCommon
     JAL $displayEnemyNames
     NOP
-    %JAL $PrintTattleCount
-    %NOP
+    JAL $PrintTattleCount
+    NOP
     BEQ r0, r0, .end
     NOP
     .displayBoss
@@ -343,6 +343,11 @@ on foes he's tattled here.[END]
 124/124[END]
 }
 
+%"[Size:0C:0C]Page: %1d/%1d"
+% #new:Data $pageformatter {
+%     FF0D0C0C 50616765 3A202531 642F2531 64000000
+% }
+
 #new:ASCII $pageformatter {
 "Page: %1d/%1d"
 }
@@ -380,7 +385,26 @@ on foes he's tattled here.[END]
     NOP
 }
 %80439068
-    
+
+#new:Data $BoxXPos {
+    5B
+}
+
+#new:Data $BoxYPos {
+    70
+}
+
+#new:Data $BoxWidth {
+    50
+}
+
+#new:Data $BoxHeight {
+    1C
+}
+
+#new:Data $PageNumberBoxRootXY {
+    0000s 0000s
+}
 
 #new:Function $PrintTattleCount {
     ADDIU sp, sp, -50
@@ -405,17 +429,41 @@ on foes he's tattled here.[END]
     NOP
 
     LIO a0, $StringBuffer2
+    ADDIU a0, a0, 4
     LIO a1, $StringBuffer
     JAL $asciiToString
     NOP
 
+    %store size parameter in string
+    LI a0, $StringBuffer2
+    LI a1, FF0D0C0C
+    SW a1, 0000 (a0) %set [Size:0C:0C] parameter in string
+
     LAW a0, $currentMenuXOffset
     LAW a1, $currentMenuYOffset
-    ADDIU a0, a0, 0046
-    ADDIU a1, a1, 0073
-    ORI a2, r0, 0090
-    ORI a3, r0, 1A
-    ORI t0, r0, 0005 %000A is blue, also good. 000C green
+
+    LAW a2, $BoxXPos
+    ADDU a0, a0, a2
+
+    LAW a2, $BoxYPos
+    ADDU a1, a1, a2
+
+    LAW a2, $BoxWidth
+    LAW a3, $BoxHeight
+
+    LI t0, $PageNumberBoxRootXY
+    LH t1, 0000 (t0) %xPos offset
+    LH t2, 0002 (t0) %yPos offset
+    ADDU a0, a0, t1
+    ADDU a1, a1, t2
+
+    % ADDIU a0, a0, 0046
+    % ADDIU a1, a1, 0073
+
+    % ORI a2, r0, 0030
+    % ORI a3, r0, 1A
+
+    ORI t0, r0, 000A %000A is blue, also good. 000C green
     JAL $DrawMenuBox
     ORI t1, r0, 00FF
 
@@ -425,6 +473,13 @@ on foes he's tattled here.[END]
     LAW a2, $currentMenuYOffset
     ADDIU a1, a1, 0068
     ADDIU a2, a2, 0078
+
+    LI t0, $PageNumberBoxRootXY
+    LH t1, 0000 (t0) %xPos offset
+    LH t2, 0002 (t0) %yPos offset
+    ADDU a1, a1, t1
+    ADDU a2, a2, t2
+
     ORI a3, r0, 00FF
     SW r0, 0010 (sp)
     JAL ~Func:draw_string

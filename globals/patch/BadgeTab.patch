@@ -242,23 +242,26 @@ On[End]
     %
     % Create Icons - Menu0
     %==========
-    LIO     A0, $IconScript_Compass
-    JAL     $CreateIcon
-    RESERVED
-    SAW     S0, $ExtraTab_FirstIconIndex
-    % save indexes in the menu data
-    LIO     A0, $ExtraTab_Menu0_MenuData_SubMenu0
-    JAL     $ExtraTab_SetMenuIconsIndexes
-    COPY    A1, S0
-    LIO     A0, $IconScript_EmptyBook
-    JAL     $CreateIcon
-    RESERVED
-    LIO     A0, $IconScript_gear_boots_1
-    JAL     $CreateIcon
-    RESERVED
-    LIO     A0, $IconScript_screwdriver
-    JAL     $CreateIcon
-    RESERVED
+
+    %TODO: are these actually used?
+        % LIO     A0, $IconScript_Compass
+        % JAL     $CreateIcon
+        % RESERVED
+        % SAW     S0, $ExtraTab_FirstIconIndex
+        % % save indexes in the menu data
+        % LIO     A0, $ExtraTab_Menu0_MenuData_SubMenu0
+        % JAL     $ExtraTab_SetMenuIconsIndexes
+        % COPY    A1, S0
+        % LIO     A0, $IconScript_EmptyBook
+        % JAL     $CreateIcon
+        % RESERVED
+        % LIO     A0, $IconScript_gear_boots_1
+        % JAL     $CreateIcon
+        % RESERVED
+        % LIO     A0, $IconScript_screwdriver
+        % JAL     $CreateIcon
+        % RESERVED
+        
     % Save the current equipped badges in to the top belt
     JAL     $Function_Save_UpBelt
     NOP
@@ -973,15 +976,16 @@ On[End]
     % Shine Sprite Icon
     JAL     ~Func:free_hud_element
     ADDIU   A0, S0, 6
-    % Pause Menu - Extra tab icons
-    JAL     ~Func:free_hud_element
-    ADDIU   A0, S0, 7 % compass
-    JAL     ~Func:free_hud_element
-    ADDIU   A0, S0, 8 % emptyBook
-    JAL     ~Func:free_hud_element
-    ADDIU   A0, S0, 9 % boots1
-    JAL     ~Func:free_hud_element
-    ADDIU   A0, S0, A % screwDriver
+        %TODO: are these actually used?
+        % Pause Menu - Extra tab icons
+        % JAL     ~Func:free_hud_element
+        % ADDIU   A0, S0, 7 % compass
+        % JAL     ~Func:free_hud_element
+        % ADDIU   A0, S0, 8 % emptyBook
+        % JAL     ~Func:free_hud_element
+        % ADDIU   A0, S0, 9 % boots1
+        % JAL     ~Func:free_hud_element
+        % ADDIU   A0, S0, A % screwDriver
     SAW     R0, $BadgeTab_CurrentBelt
     POP     A0, A1, A2, A3, V0, V1, S0
     J       8024EE58
