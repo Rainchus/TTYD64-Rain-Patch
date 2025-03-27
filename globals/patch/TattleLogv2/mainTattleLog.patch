@@ -186,12 +186,17 @@ on foes he's tattled here.[END]
     .displayCommon
     JAL $displayEnemyNames
     NOP
-    JAL $PrintTattleCount
+    % JAL $DisplayTattleCount
+    % NOP
+    JAL $DisplayPageCount
     NOP
+
     BEQ r0, r0, .end
     NOP
     .displayBoss
     JAL $displayEnemyNames
+    NOP
+    JAL $DisplayPageCount
     NOP
     BEQ r0, r0, .end
     NOP
@@ -339,8 +344,7 @@ on foes he's tattled here.[END]
 }
 
 #new:String $TattleCount {
-[Size:0C:0C]Tattles[BR]
-124/124[END]
+[Size:0C:0C]Tattles: [Var:00]/[Var:01][END]
 }
 
 %"[Size:0C:0C]Page: %1d/%1d"
@@ -386,39 +390,99 @@ on foes he's tattled here.[END]
 }
 %80439068
 
-#new:Data $BoxXPos {
-    5B
+#new:Data $TattleBoxWidth {
+    6E
 }
 
-#new:Data $BoxYPos {
-    70
-}
-
-#new:Data $BoxWidth {
-    50
-}
-
-#new:Data $BoxHeight {
+#new:Data $TattleBoxHeight {
     1C
 }
 
-#new:Data $PageNumberBoxRootXY {
-    0000s 0000s
+#new:Data $TattleBoxRootOffset {
+    000Cs 0076s
 }
 
-#new:Function $PrintTattleCount {
-    ADDIU sp, sp, -50
+#new:Data $PageBoxWidth {
+    50
+}
+
+#new:Data $PageBoxHeight {
+    1C
+}
+
+#new:Data $PageBoxRootOffset {
+    00B8s 0076s
+}
+
+#new:Function $SetTattleDisplayVars {
+    ADDIU sp, sp, -18
+    SW ra, 0014 (sp)
+
+    JAL $GetTotalTattlesCollected
+    NOP
+
+    ADDU a0, v0, r0
+    JAL 80125BE8 %set_message_int_var
+    ORI a1, r0, 0
+
+    JAL $GetTotalTattleCount
+    NOP
+    ADDU a0, v0, r0
+    JAL 80125BE8 %set_message_int_var
+    ORI a1, r0, 1
+
+    LW ra, 0014 (sp)
+    JR RA
+    ADDIU sp, sp, 18
+}
+
+#new:Function $DisplayTattleCount {
+    ADDIU sp, sp, -20
     SW ra, 001C (sp)
+
+    JAL $SetTattleDisplayVars
+    NOP
+    %draw red box for tattle count
+    LAW a0, $currentMenuXOffset
+    LAW a1, $currentMenuYOffset
+    LAW a2, $TattleBoxWidth
+    LAW a3, $TattleBoxHeight
+    LI t0, $TattleBoxRootOffset
+    LH t1, 0000 (t0) %xPos offset
+    LH t2, 0002 (t0) %yPos offset
+    ADDU a0, a0, t1
+    ADDU a1, a1, t2
+    ORI t0, r0, 0017 %000A is blue, also good. 000C green
+    JAL $DrawMenuBox
+    ORI t1, r0, 00FF
+
+
     LIO a0, $TattleCount
     LAW a1, $currentMenuXOffset
     LAW a2, $currentMenuYOffset
-    ADDIU a1, a1, 0026
-    ADDIU a2, a2, 0060
+
+    LI t0, $TattleBoxRootOffset
+    LH t1, 0000 (t0) %xPos offset
+    LH t2, 0002 (t0) %yPos offset
+    ADDU a1, a1, t1
+    ADDU a2, a2, t2
+    ADDIU a1, a1, D %offset the text to the middle of the box
+    ADDIU a2, a2, 7 %offset the text to the middle of the box
     ORI a3, r0, 00FF
     SW r0, 0010 (sp)
     JAL ~Func:draw_string
     SW r0, 0014 (sp)
+
     
+    LW ra, 001C (sp)
+    JR RA
+    ADDIU sp, sp, 20
+}
+
+#new:Function $DisplayPageCount {
+    ADDIU sp, sp, -50
+    SW ra, 001C (sp)
+
     LIO a0, $StringBuffer
     LIO a1, $pageformatter
     LAW a2, $currentPageNumber
@@ -442,26 +506,14 @@ on foes he's tattled here.[END]
     LAW a0, $currentMenuXOffset
     LAW a1, $currentMenuYOffset
 
-    LAW a2, $BoxXPos
-    ADDU a0, a0, a2
+    LAW a2, $PageBoxWidth
+    LAW a3, $PageBoxHeight
 
-    LAW a2, $BoxYPos
-    ADDU a1, a1, a2
-
-    LAW a2, $BoxWidth
-    LAW a3, $BoxHeight
-
-    LI t0, $PageNumberBoxRootXY
+    LI t0, $PageBoxRootOffset
     LH t1, 0000 (t0) %xPos offset
     LH t2, 0002 (t0) %yPos offset
     ADDU a0, a0, t1
     ADDU a1, a1, t2
-
-    % ADDIU a0, a0, 0046
-    % ADDIU a1, a1, 0073
-
-    % ORI a2, r0, 0030
-    % ORI a3, r0, 1A
 
     ORI t0, r0, 000A %000A is blue, also good. 000C green
     JAL $DrawMenuBox
@@ -471,14 +523,15 @@ on foes he's tattled here.[END]
     LIO a0, $StringBuffer2
     LAW a1, $currentMenuXOffset
     LAW a2, $currentMenuYOffset
-    ADDIU a1, a1, 0068
-    ADDIU a2, a2, 0078
 
-    LI t0, $PageNumberBoxRootXY
+    LI t0, $PageBoxRootOffset
     LH t1, 0000 (t0) %xPos offset
     LH t2, 0002 (t0) %yPos offset
     ADDU a1, a1, t1
     ADDU a2, a2, t2
+
+    ADDIU a1, a1, E %offset the text to the middle of the box
+    ADDIU a2, a2, 7 %offset the text to the middle of the box
 
     ORI a3, r0, 00FF
     SW r0, 0010 (sp)
@@ -566,6 +619,9 @@ on foes he's tattled here.[END]
     ORI t0, r0, 000C %000A is blue, also good. 000C green
     JAL $DrawMenuBox
     ORI t1, r0, 00FF
+
+    JAL $DisplayTattleCount
+    NOP
 
     LIO a0, $commonEnemiesString
     LAW a1, $currentMenuXOffset

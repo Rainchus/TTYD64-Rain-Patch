@@ -1,0 +1,5 @@
+%skip code that iterates over each individual pixel in the framebuffer
+%this gives instant pauses on emulators
+@Function 2E2C {
+    BEQ  R0, R0, 10C 
+}

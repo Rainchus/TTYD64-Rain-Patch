@@ -525,7 +525,35 @@ A Dry Bones[END]
 }
 
 #export:String $darkHammerBrosName {
-[Size:0C:0C]Dark Hammer Bros.[END]
+[Size:0C:0C]D. Hammer Bros.[END]
+}
+
+#export:String $bulkyBobOmbName {
+[Size:0C:0C]Bulky Bob-omb[END]
+}
+
+#export:String $piderName {
+[Size:0C:0C]  Pider[END]
+}
+
+#export:String $palePiranhaName {
+[Size:0C:0C]Pale Piranha[End]
+}
+
+#export:String $darkPuffName {
+[Size:0C:0C]Dark Puff[End]
+}
+
+#export:String $poisonPuffName {
+[Size:0C:0C]Poison Puff[End]
+}
+
+#export:String $darkCrawName {
+[Size:0C:0C]Dark Craw[End]
+}
+
+#export:String $gusName {
+[Size:0C:0C]Gus[End]
 }
 
 #export:String $bowserName {

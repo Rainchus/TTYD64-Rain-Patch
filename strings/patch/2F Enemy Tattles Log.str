@@ -3117,7 +3117,7 @@
 
 #string:2F:096
 {
-	[Style Right]
+
 	This is a Boomerang Bros.[BR]
 	[Wait][Next]
 	Max HP: 7, Attack Power: 2,[BR]
@@ -3127,7 +3127,7 @@
 
 #string:2F:097
 {
-	[Style Right]
+
 	This is a Dark Monty Mole.[BR]
 	[Wait][Next]
 	Max HP: 10, Attack Power: 6,[BR]
@@ -3144,7 +3144,7 @@
 
 #string:2F:098
 {
-	[Style Right]
+
 	This is a Fire Bros.[BR]
 	[Wait][Next]
 	Max HP: 7, Attack Power: 3,[BR]
@@ -3154,7 +3154,7 @@
 
 #string:2F:099
 {
-	[Style Right]
+
 	These are the Dark Hammer Bros.[BR]
 	[Wait][Next]
 	Max HP: 14, Attack Power: 6,[BR]
@@ -3173,5 +3173,120 @@
 	old-fashioned whopping. [BR]
 	[Wait][Next]
 	As always, they're not to be[BR]
-	underestimated.[Wait][End]
+	underestimated.[End]
+}
+
+#string:2F:09A
+{
+
+	This is a D. Paratroopa.[BR]
+	[Pause 10]D. Paratroopas are Para-[BR]
+	troopas who live in the[BR]
+	Toad Town Tunnels.[BR]
+	[Wait][Next]
+	Max HP: 8, Attack Power: 3,[BR]
+	Defense Power: 2[BR]
+	[Wait][Next]
+	Hammer attacks won't work[BR]
+	because they're airborne.[BR]
+	[Wait][Next]
+	They'll lose their wings if[BR]
+	you jump on 'em.[BR]
+	[Wait][Next]
+	They'll become Dark Koopas[BR]
+	when they fall, but be careful![BR]
+	They'll do a dizzy attack[BR]
+	once they're grounded.[End]
+}
+
+#string:2F:09B
+{
+
+	This is a Bulky Bob-omb.[BR]
+	[Wait][Next]
+	Max HP: 6, Attack Power: 2,[BR]
+	Defense Power: 1[BR]
+	[Wait][Next]
+	Bulky Bob-ombs seem harmless,[BR]
+	but after they charge for a lot[BR]
+	of turns, they will explode and[BR]
+	they hit really hard.[BR]
+	[Wait][Next]
+	We should take them down before[BR]
+	that happens Mario![BR]
+	[Wait][Next]
+	Also, their explosions target[BR]
+	everyone in battle, even enemies,[BR]
+	so keep that in mind.
+	[End]
+}
+
+#string:2F:09C
+{
+
+	This is a Pider.[BR]
+	[Wait][Next]
+	Max HP: 5, Attack Power: 2,[BR]
+	Defense Power: 0[BR]
+	[Wait][Next]
+	Piders like to swing on their web,[BR]
+	pay attention to the direction of[BR]
+	their head to see who they are[BR]
+	going to throw the rock at next.
+	[End]
+}
+
+#string:2F:09D
+{
+
+	This is a Pale Piranha.[BR]
+	[Wait][Next]
+	Max HP: 4, Attack Power: 2,[BR]
+	Defense Power: 0[BR]
+	[End]
+}
+
+#string:2F:09E
+{
+	This is a Dark Puff.[BR]
+	[Wait][Next]
+	Max HP: 3, Attack Power: 2,[BR]
+	Defense Power: 0[BR]
+	[End]
+}
+
+#string:2F:09F
+{
+	This is a Poison Puff.[BR]
+	[Wait][Next]
+	Be cautious Mario they can[BR]
+	poison you when they attack[BR]
+	you, try to block any of[BR]
+	his attacks![BR]
+	[Wait][Next]
+	Max HP: 15, Attack Power: 8,[BR]
+	Defense Power: 0[BR]
+	[End]
+}
+
+#string:2F:0A0
+{
+	This is a Dark Craw.[BR]
+	[Wait][Next]
+	Max HP: 20, Attack Power: 6,[BR]
+	Defense Power: 0[BR]
+	[End]
+}
+
+#string:2F:0A1
+{
+	This is Gus.[BR]
+	[Wait][Next]
+	Max HP: 20, Attack Power: 3,[BR]
+	Defense Power: 0[BR]
+	[Wait][Next]
+	This guy is a bully, he likes to[BR]
+	take people's money, we have to[BR]
+	give him what he deserves Mario!
+	[End]
 }

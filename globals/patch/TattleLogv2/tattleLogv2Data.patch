@@ -109,8 +109,8 @@ typedef struct page {
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
-    $bowserName             002F006D    C1  40`s  	36`s 	$WorldBowserData   
-    0   0   0   0`s     0`s 	0
+    $bowserName             002F006D    C1  40`s  	36`s 	$WorldBowserData
+    $gusName                002F00A1    65  45`s     15`s 	$GusData
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s     0
@@ -184,7 +184,7 @@ typedef struct page {
 }
 
 #export:Data $commonPage3Struct {
-    %enemy name     %tattle     actorID     originX originY %data for sprite
+    %enemy name             %tattle     actorID  originX originY %data for sprite
     $hammerBroName          002F0068    4B  0`s     0`s 	$HammerBrosData
     $bonyBeetleName         002F0062    46  0`s     0`s 	$BonyBeetleData
     $bombshellBillName      002F0069    4A  0`s     0`s 	$BombshellBillData
@@ -194,16 +194,14 @@ typedef struct page {
     $darkMontyMoleName      002F0097    61  0`s     0`s     $DarkMontyMoleData
     $fireBrosName           002F0098    68  0`s     0`s     $FireBrosData
 
-
-    %$darkHammerBrosName     002F0099    60  0`s     0`s     0 %$DarkHammerBrosData
-    0   0   0   0`s     0`s 	0
-    0   0   0   0`s     0`s 	0
-    0   0   0   0`s     0`s 	0
-    0   0   0   0`s     0`s 	0
-    0   0   0   0`s     0`s     0
-    0   0   0   0`s     0`s 	0
-    0   0   0   0`s     0`s 	0
-    0   0   0   0`s     0`s 	0
+    $darkHammerBrosName     002F0099    60  0`s     0`s     $DarkHammerBrosData
+    $darkParatroopaName     002F009A    6   0`s     0`s     $DarkParaTroopaData
+    $bulkyBobOmbName        002F009B    67  -8`s    20`s 	$BulkyBobOmbData
+    $piderName              002F009C    66  2`s     20`s 	$PiderData
+    $palePiranhaName        002F009D    6A  2`s     15`s 	$PalePiranhaData
+    $darkPuffName           002F009E    69  2`s     15`s 	$DarkPuffData
+    $poisonPuffName         002F009F    5D  2`s     15`s 	$PoisonPuffData
+    $darkCrawName           002F00A0    78  4`s     15`s 	$DarkCrawData
 }
 
 
