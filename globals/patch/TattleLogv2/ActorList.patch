@@ -1,4 +1,3 @@
-%TODO: convert these to ttyd64 enemy ids. currently they are from black pit
 #export .Actor_DarkParatroopa 00000006
 #export .Actor_Goomba 00000007
 #export .Actor_Paragoomba 00000008
