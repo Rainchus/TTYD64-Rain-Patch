@@ -3290,3 +3290,87 @@
 	give him what he deserves Mario!
 	[End]
 }
+
+#string:2F:0A2
+{
+	This is a Dark Lakitu.[BR]
+	[Wait][Next]
+	Max HP: 13, Attack Power: 5,[BR]
+	Defense Power: 0[BR]
+	[Wait][Next]
+	They toss down Spiny Eggs, and[BR]
+	these sometimes turn into[BR]
+	crawling Sky Blue Spinies.[BR]
+	[Wait][Next]
+	We'd better deal with them[BR]
+	quickly or else we'll be[BR]
+	surrounded by Sky Blue Spinies.[BR]
+	[Wait][Next]
+	Sometimes they charge their[BR]
+	power before attacking for up[BR]
+	to 10 damage!
+	[End]
+}
+
+#string:2F:0A3
+{
+	This is a Sky Blue Spiny.[BR]
+	[Wait][Next]
+	Max HP: 6, Attack Power: 6,[BR]
+	Defense Power: 4[BR]
+	[Wait][Next]
+	They'll roll into Spiny Eggs[BR]
+	and slam into you.[BR]
+	[Wait][Next]
+	It'll be much easier to fight[BR]
+	them if you can flip them over.[BR]
+	Their defense power falls to 0.[BR]
+	[Wait][Next]
+	Sometimes they charge their[BR]
+	power before attacking for up[BR]
+	to 12 damage!
+	[End]
+}
+
+#string:2F:0A4
+{
+	This is a Flower Fuzzy.[BR]
+	[Wait][Next]
+	Max HP: 6, Attack Power: 3,[BR]
+	Defense Power: 0[BR]
+	[End]
+}
+
+#string:2F:0A5
+{
+	This is a Swampire.[BR]
+	[Wait][Next]
+	Max HP: 20, Attack Power: 6,[BR]
+	Defense Power: 0[BR]
+	[Wait][Next]
+	Hit [A] repeatedly to fight[BR]
+	it off or else it'll keep[BR]
+	sucking your HP.[BR]
+	[End]
+}
+
+#string:2F:0A6
+{
+	This is a Dark Ember.[BR]
+	[Wait][Next]
+	Max HP: 12, Attack Power: 6,[BR]
+	Defense Power: 0[BR]
+	[Wait][Next]
+	They divide themselves when[BR]
+	they're attacked.[BR]
+	[Pause 10]Keep attacking 'em, though.[BR]
+	You'll get 'em eventually.[BR]
+	[Wait][Next]
+	They'll probably fight back.[BR]
+	[Pause 10]Their attacks usually deal out[BR]
+	6 damage points.[BR]
+	[Wait][Next]
+	Water attacks will work well.[BR]
+	[Pause 10]Let's beat 'em before they[BR]
+	get a chance to burn us.[Wait][End]
+}

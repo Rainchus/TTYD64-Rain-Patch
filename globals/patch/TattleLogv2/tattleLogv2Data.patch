@@ -22,6 +22,9 @@ typedef struct page {
     0
     0
     0
+    0
+    0
+    0
 }
 
 #export:Data $commonPageStructs {
@@ -29,6 +32,7 @@ typedef struct page {
     $commonPage1Struct
     $commonPage2Struct
     $commonPage3Struct
+    $commonPage4Struct
 }
 
 #export:Data $bossPageStructs {
@@ -203,6 +207,29 @@ typedef struct page {
     $poisonPuffName         002F009F    5D  2`s     15`s 	$PoisonPuffData
     $darkCrawName           002F00A0    78  4`s     15`s 	$DarkCrawData
 }
+
+#export:Data $commonPage4Struct {
+    %enemy name             %tattle     actorID  originX originY %data for sprite
+    $darkLakituName         002F00A2    5E  4`s     10`s 	$DarkLakituData
+    $skyBlueSpinyName       002F00A3    5F  0`s     0`s     $SkyBlueSpinyData
+    $flowerFuzzyName        002F00A4    6D  0`s  	0`s 	$FlowerFuzzyData
+    $swampireName           002F00A5    64  0`s  	0`s 	$SwampireData
+    $darkEmberName          002F00A6    63  0`s     0`s 	$DarkEmberData
+    0   0   0   0`s     0`s 	0
+    0   0   0   0`s     0`s 	0
+    0   0   0   0`s     0`s 	0
+
+    0   0   0   0`s     0`s 	0
+    0   0   0   0`s     0`s 	0
+    0   0   0   0`s     0`s 	0
+    0   0   0   0`s     0`s 	0
+    0   0   0   0`s     0`s 	0
+    0   0   0   0`s     0`s 	0
+    0   0   0   0`s     0`s 	0
+    0   0   0   0`s     0`s 	0
+}
+
+
 
 
 

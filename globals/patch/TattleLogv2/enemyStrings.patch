@@ -556,6 +556,26 @@ A Dry Bones[END]
 [Size:0C:0C]Gus[End]
 }
 
+#export:String $darkLakituName {
+[Size:0C:0C]Dark Lakitu[End]
+}
+
+#export:String $skyBlueSpinyName {
+[Size:0C:0C]Sky Blue Spiny[End]
+}
+
+#export:String $flowerFuzzyName {
+[Size:0C:0C]Flower Fuzzy[End]
+}
+
+#export:String $swampireName {
+[Size:0C:0C]Swampire[End]
+}
+
+#export:String $darkEmberName {
+[Size:0C:0C]Dark Ember[End]
+}
+
 #export:String $bowserName {
 [Size:0C:0C]Bowser[END]
 }
