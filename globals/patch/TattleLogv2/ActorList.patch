@@ -1,8 +1,198 @@
 %TODO: convert these to ttyd64 enemy ids. currently they are from black pit
-#export .Actor_RedGoomba 00000000
+#export .Actor_DarkParatroopa 00000006
+#export .Actor_Goomba 00000007
+#export .Actor_Paragoomba 00000008
+#export .Actor_SpikedGoomba 00000009
+#export .Actor_KoopaTroopa 0000000B
+#export .Actor_Fuzzy 0000000A
+#export .Actor_Paratroopa 0000000C
+#export .Actor_Bobomb 0000000D
+#export .Actor_BulletBill 0000000F
+#export .Actor_BillBlaster 00000010
+#export .Actor_MontyMole 00000012
+#export .Actor_Cleft 00000011
+#export .Actor_Bandit 00000013
+#export .Actor_Pokey 00000014
+#export .Actor_PokeyMummy 00000015
+#export .Actor_Swooper 00000016
+#export .Actor_BuzzyBeetle 00000017
+#export .Actor_StoneChomp 00000018
+#export .Actor_PiranhaPlant 00000019
+#export .Actor_ForestFuzzy 0000001A
+#export .Actor_HyperGoomba 0000001B
+#export .Actor_HyperParagoomba 0000001C
+#export .Actor_HyperCleft 0000001D
+#export .Actor_Clubba 0000001E
+#export .Actor_ShyGuy 0000001F
+#export .Actor_GrooveGuy 00000020
+#export .Actor_SkyGuy 00000021
+#export .Actor_MediGuy 00000022
+#export .Actor_PyroGuy 00000023
+#export .Actor_SpyGuy 00000024
+#export .Actor_HurtPlant 00000026
+#export .Actor_MBush 00000027
+#export .Actor_JungleFuzzy 00000029
+#export .Actor_SpearGuy 0000002A
+#export .Actor_LavaBubble 0000002B
+#export .Actor_SpikeTop 0000002C
+#export .Actor_PutridPiranha 0000002D
+#export .Actor_Lakitu 0000002E
+#export .Actor_Spiny 0000002F
+#export .Actor_MontyMoleCh6 00000030
+#export .Actor_Bzzap 00000031
+#export .Actor_CrazeeDayzee 00000032
+#export .Actor_AmayzDayzee 00000033
+#export .Actor_RuffPuff 00000034
+#export .Actor_Spike 00000035
+#export .Actor_Gulpit 00000036
+#export .Actor_WhiteClubba 00000038
+#export .Actor_FrostPiranha 00000039
+#export .Actor_Swoopula 0000003A
+#export .Actor_Duplighost 0000003B
+#export .Actor_Ember 00000045
+#export .Actor_BonyBeetle 00000046
+#export .Actor_DryBones 00000047
+#export .Actor_BombshellBillBlaster 00000049
+#export .Actor_BombshellBill 0000004A
+#export .Actor_HammerBros 0000004B
+#export .Actor_Koopatrol 0000004C
+#export .Actor_PoisonPuff 0000005D
+#export .Actor_DarkLakitu 0000005E
+#export .Actor_SkyBlueSpiny 0000005F
+#export .Actor_DarkHammerBros 00000060
+#export .Actor_DarkMontyMole 00000061
+#export .Actor_DarkEmber 00000063
+#export .Actor_Swampire 00000064
+#export .Actor_Gus 00000065
+#export .Actor_Pider 00000066
+#export .Actor_BulkyBobOmb 00000067
+#export .Actor_FireBros 00000068
+#export .Actor_DarkPuff 00000069
+#export .Actor_PalePiranha 0000006A
+#export .Actor_BoomerangBros 0000006C
+#export .Actor_FlowerFuzzy 0000006D
+#export .Actor_DarkCraw 00000078
+#export .Actor_JrTroopa 0000008F
+#export .Actor_BlueGoombaBro 00000090
+#export .Actor_RedGoombaBro 00000091
+#export .Actor_GoombaKing 00000092
+#export .Actor_Magikoopa 00000095
+#export .Actor_KoopaBros 0000009C
+#export .Actor_Buzzar 000000A0
+#export .Actor_TutanKoopa 000000A1
+#export .Actor_Chomp 000000A2
+#export .Actor_Tubba 000000A4
+#export .Actor_TubbasHeart 000000A5
+#export .Actor_StiltGuy 000000A6
+#export .Actor_GeneralGuy 000000AA
+#export .Actor_AntiGuy 000000AF
+#export .Actor_BigLanternGhost 000000B1
+#export .Actor_LavaPiranha 000000B3
+#export .Actor_LavaBud 000000B6
+#export .Actor_KentCKoopa 000000B9
+#export .Actor_HuffNPuff 000000BA
+#export .Actor_Monstar 000000BC
+#export .Actor_CrystalKing 000000BD
+#export .Actor_CrystalBit 000000BF
+#export .Actor_Bowser 000000C1 %final bowser
 
 #export:Data $TattleActorIDList {
-    
+    .Actor_DarkParatroopa
+    .Actor_Goomba
+    .Actor_Paragoomba
+    .Actor_SpikedGoomba
+    .Actor_KoopaTroopa
+    .Actor_Fuzzy
+    .Actor_Paratroopa
+    .Actor_Bobomb
+    .Actor_BulletBill
+    .Actor_BillBlaster
+    .Actor_MontyMole
+    .Actor_Cleft
+    .Actor_Bandit
+    .Actor_Pokey
+    .Actor_PokeyMummy
+    .Actor_Swooper
+    .Actor_BuzzyBeetle
+    .Actor_StoneChomp
+    .Actor_PiranhaPlant
+    .Actor_ForestFuzzy
+    .Actor_HyperGoomba
+    .Actor_HyperParagoomba
+    .Actor_HyperCleft
+    .Actor_Clubba
+    .Actor_ShyGuy
+    .Actor_GrooveGuy
+    .Actor_SkyGuy
+    .Actor_MediGuy
+    .Actor_PyroGuy
+    .Actor_SpyGuy
+    .Actor_HurtPlant
+    .Actor_MBush
+    .Actor_JungleFuzzy
+    .Actor_SpearGuy
+    .Actor_LavaBubble
+    .Actor_SpikeTop
+    .Actor_PutridPiranha
+    .Actor_Lakitu
+    .Actor_Spiny
+    .Actor_MontyMoleCh6
+    .Actor_Bzzap
+    .Actor_CrazeeDayzee
+    .Actor_AmayzDayzee
+    .Actor_RuffPuff
+    .Actor_Spike
+    .Actor_Gulpit
+    .Actor_WhiteClubba
+    .Actor_FrostPiranha
+    .Actor_Swoopula
+    .Actor_Duplighost
+    .Actor_Ember
+    .Actor_BonyBeetle
+    .Actor_DryBones
+    .Actor_BombshellBillBlaster
+    .Actor_BombshellBill
+    .Actor_HammerBros
+    .Actor_Koopatrol
+    .Actor_PoisonPuff
+    .Actor_DarkLakitu
+    .Actor_SkyBlueSpiny
+    .Actor_DarkHammerBros
+    .Actor_DarkMontyMole
+    .Actor_DarkEmber
+    .Actor_Swampire
+    .Actor_Gus
+    .Actor_Pider
+    .Actor_BulkyBobOmb
+    .Actor_FireBros
+    .Actor_DarkPuff
+    .Actor_PalePiranha
+    .Actor_BoomerangBros
+    .Actor_FlowerFuzzy
+    .Actor_DarkCraw
+    .Actor_JrTroopa
+    .Actor_BlueGoombaBro
+    .Actor_RedGoombaBro
+    .Actor_GoombaKing
+    .Actor_Magikoopa
+    .Actor_KoopaBros
+    .Actor_Buzzar
+    .Actor_TutanKoopa
+    .Actor_Chomp
+    .Actor_Tubba
+    .Actor_TubbasHeart
+    .Actor_StiltGuy
+    .Actor_GeneralGuy
+    .Actor_AntiGuy
+    .Actor_BigLanternGhost
+    .Actor_LavaPiranha
+    .Actor_LavaBud
+    .Actor_KentCKoopa
+    .Actor_HuffNPuff
+    .Actor_Monstar
+    .Actor_CrystalKing
+    .Actor_CrystalBit
+    .Actor_Bowser
     FFFFFFFF
 }
 

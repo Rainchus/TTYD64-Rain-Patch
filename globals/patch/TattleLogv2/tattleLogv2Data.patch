@@ -54,7 +54,7 @@ typedef struct page {
     0   0   0   0`s     0`s 	0
 
     $blueGoombaName     002F0004    90  35`s    8`s     $GoombaBroBlueData
-    $redGoombaName      002F0003    90  35`s    8`s     $GoombaBroRedData
+    $redGoombaName      002F0003    91  35`s    8`s     $GoombaBroRedData
     $goombaKingName     002F0005    92  35`s    40`s 	$GoombaKingData
     $bulletBillName     002F000B    0F  40`s    0`s 	$BulletBillData
     $billBlasterName    002F000C    10  35`s  	12`s 	$BillBlasterData
@@ -93,7 +93,7 @@ typedef struct page {
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
     0   0   0   0`s     0`s 	0
-    $kentCKoopaName         002F006F    35  40`s    32`s     $KentCKoopaData
+    $kentCKoopaName         002F006F    B9  40`s    32`s     $KentCKoopaData
     $spikeName              002F0048    35  44`s  	8`s 	$WorldLakilesterData
     $huffNPuffName          002F004A    BA  32`s  	-16`s 	$HuffNPuffData
     $monstarName            002F004F    BC  44`s  	44`s 	$MonstarData
@@ -146,11 +146,11 @@ typedef struct page {
 
 #export:Data $commonPage1Struct {
     %enemy name             %tattle     actorID     originX originY %data for sprite
-    $piranhaPlantName       002F001F    19  2`s     15`s     $PiranhaPlantData
-    $hyperGoombaName        002F0021    19  0`s     0`s 	$HyperGoombaData
+    $piranhaPlantName       002F001F    19  2`s     15`s    $PiranhaPlantData
+    $hyperGoombaName        002F0021    1B  0`s     0`s 	$HyperGoombaData
     $hyperParagoombaName    002F0022    1C  0`s     0`s 	$HyperParagoombaData
-    $hyperCleftName         002F0023    1D  -4`s     8`s     $HyperCleftData
-    $clubbaName             002F0024    1E  0`s     15`s     $WorldClubbaData
+    $hyperCleftName         002F0023    1D  -4`s     8`s    $HyperCleftData
+    $clubbaName             002F0024    1E  0`s     15`s    $WorldClubbaData
     $shyGuyName             002F0029    1F  0`s  	0`s 	$ShyGuyData
     $grooveGuyName          002F002A    20  0`s     0`s     $GrooveGuyData
     $skyGuyName             002F002D    21  0`s     20`s    $SkyGuyData
@@ -160,10 +160,9 @@ typedef struct page {
     $spyGuyName             002F002B    24  0`s     4`s 	$SpyGuyData
     $jungleFuzzyName        002F0037    29  0`s     0`s     $JungleFuzzyData
     $spearGuyName           002F0038    2A  0`s     8`s     $JungleGuyData
-    $hurtPlantName          002F0035    26  0`s     16`s     $HurtPlantData
+    $hurtPlantName          002F0035    26  0`s     16`s    $HurtPlantData
     $mBushName              002F0036    27  0`s     0`s     $MBushData
-    $putridPiranhaName      002F0039    2D  4`s     20`s     $PutridPiranhaData
-
+    $putridPiranhaName      002F0039    2D  4`s     20`s    $PutridPiranhaData
 }
 
 #export:Data $commonPage2Struct {
