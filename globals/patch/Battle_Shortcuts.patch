@@ -438,12 +438,12 @@ bit4/10=R button
 
 % Used to calculate the offset for all C buttons and their commands
 #new:Data $Data_IconGroup1_MainOffset
-{ 00A700CC }
+{ 009000CE }
 % XXXXYYYY
 
 % Used to calculate the offset for the R button and his command
 #new:Data $Data_IconGroup2_MainOffset
-{ 00C100CC }
+{ 00C100CE }
 % XXXXYYYY
 
 % Draw new icons

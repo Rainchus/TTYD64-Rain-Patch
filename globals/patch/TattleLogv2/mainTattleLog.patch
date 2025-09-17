@@ -188,16 +188,16 @@ on foes he's tattled here.[END]
     NOP
     % JAL $DisplayTattleCount
     % NOP
-    JAL $DisplayPageCount
-    NOP
+    % JAL $DisplayPageCount
+    % NOP
 
     BEQ r0, r0, .end
     NOP
     .displayBoss
     JAL $displayEnemyNames
     NOP
-    JAL $DisplayPageCount
-    NOP
+    %JAL $DisplayPageCount
+    %NOP
     BEQ r0, r0, .end
     NOP
     .skip
@@ -308,7 +308,7 @@ on foes he's tattled here.[END]
     JAL $load_tattle_flag_copy
     LW a0, 0008 (s0) %get actor type
     %temporary, always return true for tattle bool
-    ORI v0, r0, 0001
+    %ORI v0, r0, 0001
     LIO a0, $unkString
     BNEL v0, r0, .skipEnemyName
     LW a0, 0000 (s0) %load enemy string name
@@ -809,7 +809,7 @@ on foes he's tattled here.[END]
     JAL $load_tattle_flag_copy
     LW a0, 0008 (s0) %load actor type
     %temporary, always return true for tattle flag
-    ORI v0, r0, 0001
+    %ORI v0, r0, 0001
     %%%%
     LW t0, 0004 (s0) %load current enemy description string
     BEQL v0, r0, .next
@@ -925,7 +925,7 @@ on foes he's tattled here.[END]
     JAL $load_tattle_flag_copy
     LW a0, 0008 (s0) %load actor type
     %temporary, always return true on tattle flag
-    ORI v0, r0, 0001
+    %ORI v0, r0, 0001
     BEQ v0, r0, .exit
     NOP
     %set up image for display

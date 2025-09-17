@@ -212,6 +212,19 @@
     NOP
 }
 
+#new:Function $SetTattleFlag {
+    LIO    t0, 800DBEDD
+    SRL    t1, a0, 3
+    ANDI   t3, a0, 7
+    ADDU   t0, t0, t1
+    LBU    t2, 0000 (t0)
+    ORI    t4, r0, 1
+    SLLV   t4, t4, t3
+    OR     t2, t2, t4
+    JR     RA
+    SB     t2, 0000 (t0)
+}
+
 #export:Function $GetTotalTattleCount {
     PUSH s0, s1, ra
     DADDU s0, r0, r0

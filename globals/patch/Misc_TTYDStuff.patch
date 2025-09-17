@@ -311,7 +311,12 @@
     NOP
 }
 
-@Hook:Global 80135A2C {
+@Function:Global 80135A2C {
+    J $setBadgeFlagCode
+    LH v1, 0018 (s1)
+}
+
+#new:Function $setBadgeFlagCode {
     SH v1, 00B4 (v0) %restore from hook (sets badge in inventory)
     JAL $SetBadgeFlag
     ADDU a0, v1, r0
@@ -370,10 +375,10 @@
 
 @Hook:Global 800E7740 {
     SW ra, 0010 (sp) %restore from hook
-    PUSH a0
+    PUSH a0, v0
     JAL $SetBadgeFlag
     NOP
-    POP a0
+    POP a0, v0
     SLL v0, a0, 5 %restore from hook
     J 800E7748 %return from hook
     NOP
