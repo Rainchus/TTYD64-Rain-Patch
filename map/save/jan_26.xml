@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="jan_26" author="elDexter" background="yos_bg" textures="jan_tex">
 	<Editor>
-		<Camera pos="463.118286,214.036804,337.775848" pitch="10.000000" yaw="0.000000"/>
-		<Camera pos="463.000000,65536.000000,-94.000000"/>
-		<Camera pos="65536.000000,90.000000,-94.000000"/>
-		<Camera pos="463.000000,90.000000,65536.000000"/>
+		<Camera pos="156.097168,6.200125,578.363831" pitch="22.400064" yaw="308.959808"/>
+		<Camera pos="-116.750397,65536.000000,-443.601593"/>
+		<Camera pos="65536.000000,90.000000,-42.689178"/>
+		<Camera pos="62.781017,9.186593,65536.000000"/>
 	</Editor>
 	<ModelTree>
-		<Node name="Root" id="57">
+		<Node name="Root" id="58">
 			<Node name="g1" id="7">
 				<Node name="g2" id="2">
 					<Node name="g41" id="1">
@@ -100,10 +100,11 @@
 				<Node name="ravenStatue1" id="54"/>
 				<Node name="ravenStatue2" id="55"/>
 			</Node>
+			<Node name="MeshModel" id="57"/>
 		</Node>
 	</ModelTree>
 	<ColliderTree>
-		<Node name="Root" id="2A">
+		<Node name="Root" id="2B">
 			<Node name="MeshCollider" id="0"/>
 			<Node name="MeshCollider" id="1"/>
 			<Node name="Split Collider" id="2"/>
@@ -147,6 +148,7 @@
 			<Node name="asddf" id="27"/>
 			<Node name="water" id="28"/>
 			<Node name="sign1" id="29"/>
+			<Node name="Split Collider" id="2A"/>
 		</Node>
 	</ColliderTree>
 	<ZoneTree>
@@ -186,9 +188,29 @@
 	</LightSets>
 	<Models>
 		<Model ver="2" type="ROOT" lightset="1">
-			<MapObject name="Root" id="57" dumped="true" fileOffset="A458"/>
+			<MapObject name="Root" id="58" dumped="true" fileOffset="A458"/>
 			<BoundingBox empty="false" min="-600,-145,-600" max="600,276,621"/>
 			<PropertyList>
+			</PropertyList>
+		</Model>
+		<Model ver="2" type="MODEL" lightset="0">
+			<MapObject name="MeshModel" id="57"/>
+			<ShapeMesh ver="3" texture="">
+				<DisplayList>
+					<F3DEX2 cmd="E7000000,0"/>
+					<F3DEX2 cmd="D9FDFFFF,0"/>
+					<F3DEX2 cmd="D9FFFFFF,200400"/>
+					<TriangleBatch ver="0">
+						<VertexTable>
+						</VertexTable>
+						<TriangleList>
+						</TriangleList>
+					</TriangleBatch>
+				</DisplayList>
+			</ShapeMesh>
+			<PropertyList>
+				<Property v="5C,0,1"/>
+				<Property v="5F,0,0"/>
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
@@ -9744,11 +9766,119 @@
 	</Models>
 	<Colliders>
 		<Collider ver="0" flags="0">
-			<MapObject name="Root" id="2A"/>
+			<MapObject name="Root" id="2B"/>
 			<HitObject type="ROOT"/>
 		</Collider>
+		<Collider ver="0" flags="8000">
+			<MapObject name="Split Collider" id="2A"/>
+			<HitObject type="HIT"/>
+			<HitMesh ver="0">
+				<TriangleBatch ver="0">
+					<VertexTable>
+						<Vertex xyz="50,-125,520" uv="-13290,0"/>
+						<Vertex xyz="207,-21,520" uv="-6538,1664"/>
+						<Vertex xyz="207,-125,520" uv="-6538,0"/>
+						<Vertex xyz="207,-21,520" uv="-6538,1664"/>
+						<Vertex xyz="50,-125,520" uv="-13290,0"/>
+						<Vertex xyz="50,-21,520" uv="-13290,1664"/>
+						<Vertex xyz="-215,-125,520" uv="-13290,0"/>
+						<Vertex xyz="-50,-21,520" uv="-6538,1664"/>
+						<Vertex xyz="-50,-125,520" uv="-6538,0"/>
+						<Vertex xyz="-50,-21,520" uv="-6538,1664"/>
+						<Vertex xyz="-215,-125,520" uv="-13290,0"/>
+						<Vertex xyz="-215,-21,520" uv="-13290,1664"/>
+						<Vertex xyz="-520,-20,215" uv="-20214,1664"/>
+						<Vertex xyz="-520,-124,-215" uv="-27062,0"/>
+						<Vertex xyz="-520,-20,-215" uv="-27062,1664"/>
+						<Vertex xyz="-520,-124,-215" uv="-27062,0"/>
+						<Vertex xyz="-520,-20,215" uv="-20214,1664"/>
+						<Vertex xyz="-520,-125,215" uv="-20214,0"/>
+						<Vertex xyz="-215,-20,520" uv="-13290,1664"/>
+						<Vertex xyz="-520,-125,215" uv="-20214,0"/>
+						<Vertex xyz="-520,-20,215" uv="-20214,1664"/>
+						<Vertex xyz="-520,-125,215" uv="-20214,0"/>
+						<Vertex xyz="-215,-20,520" uv="-13290,1664"/>
+						<Vertex xyz="-215,-125,520" uv="-13290,0"/>
+						<Vertex xyz="500,-21,208" uv="309,1664"/>
+						<Vertex xyz="207,-125,520" uv="-6538,0"/>
+						<Vertex xyz="207,-21,520" uv="-6538,1664"/>
+						<Vertex xyz="207,-125,520" uv="-6538,0"/>
+						<Vertex xyz="500,-21,208" uv="309,1664"/>
+						<Vertex xyz="500,-125,208" uv="309,0"/>
+						<Vertex xyz="500,-21,-207" uv="6949,1664"/>
+						<Vertex xyz="500,-125,208" uv="309,0"/>
+						<Vertex xyz="500,-21,208" uv="309,1664"/>
+						<Vertex xyz="500,-125,208" uv="309,0"/>
+						<Vertex xyz="500,-21,-207" uv="6949,1664"/>
+						<Vertex xyz="500,-125,-207" uv="6949,0"/>
+						<Vertex xyz="207,-21,-500" uv="13579,1664"/>
+						<Vertex xyz="500,-125,-207" uv="6949,0"/>
+						<Vertex xyz="500,-21,-207" uv="6949,1664"/>
+						<Vertex xyz="500,-125,-207" uv="6949,0"/>
+						<Vertex xyz="207,-21,-500" uv="13579,1664"/>
+						<Vertex xyz="207,-125,-500" uv="13579,0"/>
+						<Vertex xyz="-227,-21,-500" uv="20523,1664"/>
+						<Vertex xyz="207,-125,-500" uv="13579,0"/>
+						<Vertex xyz="207,-21,-500" uv="13579,1664"/>
+						<Vertex xyz="207,-125,-500" uv="13579,0"/>
+						<Vertex xyz="-227,-21,-500" uv="20523,1664"/>
+						<Vertex xyz="-227,-125,-500" uv="20523,0"/>
+						<Vertex xyz="-520,-20,-215" uv="27062,1664"/>
+						<Vertex xyz="-227,-125,-500" uv="20523,0"/>
+						<Vertex xyz="-227,-21,-500" uv="20523,1664"/>
+						<Vertex xyz="-227,-125,-500" uv="20523,0"/>
+						<Vertex xyz="-520,-20,-215" uv="27062,1664"/>
+						<Vertex xyz="-520,-124,-215" uv="27062,0"/>
+						<Vertex xyz="-49,-144,520"/>
+						<Vertex xyz="-49,-28,520" uv="0,1024"/>
+						<Vertex xyz="-49,-144,621" uv="1024,0"/>
+						<Vertex xyz="-49,-28,520" uv="0,1024"/>
+						<Vertex xyz="-49,-28,621" uv="1024,1024"/>
+						<Vertex xyz="-49,-144,621" uv="1024,0"/>
+						<Vertex xyz="-49,-144,621" uv="1024,0"/>
+						<Vertex xyz="-49,-28,621" uv="1024,1024"/>
+						<Vertex xyz="50,-144,621" uv="2048,0"/>
+						<Vertex xyz="-49,-28,621" uv="1024,1024"/>
+						<Vertex xyz="50,-28,621" uv="2048,1024"/>
+						<Vertex xyz="50,-144,621" uv="2048,0"/>
+						<Vertex xyz="50,-144,621" uv="2048,0"/>
+						<Vertex xyz="50,-28,621" uv="2048,1024"/>
+						<Vertex xyz="50,-144,520" uv="3072,0"/>
+						<Vertex xyz="50,-28,621" uv="2048,1024"/>
+						<Vertex xyz="50,-28,520" uv="3072,1024"/>
+						<Vertex xyz="50,-144,520" uv="3072,0"/>
+					</VertexTable>
+					<TriangleList>
+						<Triangle ijk="0,1,2"/>
+						<Triangle ijk="3,4,5"/>
+						<Triangle ijk="6,7,8"/>
+						<Triangle ijk="9,10,11"/>
+						<Triangle ijk="12,13,14"/>
+						<Triangle ijk="15,16,17"/>
+						<Triangle ijk="18,19,20"/>
+						<Triangle ijk="21,22,23"/>
+						<Triangle ijk="24,25,26"/>
+						<Triangle ijk="27,28,29"/>
+						<Triangle ijk="30,31,32"/>
+						<Triangle ijk="33,34,35"/>
+						<Triangle ijk="36,37,38"/>
+						<Triangle ijk="39,40,41"/>
+						<Triangle ijk="42,43,44"/>
+						<Triangle ijk="45,46,47"/>
+						<Triangle ijk="48,49,50"/>
+						<Triangle ijk="51,52,53"/>
+						<Triangle ijk="54,55,56"/>
+						<Triangle ijk="57,58,59"/>
+						<Triangle ijk="60,61,62"/>
+						<Triangle ijk="63,64,65"/>
+						<Triangle ijk="66,67,68"/>
+						<Triangle ijk="69,70,71"/>
+					</TriangleList>
+				</TriangleBatch>
+			</HitMesh>
+		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="sign1" id="29" hidden="true"/>
+			<MapObject name="sign1" id="29"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9766,7 +9896,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="water" id="28" hidden="true"/>
+			<MapObject name="water" id="28"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9860,7 +9990,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="asddf" id="27" hidden="true"/>
+			<MapObject name="asddf" id="27"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9884,7 +10014,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="rMain" id="25" hidden="true"/>
+			<MapObject name="rMain" id="25"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9943,7 +10073,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="r5" id="24" hidden="true"/>
+			<MapObject name="r5" id="24"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9979,7 +10109,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="r4" id="23" hidden="true"/>
+			<MapObject name="r4" id="23"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9999,7 +10129,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="r3" id="22" hidden="true"/>
+			<MapObject name="r3" id="22"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10019,7 +10149,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="r2" id="21" hidden="true"/>
+			<MapObject name="r2" id="21"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10039,7 +10169,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="r1" id="20" hidden="true"/>
+			<MapObject name="r1" id="20"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10057,7 +10187,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="1F" hidden="true"/>
+			<MapObject name="MeshCollider" id="1F"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10277,7 +10407,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="ravenStatue2" id="1E" hidden="true"/>
+			<MapObject name="ravenStatue2" id="1E"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10321,7 +10451,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="1D" hidden="true"/>
+			<MapObject name="MeshCollider" id="1D"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10373,7 +10503,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="1C" hidden="true"/>
+			<MapObject name="MeshCollider" id="1C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10393,7 +10523,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="1B" hidden="true"/>
+			<MapObject name="MeshCollider" id="1B"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10413,7 +10543,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="1A" hidden="true"/>
+			<MapObject name="MeshCollider" id="1A"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10465,7 +10595,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="HullCollider" id="19" hidden="true"/>
+			<MapObject name="HullCollider" id="19"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10531,7 +10661,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="port3" id="18" hidden="true"/>
+			<MapObject name="port3" id="18"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10575,7 +10705,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o185" id="17" hidden="true"/>
+			<MapObject name="o185" id="17"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10707,7 +10837,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="CubeCollider" id="16" hidden="true"/>
+			<MapObject name="CubeCollider" id="16"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10757,7 +10887,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="Split Collider" id="15" hidden="true"/>
+			<MapObject name="Split Collider" id="15"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10795,7 +10925,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="reward" id="14" hidden="true"/>
+			<MapObject name="reward" id="14"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10813,7 +10943,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="sign2" id="13" hidden="true"/>
+			<MapObject name="sign2" id="13"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10831,7 +10961,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="CubeCollider" id="12" hidden="true"/>
+			<MapObject name="CubeCollider" id="12"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10879,7 +11009,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="HullCollider" id="11" hidden="true"/>
+			<MapObject name="HullCollider" id="11"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10917,7 +11047,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="HullCollider" id="10" hidden="true"/>
+			<MapObject name="HullCollider" id="10"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10953,7 +11083,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="F" hidden="true"/>
+			<MapObject name="MeshCollider" id="F"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11029,7 +11159,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="port2" id="E" hidden="true"/>
+			<MapObject name="port2" id="E"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11073,7 +11203,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o185" id="D" hidden="true"/>
+			<MapObject name="o185" id="D"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11205,7 +11335,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="port1" id="C" hidden="true"/>
+			<MapObject name="port1" id="C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11249,7 +11379,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o185" id="B" hidden="true"/>
+			<MapObject name="o185" id="B"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11381,7 +11511,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="ravenStatue1" id="A" hidden="true"/>
+			<MapObject name="ravenStatue1" id="A"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11411,7 +11541,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="9" hidden="true"/>
+			<MapObject name="MeshCollider" id="9"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11439,7 +11569,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="HullCollider" id="8" hidden="true"/>
+			<MapObject name="HullCollider" id="8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11475,7 +11605,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="7" hidden="true"/>
+			<MapObject name="MeshCollider" id="7"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11523,7 +11653,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="6" hidden="true"/>
+			<MapObject name="MeshCollider" id="6"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11563,7 +11693,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="CubeCollider" id="5" hidden="true"/>
+			<MapObject name="CubeCollider" id="5"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11895,7 +12025,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="CubeCollider" id="4" hidden="true"/>
+			<MapObject name="CubeCollider" id="4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11987,7 +12117,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="Exit0" id="3" hidden="true"/>
+			<MapObject name="Exit0" id="3"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12005,7 +12135,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="Split Collider" id="2" hidden="true"/>
+			<MapObject name="Split Collider" id="2"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12077,7 +12207,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="1" hidden="true"/>
+			<MapObject name="MeshCollider" id="1"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12129,7 +12259,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="0" hidden="true"/>
+			<MapObject name="MeshCollider" id="0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
